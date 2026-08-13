@@ -1,0 +1,80 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const SITE_TITLE = "Permaculture Forêt";
+const CONTACT_EMAIL = "contact@permaculture-foret.fr";
+---
+
+<BaseLayout
+  title={`Politique de confidentialité — ${SITE_TITLE}`}
+  description="Politique de confidentialité du blog Permaculture Forêt : cookies, publicité, affiliation et données personnelles."
+>
+  <article class="legal">
+    <h1>🔒 Politique de confidentialité</h1>
+    <p><em>Dernière mise à jour : août 2026</em></p>
+
+    <h2>1. Qui sommes-nous ?</h2>
+    <p>
+      Le site <strong>{SITE_TITLE}</strong> (<code>https://permaculture-foret.fr</code>)
+      est un blog consacré à la permaculture, à l'agroforesterie et au jardinage
+      naturel. Pour toute question relative à cette politique, vous pouvez nous
+      écrire à <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.
+    </p>
+
+    <h2>2. Données collectées</h2>
+    <p>Ce blog est un site statique : il ne stocke aucune donnée personnelle sur ses propres serveurs (pas de formulaire, pas de compte utilisateur, pas de base de données).</p>
+    <p>Des données peuvent néanmoins être collectées par des services tiers (voir ci-dessous) : adresse IP, type de navigateur, pages visitées.</p>
+
+    <h2>3. Publicité — Google AdSense</h2>
+    <p>
+      Ce site utilise <strong>Google AdSense</strong>, un service de publicité de
+      Google LLC. Google utilise des cookies pour diffuser des annonces adaptées à
+      votre navigation. Les informations collectées (adresse IP, cookies,
+      identifiants) permettent à Google d'afficher des publicités personnalisées.
+    </p>
+    <p>
+      Vous pouvez refuser la personnalisation des annonces sur la page
+      <a href="https://adssettings.google.com/" target="_blank" rel="noopener">Paramètres des annonces Google</a>,
+      ou consulter la
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Politique de confidentialité de Google</a>.
+    </p>
+
+    <h2>4. Affiliation</h2>
+    <p>
+      Ce blog contient des <strong>liens d'affiliation</strong> (notamment vers
+      Amazon.fr). Lorsque vous cliquez sur un lien affilié puis effectuez un achat,
+      nous percevons une commission, sans coût supplémentaire pour vous. Amazon
+      peut déposer des cookies de suivi afin d'attribuer la vente.
+    </p>
+
+    <h2>5. Cookies</h2>
+    <p>Les cookies utilisés sur ce site proviennent exclusivement de services tiers (AdSense, affiliation). Aucun cookie de mesure d'audience propriétaire n'est déposé.</p>
+
+    <h2>6. Vos droits</h2>
+    <p>
+      Conformément au RGPD, vous disposez d'un droit d'accès, de rectification,
+      d'opposition et de suppression des données vous concernant. Pour l'exercer,
+      contactez-nous à <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.
+    </p>
+  </article>
+</BaseLayout>
+
+<style>
+  .legal {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+  .legal h1 {
+    color: var(--primary);
+  }
+  .legal h2 {
+    margin-top: 1.75rem;
+    font-size: 1.15rem;
+  }
+  .legal code {
+    background: var(--bg-alt);
+    padding: 0.1rem 0.35rem;
+    border-radius: 4px;
+  }
+</style>
