@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://permaculture-foret.fr/sitemap-index.xml
