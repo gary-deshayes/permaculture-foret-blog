@@ -2,6 +2,7 @@
 title: "Butte de permaculture : créer une butte auto-fertile"
 description: "Créez une butte de permaculture pas à pas : butte lasagne ou hugelkultur, matériaux, plantations et entretien. Le guide pour un potager auto-fertile."
 pubDate: 2026-08-14
+heroImage: /images/butte-permaculture.jpg
 tags: ["permaculture", "butte", "sol vivant"]
 ---
 

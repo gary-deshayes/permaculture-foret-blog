@@ -2,6 +2,7 @@
 title: "Bienvenue sur Permaculture Forêt"
 description: "Découvrez les principes de la permaculture, du jardinage bio et de l'agroforesterie pour cultiver en harmonie avec la nature."
 pubDate: 2026-07-30
+heroImage: /images/bienvenue-sur-permaculture-foret.jpg
 updatedDate: 2026-08-05
 tags: ["permaculture", "bio", "jardinage"]
 ---

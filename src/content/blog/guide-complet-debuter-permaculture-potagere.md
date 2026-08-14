@@ -2,6 +2,7 @@
 title: "Guide complet : débuter la permaculture potagère"
 description: "Apprenez les bases de la permaculture pour créer un potager nourricier, résilient et respectueux de la biodiversité."
 pubDate: 2026-08-01
+heroImage: /images/guide-complet-debuter-permaculture-potagere.jpg
 updatedDate: 2026-08-05
 tags: ["permaculture", "potager", "debutant"]
 affiliateProduct:

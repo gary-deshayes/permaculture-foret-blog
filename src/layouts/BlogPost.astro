@@ -25,10 +25,10 @@ const jsonLd = {
   image: image ? new URL(image, site).toString() : undefined,
   datePublished: pubDate.toISOString(),
   dateModified: (updatedDate ?? pubDate).toISOString(),
-  author: { "@type": "Person", name: "Le Rédacteur" },
+  author: { "@type": "Person", name: "Permaculture Forêt" },
   publisher: {
     "@type": "Organization",
-    name: "Mon Blog",
+    name: "Permaculture Forêt",
     logo: { "@type": "ImageObject", url: new URL("/favicon.svg", site).toString() },
   },
   mainEntityOfPage: canonical.toString(),
@@ -53,6 +53,12 @@ const jsonLd = {
       <h1>{title}</h1>
       <p class="post-desc">{description}</p>
     </header>
+
+    {image && (
+      <figure class="post-hero">
+        <img src={image} alt={title} width="1280" height="720" loading="eager" fetchpriority="high" />
+      </figure>
+    )}
 
     <!-- 📢 Encart pub : haut d'article -->
     <AdSlot format="horizontal" />
@@ -91,6 +97,18 @@ const jsonLd = {
   .post-desc {
     font-size: 1.1rem;
     color: var(--muted);
+  }
+  .post-hero {
+    margin: 0 0 1.5rem;
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+  .post-hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 480px;
+    object-fit: cover;
   }
   .post-content {
     font-size: 1.02rem;

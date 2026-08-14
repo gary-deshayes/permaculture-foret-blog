@@ -10,24 +10,36 @@ const posts = (await getCollection("blog")).sort(
 
 <BaseLayout
   title="Tous les articles — Permaculture Forêt"
-  description="Tous nos guides, comparatifs et conseils [NICHE]."
+  description="Tous nos guides, comparatifs et conseils en permaculture, agroforesterie et jardinage naturel."
 >
   <h1>📚 Tous les articles</h1>
   <div class="posts-list">
     {posts.map((post) => (
       <a href={`/blog/${post.slug}/`} class="post-item">
-        <div class="post-item-date">
-          {post.data.pubDate.toLocaleDateString("fr-FR", { dateStyle: "long" })}
-        </div>
-        <h2>{post.data.title}</h2>
-        <p>{post.data.description}</p>
-        {post.data.tags && (
-          <div class="post-item-tags">
-            {post.data.tags.map((t) => (
-              <span class="tag">#{t}</span>
-            ))}
-          </div>
+        {post.data.heroImage && (
+          <img
+            src={post.data.heroImage}
+            alt={post.data.title}
+            class="post-item-img"
+            width="1280"
+            height="720"
+            loading="lazy"
+          />
         )}
+        <div class="post-item-body">
+          <div class="post-item-date">
+            {post.data.pubDate.toLocaleDateString("fr-FR", { dateStyle: "long" })}
+          </div>
+          <h2>{post.data.title}</h2>
+          <p>{post.data.description}</p>
+          {post.data.tags && (
+            <div class="post-item-tags">
+              {post.data.tags.map((t) => (
+                <span class="tag">#{t}</span>
+              ))}
+            </div>
+          )}
+        </div>
       </a>
     ))}
   </div>
@@ -41,7 +53,9 @@ const posts = (await getCollection("blog")).sort(
     margin-top: 1.5rem;
   }
   .post-item {
-    display: block;
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
     background: var(--bg-alt);
     border: 1px solid var(--border);
     border-radius: var(--radius);
@@ -53,6 +67,28 @@ const posts = (await getCollection("blog")).sort(
   .post-item:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+  .post-item-img {
+    flex: 0 0 200px;
+    width: 200px;
+    height: 112px;
+    object-fit: cover;
+    border-radius: calc(var(--radius) - 4px);
+  }
+  .post-item-body {
+    flex: 1;
+    min-width: 0;
+  }
+  @media (max-width: 640px) {
+    .post-item {
+      flex-direction: column;
+    }
+    .post-item-img {
+      flex: none;
+      width: 100%;
+      height: auto;
+      max-height: 180px;
+    }
   }
   .post-item-date {
     font-size: 0.78rem;
