@@ -1,0 +1,450 @@
+---
+// Calendrier des semis interactif — par climat + géolocalisation
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { ZONES, CITIES, MONTHS, withOffsets } from "../../data/semis.mjs";
+
+const vegs = withOffsets();
+const data = JSON.stringify({ zones: ZONES, cities: CITIES, months: MONTHS, vegs });
+
+const currentMonth = new Date().getMonth() + 1;
+const faq = [
+  {
+    q: "Que semer en ce moment ?",
+    a: "Le calendrier s'ouvre automatiquement sur le mois en cours, adapté à votre climat. Cliquez sur « Me localiser » ou choisissez votre zone (océanique, bassin parisien, continental, méditerranéen ou montagnard) pour voir les légumes à semer sous abri, en pleine terre et à récolter ce mois-ci.",
+  },
+  {
+    q: "Pourquoi les dates changent selon le climat ?",
+    a: "Un même légume se sème 1 à 2 mois plus tôt sur la côte méditerranéenne que dans les Vosges ou en altitude. Le calendrier applique un décalage de saison à chaque climat : les méditerranéens démarrent plus tôt, les montagnards attendent la fin des gelées, les océaniques suivent un rythme doux et humide.",
+  },
+  {
+    q: "Comment la géolocalisation fonctionne-t-elle ?",
+    a: "Avec votre accord, le site détecte votre position et la compare à une base de villes françaises pour déterminer votre climat approximatif. Aucune donnée n'est envoyée à un serveur : tout se calcule dans votre navigateur. Vous pouvez aussi choisir votre ville ou votre zone manuellement.",
+  },
+  {
+    q: "Ces dates sont-elles fiables ?",
+    a: "Ce sont des repères moyens issus des pratiques de jardinage françaises. Chaque jardin a son microclimat : expositions, altitude, sol. Observez la météo locale et les gelées tardives avant de vous lancer, surtout en climat continental et montagnard.",
+  },
+];
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faq.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
+---
+
+<BaseLayout
+  title="Calendrier des semis : que semer par mois, climat et région (2026)"
+  description="Calendrier des semis interactif et gratuit : 30 légumes, 5 climats français (océanique, bassin parisien, continental, méditerranéen, montagnard) et géolocalisation automatique."
+>
+  <script type="application/ld+json" set:html={JSON.stringify(faqJsonLd)} />
+  <script type="application/json" id="semis-data" set:html={data} />
+
+  <!-- ============ HERO ============ -->
+  <section class="page-hero">
+    <div class="kicker" data-reveal>Outil de jardin</div>
+    <h1 data-reveal data-delay="1">
+      Calendrier des <span class="grad-text italic-accent">semis</span>
+    </h1>
+    <p data-reveal data-delay="2">
+      30 légumes, adapté à <strong>votre climat</strong> et à votre région.
+      Localisez-vous ou choisissez votre zone : les dates de semis se
+      décallent automatiquement (méditerranéen plus précoce, montagne plus
+      tardive). Mois en cours présélectionné.
+    </p>
+  </section>
+
+  <!-- ============ ÉTAPE 1 : CLIMAT ============ -->
+  <section id="climat">
+    <div class="kicker" data-reveal>Étape 1</div>
+    <h2 class="section-title" data-reveal data-delay="1">Votre climat</h2>
+    <div class="geo-bar" data-reveal data-delay="2">
+      <button id="geo-btn" class="btn btn-primary" type="button">📍 Me localiser</button>
+      <span id="geo-status" class="geo-status">Choisissez votre zone ou votre ville…</span>
+      <select id="city-select" class="city-select" aria-label="Choisir votre ville">
+        <option value="">🏙️ Ou choisissez votre ville…</option>
+        {CITIES.map((c) => (
+          <option value={c[3]} data-city={c[0]}>
+            {c[0]} — {ZONES[c[3]].label}
+          </option>
+        ))}
+      </select>
+    </div>
+    <div class="zone-grid" data-reveal data-delay="2">
+      {Object.entries(ZONES).map(([key, z]) => (
+        <button
+          class="zone-card card"
+          data-zone={key}
+          type="button"
+          style={`--zc:${z.color}`}
+        >
+          <span class="zone-emoji">{z.emoji}</span>
+          <span class="zone-name">{z.label}</span>
+          <span class="zone-desc">{z.desc}</span>
+        </button>
+      ))}
+    </div>
+  </section>
+
+  <!-- ============ ÉTAPE 2 : MOIS ============ -->
+  <section id="mois">
+    <div class="kicker" data-reveal>Étape 2</div>
+    <h2 class="section-title" data-reveal data-delay="1">Choisissez votre mois</h2>
+    <div class="month-tabs" data-reveal data-delay="2" role="tablist" aria-label="Mois">
+      {MONTHS.map((m, i) => (
+        <button class="month-tab" data-month={i + 1} type="button" role="tab">
+          {m}
+        </button>
+      ))}
+    </div>
+    <p class="month-heading" data-reveal data-delay="2">
+      🌱 Que semer en <strong id="month-label">…</strong> en climat <strong id="zone-label">…</strong>
+    </p>
+    <div class="legend" data-reveal data-delay="2">
+      <span class="lg lg-abri">Semis sous abri</span>
+      <span class="lg lg-terre">Semis pleine terre</span>
+      <span class="lg lg-recolte">Récolte</span>
+    </div>
+    <div id="semis-grid" class="semis-grid" data-reveal data-delay="2"></div>
+    <p class="disclaimer">
+      * Dates indicatives, adaptées au climat choisi. Tenez compte des gelées
+      tardives et de votre microclimat. Liens graines : affiliation Amazon —
+      prix susceptibles de varier.
+    </p>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq">
+    <div class="kicker" data-reveal>Questions fréquentes</div>
+    <h2 class="section-title" data-reveal data-delay="1">FAQ semis & climat</h2>
+    <div class="faq-list" data-reveal data-delay="2">
+      {faq.map((f) => (
+        <details class="faq-item card">
+          <summary>{f.q}</summary>
+          <p>{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+
+  <script is:inline>
+    (function () {
+      const data = JSON.parse(document.getElementById("semis-data").textContent);
+      const { zones, cities, months, vegs } = data;
+      const state = { zone: null, month: new Date().getMonth() + 1 };
+
+      const zoneLabel = document.getElementById("zone-label");
+      const monthLabel = document.getElementById("month-label");
+      const grid = document.getElementById("semis-grid");
+      const geoStatus = document.getElementById("geo-status");
+      const citySelect = document.getElementById("city-select");
+
+      // --- Décalage des mois selon climat ---
+      function shift(months, delta) {
+        const s = months.map((m) => ((m + delta - 1 + 12) % 12) + 1);
+        return [...new Set(s)].sort((a, b) => a - b);
+      }
+
+      // --- Sélection de zone ---
+      function setZone(key) {
+        state.zone = key;
+        document.querySelectorAll(".zone-card").forEach((el) =>
+          el.classList.toggle("active", el.dataset.zone === key)
+        );
+        citySelect.value = citySelect.value === key ? key : citySelect.value;
+        const z = zones[key];
+        zoneLabel.textContent = z.label;
+        geoStatus.textContent = `Climat : ${z.emoji} ${z.label}`;
+        render();
+      }
+      document.querySelectorAll(".zone-card").forEach((btn) =>
+        btn.addEventListener("click", () => setZone(btn.dataset.zone))
+      );
+
+      // --- Sélection de ville ---
+      citySelect.addEventListener("change", () => {
+        if (citySelect.value) {
+          setZone(citySelect.value);
+          const city = citySelect.options[citySelect.selectedIndex].dataset.city;
+          geoStatus.textContent = `📍 ${city} — climat ${zones[citySelect.value].label}`;
+        }
+      });
+
+      // --- Mois ---
+      document.querySelectorAll(".month-tab").forEach((btn) =>
+        btn.addEventListener("click", () => setMonth(parseInt(btn.dataset.month, 10)))
+      );
+      function setMonth(m) {
+        state.month = m;
+        document.querySelectorAll(".month-tab").forEach((el) =>
+          el.classList.toggle("active", parseInt(el.dataset.month, 10) === m)
+        );
+        monthLabel.textContent = months[m - 1];
+        render();
+      }
+
+      // --- Géolocalisation ---
+      document.getElementById("geo-btn").addEventListener("click", () => {
+        if (!navigator.geolocation) {
+          geoStatus.textContent = "Géolocalisation non supportée — choisissez votre zone.";
+          return;
+        }
+        geoStatus.textContent = "📍 Localisation en cours…";
+        navigator.geolocation.getCurrentPosition(
+          (pos) => {
+            const { latitude: lat, longitude: lon } = pos.coords;
+            let best = null, bestD = Infinity;
+            for (const [name, clat, clon, z] of cities) {
+              const d = Math.hypot(clat - lat, clon - lon);
+              if (d < bestD) { bestD = d; best = [name, z]; }
+            }
+            setZone(best[1]);
+            geoStatus.textContent = `📍 Détecté : ${best[0]} — climat ${zones[best[1]].label} (approx.)`;
+          },
+          () => {
+            geoStatus.textContent = "Géolocalisation refusée ou indisponible — choisissez votre zone.";
+          },
+          { timeout: 6000, maximumAge: 600000 }
+        );
+      });
+
+      // --- Rendu ---
+      function render() {
+        const m = state.month;
+        const z = state.zone || "bassin";
+        const cards = [];
+
+        for (const v of vegs) {
+          const off = (v.off && v.off[z]) || 0;
+          const abri = shift(v.abri, off);
+          const terre = shift(v.terre, off);
+          const recolte = shift(v.recolte, off);
+          const inAbri = abri.includes(m);
+          const inTerre = terre.includes(m);
+          const inRecolte = recolte.includes(m);
+          if (!inAbri && !inTerre && !inRecolte) continue;
+
+          const aff = "https://www.amazon.fr/s?k=" + encodeURIComponent("graines de " + v.n.toLowerCase());
+          const badges = [
+            inAbri ? '<span class="b b-abri">Semis sous abri</span>' : "",
+            inTerre ? '<span class="b b-terre">Pleine terre</span>' : "",
+            inRecolte ? '<span class="b b-recolte">Récolte</span>' : "",
+          ].join("");
+          cards.push(`
+            <div class="semis-card card">
+              <div class="semis-head">
+                <h3>${v.n}</h3>
+                <span class="family">${v.f}</span>
+              </div>
+              <div class="badges">${badges}</div>
+              <div class="meta">
+                <span>📏 ${v.d} cm</span><span>↔️ ${v.e} cm</span><span>${v.su}</span>
+              </div>
+              <p class="companions">🌿 ${v.c}</p>
+              <p class="tip">${v.tip}</p>
+              <div class="semis-links">
+                <a href="${aff}" target="_blank" rel="noopener sponsored nofollow" class="aff">Graines ↗</a>
+                ${v.link ? `<a href="${v.link}" class="guide">Lire le guide →</a>` : ""}
+              </div>
+            </div>
+          `);
+        }
+
+        grid.innerHTML = cards.length
+          ? cards.join("")
+          : `<p class="empty">Rien à semer ni récolter en ${months[m - 1]} dans ce climat — profitez-en pour préparer le sol 🌱</p>`;
+      }
+
+      // --- Init ---
+      setMonth(state.month);
+      setZone("bassin");
+    })();
+  </script>
+</BaseLayout>
+
+<style>
+  .geo-bar {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-bottom: 22px;
+  }
+  .geo-status {
+    font-size: 14px;
+    color: var(--muted);
+    font-weight: 500;
+  }
+  .city-select {
+    font-family: var(--font-body);
+    font-size: 14px;
+    padding: 10px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--border-strong);
+    background: var(--paper);
+    color: var(--text);
+    max-width: 320px;
+    cursor: pointer;
+  }
+
+  .zone-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 16px;
+  }
+  .zone-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    padding: 20px 18px;
+    text-align: left;
+    cursor: pointer;
+    border: 1px solid var(--border);
+    font-family: var(--font-body);
+    color: var(--text);
+    background: var(--panel);
+    border-radius: var(--radius);
+    transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+  }
+  .zone-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+  .zone-card.active {
+    border-color: var(--zc, var(--moss));
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--zc, var(--moss)) 25%, transparent), var(--shadow);
+  }
+  .zone-emoji { font-size: 24px; }
+  .zone-name {
+    font-family: var(--font-display);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--zc, var(--forest-2));
+  }
+  .zone-desc { font-size: 12.5px; color: var(--muted); line-height: 1.5; }
+
+  .month-tabs {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    margin-bottom: 18px;
+    scrollbar-width: thin;
+  }
+  .month-tab {
+    flex-shrink: 0;
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 9px 18px;
+    border-radius: 999px;
+    border: 1px solid var(--border-strong);
+    background: var(--paper);
+    color: var(--muted);
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .month-tab:hover { color: var(--forest); border-color: var(--moss); }
+  .month-tab.active {
+    background: var(--grad);
+    color: #fff;
+    border-color: transparent;
+    box-shadow: 0 6px 16px rgba(31, 77, 46, 0.3);
+  }
+
+  .month-heading { font-size: 17px; margin-bottom: 12px; color: var(--muted); }
+  .month-heading strong { color: var(--forest-2); }
+
+  .legend { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 22px; }
+  .lg {
+    font-size: 12.5px;
+    font-weight: 600;
+    padding: 5px 13px;
+    border-radius: 999px;
+  }
+  .lg-abri { background: rgba(217, 154, 61, 0.16); color: #9a6a1e; border: 1px solid rgba(217, 154, 61, 0.35); }
+  .lg-terre { background: rgba(85, 128, 63, 0.14); color: var(--moss); border: 1px solid rgba(85, 128, 63, 0.35); }
+  .lg-recolte { background: rgba(127, 163, 94, 0.14); color: #4c6b34; border: 1px solid rgba(127, 163, 94, 0.35); }
+
+  .semis-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 18px;
+  }
+  .semis-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 20px 18px;
+  }
+  .semis-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+  .semis-head h3 { font-size: 19px; }
+  .family {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+    background: rgba(47, 71, 43, 0.07);
+    padding: 3px 10px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  .badges { display: flex; gap: 7px; flex-wrap: wrap; }
+  .b { font-size: 12px; font-weight: 700; padding: 3px 11px; border-radius: 999px; }
+  .b-abri { background: rgba(217, 154, 61, 0.16); color: #9a6a1e; }
+  .b-terre { background: rgba(85, 128, 63, 0.14); color: var(--moss); }
+  .b-recolte { background: rgba(127, 163, 94, 0.16); color: #4c6b34; }
+  .meta { display: flex; gap: 12px; flex-wrap: wrap; font-size: 13px; color: var(--muted); }
+  .companions { font-size: 13.5px; color: var(--text); margin: 0; }
+  .tip { font-size: 13.5px; color: var(--muted); font-style: italic; margin: 0; }
+  .semis-links { margin-top: auto; display: flex; gap: 10px; align-items: center; padding-top: 6px; }
+  .aff {
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    background: var(--grad);
+    padding: 8px 18px;
+    border-radius: 999px;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .aff:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(31, 77, 46, 0.35); color: #fff; }
+  .guide { font-size: 14px; font-weight: 600; color: var(--forest); }
+  .empty {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: var(--muted);
+    background: var(--panel);
+    border: 1px dashed var(--border-strong);
+    border-radius: var(--radius);
+    padding: 34px;
+  }
+  .disclaimer { font-size: 12px; color: var(--muted); margin-top: 18px; }
+
+  .faq-list { display: flex; flex-direction: column; gap: 12px; max-width: 760px; }
+  .faq-item { padding: 16px 20px; }
+  .faq-item summary {
+    font-family: var(--font-display);
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--forest-2);
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+  .faq-item summary::after { content: "＋"; color: var(--moss); font-size: 18px; transition: transform 0.2s; }
+  .faq-item[open] summary::after { transform: rotate(45deg); }
+  .faq-item p { margin: 12px 0 0; color: var(--muted); font-size: 14.5px; }
+
+  @media (max-width: 640px) {
+    .semis-grid { grid-template-columns: 1fr; }
+    .zone-grid { grid-template-columns: 1fr 1fr; }
+    .city-select { max-width: 100%; }
+  }
+</style>
