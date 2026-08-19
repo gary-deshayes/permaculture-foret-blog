@@ -52,6 +52,11 @@ const canonical = new URL(Astro.url.pathname, site);
       href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <script is:inline>
+      // Marqueur JS : sans cette classe, les animations [data-reveal] restent désactivées
+      // et tout le contenu est visible par défaut (aucun risque de page vide).
+      document.documentElement.classList.add("js");
+    </script>
 
     <!--
       ⚠️ AdSense : décommenter quand approuvé
@@ -203,9 +208,11 @@ const canonical = new URL(Astro.url.pathname, site);
         document.addEventListener("DOMContentLoaded", init);
       })();
 
-      // Reveal on scroll
+      // Reveal on scroll — seuil 0.01 (compatible éléments très hauts), éléments déjà
+      // à l'écran révélés immédiatement, + filet de sécurité 2 s : jamais de contenu invisible.
       (function () {
         const els = document.querySelectorAll("[data-reveal]");
+        if (!els.length) return;
         if (!("IntersectionObserver" in window)) {
           els.forEach((el) => el.classList.add("visible"));
           return;
@@ -219,9 +226,15 @@ const canonical = new URL(Astro.url.pathname, site);
               }
             }
           },
-          { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+          { threshold: 0.01, rootMargin: "0px 0px -20px 0px" }
         );
-        els.forEach((el) => io.observe(el));
+        els.forEach((el) => {
+          io.observe(el);
+          // Déjà dans le viewport au chargement → visible tout de suite
+          const r = el.getBoundingClientRect();
+          if (r.top < window.innerHeight && r.bottom > 0) el.classList.add("visible");
+        });
+        setTimeout(() => els.forEach((el) => el.classList.add("visible")), 2000);
       })();
 
       // Burger menu mobile
