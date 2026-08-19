@@ -136,6 +136,17 @@ const faqJsonLd = {
     </div>
   </section>
 
+  <!-- ============ LIEN MON POTAGER ============ -->
+  <section class="semis-section">
+    <div class="cross-banner" data-reveal>
+      <span>🥕</span>
+      <p>
+        Construisez votre plan de culture personnel ?
+        <a href="/outils/mon-potager/">Créer « Mon potager » →</a>
+      </p>
+    </div>
+  </section>
+
   <!-- ============ FAQ ============ -->
   <section id="faq">
     <div class="kicker" data-reveal>Questions fréquentes</div>
@@ -545,6 +556,21 @@ const faqJsonLd = {
     padding: 30px;
   }
   .disclaimer { font-size: 12px; color: var(--muted); margin-top: 16px; }
+
+  /* Bannière lien croisé */
+  .cross-banner {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 18px 24px;
+    border-radius: 18px;
+    background: rgba(127, 163, 94, 0.1);
+    border: 1px solid var(--border);
+    font-size: 15px;
+    color: var(--text);
+  }
+  .cross-banner a { font-weight: 700; color: var(--forest); }
+  .semis-section .cross-banner { margin-top: 0; }
 
   /* FAQ */
   .faq-list { display: flex; flex-direction: column; gap: 12px; max-width: 760px; }

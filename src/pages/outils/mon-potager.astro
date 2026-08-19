@@ -1,0 +1,646 @@
+---
+// Mon potager — planificateur de culture personnalisé (semis/gelées + liste de graines + PDF)
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { ZONES, CITIES, MONTHS, VEGS } from "../../data/semis.mjs";
+
+const vegs = VEGS.map((v) => ({
+  ...v,
+  slug: v.n
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-"),
+}));
+const data = JSON.stringify({ zones: ZONES, cities: CITIES, months: MONTHS, vegs });
+---
+
+<BaseLayout
+  title="Mon potager : créez votre plan de culture personnalisé (2026)"
+  description="Sélectionnez vos légumes, réglez la date de vos gelées : obtenez votre plan de culture mois par mois, votre liste de graines et un calendrier à imprimer. Gratuit, sans inscription."
+>
+  <script type="application/json" id="mp-data" set:html={data} />
+
+  <!-- ============ HERO ============ -->
+  <section class="page-hero mp-hero">
+    <div class="kicker" data-reveal>Outil de jardin</div>
+    <h1 data-reveal data-delay="1">
+      Mon <span class="grad-text italic-accent">potager</span>
+    </h1>
+    <p data-reveal data-delay="2">
+      Choisissez vos légumes, réglez la date de vos gelées : votre plan de
+      culture mois par mois, votre liste de graines et un calendrier à
+      imprimer se génèrent automatiquement. Rien n'est envoyé sur un serveur.
+    </p>
+  </section>
+
+  <!-- ============ ÉTAPE 1 : TERRAIN ============ -->
+  <section class="mp-section">
+    <div class="tool-panel" data-reveal>
+      <div class="step-label">Étape 1</div>
+      <h2 class="step-title">Votre terrain</h2>
+      <div class="geo-bar">
+        <button id="geo-btn" class="btn btn-primary" type="button">📍 Me localiser</button>
+        <select id="city-select" class="city-select" aria-label="Choisir votre ville">
+          <option value="">🏙️ Choisir une ville…</option>
+          {CITIES.map((c) => (
+            <option value={c[3]} data-city={c[0]} data-frost={c[4]}>
+              {c[0]} — {ZONES[c[3]].label}
+            </option>
+          ))}
+        </select>
+      </div>
+      <p id="geo-status" class="geo-status">Défaut : Bassin parisien (gelées ~ mi-avril).</p>
+
+      <div class="frost-box">
+        <div class="frost-head">
+          <span class="frost-label">❄️ Dernières gelées moyennes</span>
+          <span id="frost-date" class="frost-date chip">…</span>
+        </div>
+        <input
+          id="frost-slider"
+          class="frost-slider"
+          type="range"
+          min="6"
+          max="24"
+          step="1"
+          value="15"
+          aria-label="Semaine des dernières gelées"
+        />
+        <div class="frost-scale">
+          <span>Fin janvier</span><span>Fin février</span><span>Fin mars</span><span>Fin avril</span><span>Fin mai</span><span>Fin juin</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ÉTAPE 2 : LÉGUMES ============ -->
+  <section class="mp-section">
+    <div class="tool-panel" data-reveal>
+      <div class="step-label">Étape 2</div>
+      <div class="step-head">
+        <h2 class="step-title">Vos légumes</h2>
+        <span id="sel-count" class="sel-count chip">0 sélectionné</span>
+      </div>
+      <div class="veg-tools">
+        <input id="veg-search" class="veg-search" type="search" placeholder="🔍 Rechercher un légume…" aria-label="Rechercher un légume" />
+        <button id="sel-all" class="mini-btn" type="button">Tout</button>
+        <button id="sel-none" class="mini-btn" type="button">Rien</button>
+      </div>
+      <div id="veg-grid" class="veg-grid"></div>
+    </div>
+  </section>
+
+  <!-- ============ ÉTAPE 3 : PLAN ============ -->
+  <section class="mp-section">
+    <div class="tool-panel" data-reveal>
+      <div class="step-label">Étape 3</div>
+      <div class="step-head">
+        <h2 class="step-title">Votre plan de culture</h2>
+        <div class="plan-actions">
+          <button id="print-btn" class="btn btn-primary" type="button">🖨️ Imprimer / PDF</button>
+          <button id="share-btn" class="btn btn-ghost" type="button">🔗 Copier le lien</button>
+        </div>
+      </div>
+      <p id="plan-empty" class="plan-empty">
+        Sélectionnez au moins 2 légumes à l'étape 2 pour générer votre plan 🌱
+      </p>
+      <div class="legend">
+        <span class="lg lg-abri">Semis sous abri</span>
+        <span class="lg lg-terre">Semis pleine terre</span>
+        <span class="lg lg-recolte">Récolte</span>
+      </div>
+      <div id="plan-grid" class="plan-grid"></div>
+
+      <div id="shopping" class="shopping" hidden>
+        <h3 class="shopping-title">🧺 Votre liste de graines</h3>
+        <div id="shopping-list" class="shopping-list"></div>
+        <p class="disclaimer">
+          * Liens d'affiliation Amazon — prix susceptibles de varier. Comparez
+          les sachets : un gramme suffit souvent pour plusieurs années.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LIEN CALENDRIER ============ -->
+  <section class="mp-section">
+    <div class="cross-banner" data-reveal>
+      <span>🗓️</span>
+      <p>
+        Vous préférez explorer mois par mois ?
+        <a href="/outils/calendrier-des-semis/">Ouvrir le calendrier des semis complet →</a>
+      </p>
+    </div>
+  </section>
+
+  <script is:inline>
+    (function () {
+      const data = JSON.parse(document.getElementById("mp-data").textContent);
+      const { zones, cities, months, vegs } = data;
+      const slugToVeg = {};
+      vegs.forEach((v) => (slugToVeg[v.slug] = v));
+
+      const state = {
+        frost: 15,
+        selected: new Set(),
+        query: "",
+      };
+
+      const frostSlider = document.getElementById("frost-slider");
+      const frostDate = document.getElementById("frost-date");
+      const geoStatus = document.getElementById("geo-status");
+      const citySelect = document.getElementById("city-select");
+      const vegGrid = document.getElementById("veg-grid");
+      const vegSearch = document.getElementById("veg-search");
+      const selCount = document.getElementById("sel-count");
+      const planGrid = document.getElementById("plan-grid");
+      const planEmpty = document.getElementById("plan-empty");
+      const shopping = document.getElementById("shopping");
+      const shoppingList = document.getElementById("shopping-list");
+
+      // --- Helpers ---
+      function weekToDate(w) {
+        const d = new Date(2026, 0, w * 7 - 3);
+        return d.toLocaleDateString("fr-FR", { day: "numeric", month: "long" });
+      }
+      function monthOf(w) {
+        return Math.min(12, Math.max(1, Math.floor((w - 1) / 4.34) + 1));
+      }
+      function windowsToMonths(windows, frost) {
+        const set = new Set();
+        for (const [s, e] of windows) {
+          for (let w = s; w <= e; w++) set.add(monthOf(frost + w));
+        }
+        return set;
+      }
+      function vegActivity(v) {
+        return {
+          abri: windowsToMonths(v.abri || [], state.frost),
+          terre: windowsToMonths(v.terre || [], state.frost),
+          recolte: windowsToMonths(v.recolte || [], state.frost),
+        };
+      }
+      function affUrl(v) {
+        return "https://www.amazon.fr/s?k=" + encodeURIComponent("graines de " + v.n.toLowerCase());
+      }
+
+      // --- Persistance & partage ---
+      const LS_KEY = "mon-potager-v1";
+      function save() {
+        try {
+          localStorage.setItem(LS_KEY, JSON.stringify({ frost: state.frost, vegs: [...state.selected] }));
+        } catch (e) {}
+        const params = new URLSearchParams();
+        params.set("v", [...state.selected].join(","));
+        params.set("frost", String(state.frost));
+        history.replaceState(null, "", location.pathname + "?" + params.toString());
+      }
+      function loadState() {
+        try {
+          const raw = localStorage.getItem(LS_KEY);
+          if (raw) {
+            const d = JSON.parse(raw);
+            state.frost = d.frost || 15;
+            (d.vegs || []).forEach((s) => { if (slugToVeg[s]) state.selected.add(s); });
+          }
+        } catch (e) {}
+        const q = new URLSearchParams(location.search);
+        if (q.has("frost")) state.frost = Math.min(24, Math.max(6, parseInt(q.get("frost"), 10) || 15));
+        if (q.has("v")) {
+          state.selected = new Set(q.get("v").split(",").filter((s) => slugToVeg[s]));
+        }
+      }
+
+      // --- Frost ---
+      function setFrost(w) {
+        state.frost = w;
+        frostSlider.value = w;
+        frostDate.textContent = `~ ${weekToDate(w)}`;
+        renderVegs();
+        renderPlan();
+      }
+      frostSlider.addEventListener("input", () => { setFrost(parseInt(frostSlider.value, 10)); save(); });
+
+      citySelect.addEventListener("change", () => {
+        if (citySelect.value) {
+          const opt = citySelect.options[citySelect.selectedIndex];
+          setFrost(parseInt(opt.dataset.frost, 10));
+          geoStatus.textContent = `📍 ${opt.dataset.city} — gelées ~ ${weekToDate(parseInt(opt.dataset.frost, 10))} (climat ${zones[citySelect.value].label})`;
+          save();
+        }
+      });
+
+      document.getElementById("geo-btn").addEventListener("click", () => {
+        if (!navigator.geolocation) { geoStatus.textContent = "Géolocalisation non supportée — choisissez une ville."; return; }
+        geoStatus.textContent = "📍 Localisation en cours…";
+        navigator.geolocation.getCurrentPosition(
+          (pos) => {
+            const { latitude: lat, longitude: lon } = pos.coords;
+            let best = null, bestD = Infinity;
+            for (const [name, clat, clon, z, f] of cities) {
+              const d = Math.hypot(clat - lat, clon - lon);
+              if (d < bestD) { bestD = d; best = [name, z, f]; }
+            }
+            setFrost(best[2]);
+            geoStatus.textContent = `📍 Détecté : ${best[0]} — gelées ~ ${weekToDate(best[2])} (climat ${zones[best[1]].label}, approx.)`;
+            save();
+          },
+          () => { geoStatus.textContent = "Géolocalisation refusée — choisissez une ville."; },
+          { timeout: 6000, maximumAge: 600000 }
+        );
+      });
+
+      // --- Sélection des légumes ---
+      function renderVegs() {
+        const q = state.query.toLowerCase();
+        const list = vegs.filter((v) => !q || v.n.toLowerCase().includes(q) || v.f.toLowerCase().includes(q));
+        vegGrid.innerHTML = list
+          .map((v) => {
+            const on = state.selected.has(v.slug);
+            return `
+            <button class="veg-card${on ? " on" : ""}" data-slug="${v.slug}" type="button" aria-pressed="${on}">
+              <span class="veg-check">${on ? "✓" : ""}</span>
+              <span class="veg-name">${v.n}</span>
+              <span class="family">${v.f}</span>
+            </button>`;
+          })
+          .join("");
+        vegGrid.querySelectorAll(".veg-card").forEach((btn) =>
+          btn.addEventListener("click", () => {
+            const s = btn.dataset.slug;
+            if (state.selected.has(s)) state.selected.delete(s);
+            else state.selected.add(s);
+            save();
+            renderVegs();
+            renderPlan();
+          })
+        );
+        selCount.textContent = `${state.selected.size} sélectionné${state.selected.size > 1 ? "s" : ""}`;
+      }
+      vegSearch.addEventListener("input", () => { state.query = vegSearch.value; renderVegs(); });
+      document.getElementById("sel-all").addEventListener("click", () => {
+        state.selected = new Set(vegs.map((v) => v.slug));
+        save(); renderVegs(); renderPlan();
+      });
+      document.getElementById("sel-none").addEventListener("click", () => {
+        state.selected = new Set();
+        save(); renderVegs(); renderPlan();
+      });
+
+      // --- Plan ---
+      function renderPlan() {
+        const sel = [...state.selected].map((s) => slugToVeg[s]).filter(Boolean);
+        const has = sel.length >= 2;
+        planEmpty.style.display = has ? "none" : "block";
+        planGrid.style.display = has ? "grid" : "none";
+        shopping.style.display = has ? "block" : "none";
+        if (!has) { shoppingList.innerHTML = ""; return; }
+
+        const acts = sel.map((v) => ({ v, a: vegActivity(v) }));
+
+        planGrid.innerHTML = months
+          .map((m, i) => {
+            const mo = i + 1;
+            const abri = acts.filter((x) => x.a.abri.has(mo)).map((x) => x.v.n);
+            const terre = acts.filter((x) => x.a.terre.has(mo)).map((x) => x.v.n);
+            const recolte = acts.filter((x) => x.a.recolte.has(mo)).map((x) => x.v.n);
+            const total = abri.length + terre.length + recolte.length;
+            const chip = (label, list, cls) =>
+              list.length
+                ? `<div class="m-group"><span class="m-label ${cls}">${label}</span><div class="m-chips">${list
+                    .map((n) => `<span class="m-chip ${cls}">${n}</span>`)
+                    .join("")}</div></div>`
+                : "";
+            return `
+            <div class="month-card${total ? "" : " empty"}">
+              <div class="month-card-head">
+                <span class="month-name">${m}</span>
+                ${total ? `<span class="month-count">${total}</span>` : ""}
+              </div>
+              ${total ? chip("Sous abri", abri, "abri") + chip("Pleine terre", terre, "terre") + chip("Récolte", recolte, "recolte") : '<span class="month-none">—</span>'}
+            </div>`;
+          })
+          .join("");
+
+        shoppingList.innerHTML = sel
+          .map(
+            (v) => `
+            <div class="shop-row">
+              <span class="shop-name">${v.n}</span>
+              <span class="family">${v.f}</span>
+              <a href="${affUrl(v)}" target="_blank" rel="noopener sponsored nofollow" class="shop-link">Graines ↗</a>
+            </div>`
+          )
+          .join("");
+      }
+
+      // --- Imprimer / Partager ---
+      document.getElementById("print-btn").addEventListener("click", () => window.print());
+      document.getElementById("share-btn").addEventListener("click", async () => {
+        const url = location.href;
+        try {
+          await navigator.clipboard.writeText(url);
+          const b = document.getElementById("share-btn");
+          b.textContent = "✅ Lien copié !";
+          setTimeout(() => (b.textContent = "🔗 Copier le lien"), 2000);
+        } catch (e) {
+          prompt("Copiez ce lien :", url);
+        }
+      });
+
+      // --- Init ---
+      loadState();
+      setFrost(state.frost);
+      renderVegs();
+      renderPlan();
+    })();
+  </script>
+</BaseLayout>
+
+<style>
+  .mp-hero { padding-bottom: 8px; }
+  .mp-hero p { max-width: 580px; }
+
+  .mp-section { padding: 28px 0 0; }
+
+  .tool-panel {
+    background: var(--panel-strong);
+    border: 1px solid var(--border);
+    border-radius: 26px;
+    padding: 30px;
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  .step-label {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--moss);
+    margin-bottom: 6px;
+  }
+  .step-title { font-size: 24px; margin-bottom: 16px; }
+  .step-head { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin-bottom: 16px; }
+  .sel-count { font-size: 13px; font-weight: 700; color: var(--forest); background: rgba(127, 163, 94, 0.14); padding: 6px 14px; }
+
+  .geo-bar { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .geo-status { font-size: 13.5px; color: var(--muted); font-weight: 500; margin: 10px 0 16px; }
+  .city-select {
+    font-family: var(--font-body);
+    font-size: 14px;
+    padding: 11px 16px;
+    border-radius: 999px;
+    border: 1px solid var(--border-strong);
+    background: var(--paper);
+    color: var(--text);
+    cursor: pointer;
+    flex: 1;
+    min-width: 200px;
+    max-width: 340px;
+  }
+
+  .frost-box {
+    background: rgba(127, 163, 94, 0.09);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 16px 20px 12px;
+  }
+  .frost-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 8px; }
+  .frost-label { font-family: var(--font-display); font-size: 16px; font-weight: 600; color: var(--forest-2); }
+  .frost-date { font-size: 13.5px; font-weight: 700; background: var(--grad); color: #fff; padding: 5px 16px; border-radius: 999px; box-shadow: 0 6px 14px rgba(31, 77, 46, 0.28); }
+  .frost-slider {
+    width: 100%;
+    appearance: none;
+    -webkit-appearance: none;
+    height: 8px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #b3bf9a, #7fa35e 40%, #55803f 70%, #1e4a2b);
+    outline: none;
+    cursor: pointer;
+  }
+  .frost-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 24px; height: 24px; border-radius: 50%;
+    background: var(--paper); border: 4px solid var(--forest);
+    box-shadow: 0 4px 12px rgba(31, 60, 28, 0.35); cursor: grab;
+  }
+  .frost-slider::-moz-range-thumb {
+    width: 24px; height: 24px; border-radius: 50%;
+    background: var(--paper); border: 4px solid var(--forest);
+    box-shadow: 0 4px 12px rgba(31, 60, 28, 0.35); cursor: grab;
+  }
+  .frost-scale { display: flex; justify-content: space-between; font-size: 10.5px; color: var(--muted); margin-top: 8px; }
+
+  .veg-tools { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 16px; }
+  .veg-search {
+    flex: 1;
+    min-width: 200px;
+    font-family: var(--font-body);
+    font-size: 14.5px;
+    padding: 11px 16px;
+    border-radius: 999px;
+    border: 1px solid var(--border-strong);
+    background: var(--paper);
+    color: var(--text);
+  }
+  .mini-btn {
+    font-size: 13.5px;
+    font-weight: 600;
+    padding: 9px 16px;
+    border-radius: 999px;
+    border: 1px solid var(--border-strong);
+    background: var(--paper);
+    color: var(--muted);
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .mini-btn:hover { color: var(--forest); border-color: var(--moss); }
+
+  .veg-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+  }
+  .veg-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: flex-start;
+    padding: 12px 13px;
+    border-radius: 14px;
+    border: 1.5px solid var(--border);
+    background: var(--paper);
+    font-family: var(--font-body);
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.18s;
+  }
+  .veg-card:hover { border-color: var(--moss); transform: translateY(-2px); }
+  .veg-card.on {
+    border-color: var(--moss);
+    background: rgba(127, 163, 94, 0.12);
+    box-shadow: 0 6px 16px rgba(31, 77, 46, 0.14);
+  }
+  .veg-check {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--border-strong);
+    display: grid;
+    place-items: center;
+    font-size: 12px;
+    font-weight: 800;
+    color: transparent;
+    transition: all 0.18s;
+  }
+  .veg-card.on .veg-check {
+    background: var(--grad);
+    border-color: transparent;
+    color: #fff;
+  }
+  .veg-name { font-family: var(--font-display); font-size: 15.5px; font-weight: 600; color: var(--forest-2); padding-right: 18px; }
+  .family {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+    background: rgba(47, 71, 43, 0.06);
+    padding: 2px 8px;
+    border-radius: 999px;
+  }
+
+  .plan-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+  .plan-empty {
+    color: var(--muted);
+    background: var(--panel);
+    border: 1px dashed var(--border-strong);
+    border-radius: var(--radius);
+    padding: 26px;
+    text-align: center;
+  }
+  .legend { display: flex; gap: 10px; flex-wrap: wrap; margin: 4px 0 16px; }
+  .lg { font-size: 12px; font-weight: 600; padding: 5px 13px; border-radius: 999px; }
+  .lg-abri { background: rgba(217, 154, 61, 0.16); color: #9a6a1e; border: 1px solid rgba(217, 154, 61, 0.35); }
+  .lg-terre { background: rgba(85, 128, 63, 0.14); color: var(--moss); border: 1px solid rgba(85, 128, 63, 0.35); }
+  .lg-recolte { background: rgba(127, 163, 94, 0.14); color: #4c6b34; border: 1px solid rgba(127, 163, 94, 0.35); }
+
+  .plan-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 12px;
+  }
+  .month-card {
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    background: var(--paper);
+    padding: 14px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+  .month-card.empty { opacity: 0.45; }
+  .month-card-head { display: flex; align-items: center; justify-content: space-between; }
+  .month-name { font-family: var(--font-display); font-size: 17px; font-weight: 600; color: var(--forest-2); }
+  .month-count {
+    font-size: 11.5px;
+    font-weight: 700;
+    color: var(--forest);
+    background: rgba(127, 163, 94, 0.14);
+    padding: 2px 9px;
+    border-radius: 999px;
+  }
+  .month-none { color: var(--muted); font-size: 13px; }
+  .m-group { display: flex; flex-direction: column; gap: 5px; }
+  .m-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; }
+  .m-label.abri { color: #9a6a1e; }
+  .m-label.terre { color: var(--moss); }
+  .m-label.recolte { color: #4c6b34; }
+  .m-chips { display: flex; flex-wrap: wrap; gap: 5px; }
+  .m-chip {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+  }
+  .m-chip.abri { background: rgba(217, 154, 61, 0.14); color: #9a6a1e; border-color: rgba(217, 154, 61, 0.3); }
+  .m-chip.terre { background: rgba(85, 128, 63, 0.12); color: var(--moss); border-color: rgba(85, 128, 63, 0.3); }
+  .m-chip.recolte { background: rgba(127, 163, 94, 0.14); color: #4c6b34; border-color: rgba(127, 163, 94, 0.3); }
+
+  .shopping { margin-top: 26px; border-top: 1px solid var(--border); padding-top: 20px; }
+  .shopping-title { font-size: 20px; margin-bottom: 12px; }
+  .shopping-list { display: flex; flex-direction: column; gap: 8px; max-width: 640px; }
+  .shop-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 14px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--paper);
+  }
+  .shop-name { font-family: var(--font-display); font-size: 15.5px; font-weight: 600; color: var(--forest-2); flex: 1; }
+  .shop-link {
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    background: var(--grad);
+    padding: 7px 16px;
+    border-radius: 999px;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .shop-link:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(31, 77, 46, 0.35); color: #fff; }
+  .disclaimer { font-size: 12px; color: var(--muted); margin-top: 14px; }
+
+  .cross-banner {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 18px 24px;
+    border-radius: 18px;
+    background: rgba(127, 163, 94, 0.1);
+    border: 1px solid var(--border);
+    font-size: 15px;
+    color: var(--text);
+  }
+  .cross-banner a { font-weight: 700; color: var(--forest); }
+
+  /* ============ Impression / PDF ============ */
+  @media print {
+    .nav, .site-footer, .geo-bar, .geo-status, .veg-tools, .veg-grid, .plan-actions, .cross-banner, .mp-hero .kicker, #plan-empty { display: none !important; }
+    .mp-hero { padding: 0 0 14px; }
+    .mp-hero h1 { font-size: 26px; }
+    .mp-hero p { display: none; }
+    body { background: #fff; color: #000; }
+    .tool-panel { box-shadow: none; border: none; padding: 10px 0; backdrop-filter: none; }
+    .mp-section { padding: 10px 0; page-break-inside: avoid; }
+    .plan-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+    .month-card { break-inside: avoid; }
+    .m-chip, .lg, .veg-card, .shop-link, .frost-date { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .shopping-list { max-width: 100%; }
+    .step-label, .step-title, .shopping-title { color: #000; }
+    .month-name, .shop-name { color: #000; }
+    a { text-decoration: none; color: #000; }
+  }
+
+  /* ============ Mobile ============ */
+  @media (max-width: 640px) {
+    .mp-section { padding: 18px 0 0; }
+    .tool-panel { padding: 20px 14px; border-radius: 20px; }
+    .geo-bar { flex-direction: column; align-items: stretch; }
+    .geo-bar .btn { width: 100%; justify-content: center; }
+    .city-select { min-width: 0; width: 100%; max-width: none; }
+    .veg-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+    .plan-grid { grid-template-columns: 1fr; }
+    .plan-actions { width: 100%; }
+    .plan-actions .btn { flex: 1; justify-content: center; }
+    .step-head { flex-direction: column; align-items: flex-start; }
+  }
+</style>
