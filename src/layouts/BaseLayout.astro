@@ -44,6 +44,8 @@ const canonical = new URL(Astro.url.pathname, site);
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/favicon.svg" />
     <meta name="theme-color" content="#faf6ec" />
+    <!-- Empêche le navigateur (mode sombre du téléphone) d'auto-darken la page -->
+    <meta name="color-scheme" content="light" />
 
     <!-- Polices : Fraunces (titres organiques) + Inter (texte) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
