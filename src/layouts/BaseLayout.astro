@@ -1,5 +1,7 @@
 ---
-// Layout de base — SEO complet + navigation
+// Layout de base — SEO complet + navigation nature
+import "../styles/global.css";
+
 interface Props {
   title: string;
   description: string;
@@ -12,7 +14,7 @@ const {
   image = "/og-default.jpg",
   type = "website",
 } = Astro.props;
-const site = new URL(Astro.site ?? "https://exemple.fr");
+const site = new URL(Astro.site ?? "https://permaculture-foret.fr");
 const canonical = new URL(Astro.url.pathname, site);
 ---
 
@@ -27,6 +29,7 @@ const canonical = new URL(Astro.url.pathname, site);
 
     <!-- Open Graph -->
     <meta property="og:type" content={type} />
+    <meta property="og:site_name" content="Permaculture Forêt" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
@@ -39,6 +42,16 @@ const canonical = new URL(Astro.url.pathname, site);
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <meta name="theme-color" content="#faf6ec" />
+
+    <!-- Polices : Fraunces (titres organiques) + Inter (texte) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!--
       ⚠️ AdSense : décommenter quand approuvé
@@ -46,14 +59,25 @@ const canonical = new URL(Astro.url.pathname, site);
     -->
   </head>
   <body>
-    <header class="site-header">
-      <nav class="container nav">
-        <a href="/" class="logo">🌱 Permaculture Forêt</a>
+    <header class="nav">
+      <nav class="container nav-inner" aria-label="Navigation principale">
+        <a href="/" class="brand" aria-label="Permaculture Forêt — accueil">
+          <svg width="30" height="30" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="32" height="32" rx="9" fill="#1f4d2e" />
+            <path d="M16 25c0-7 2.5-11.5 8.5-14.5-1.5 6.5-4.5 10.5-8.5 14.5Z" fill="#7ba05b" />
+            <path d="M16 25c0-7-2.5-11.5-8.5-14.5 1.5 6.5 4.5 10.5 8.5 14.5Z" fill="#7ba05b" />
+            <path d="M16 25V10" stroke="#e3a53c" stroke-width="2.2" stroke-linecap="round" />
+            <path d="M16 14c-2.5-2.5-5.5-3.5-9-3 2 2.8 5 4.2 9 3Zm0 4c2.5-2 5.5-2.8 9-2-2 2.4-5 3.6-9 2Z" fill="#e3a53c" />
+          </svg>
+          <span>Permaculture <em style="font-style:italic">Forêt</em></span>
+        </a>
+        <button class="nav-burger" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
         <div class="nav-links">
           <a href="/">Accueil</a>
           <a href="/blog/">Articles</a>
           <a href="/comparatifs/">Comparatifs</a>
           <a href="/a-propos/">À propos</a>
+          <a href="/blog/" class="nav-cta">Explorer les guides →</a>
         </div>
       </nav>
     </header>
@@ -64,129 +88,156 @@ const canonical = new URL(Astro.url.pathname, site);
 
     <footer class="site-footer">
       <div class="container">
-        <p>
-          © {new Date().getFullYear()} Permaculture Forêt — Tous droits réservés ·{" "}
-          <a href="/confidentialite/">Confidentialité</a>
-        </p>
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand">
+              <svg width="26" height="26" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect width="32" height="32" rx="9" fill="#7ba05b" />
+                <path d="M16 25c0-7 2.5-11.5 8.5-14.5-1.5 6.5-4.5 10.5-8.5 14.5Z" fill="#f4efdf" />
+                <path d="M16 25c0-7-2.5-11.5-8.5-14.5 1.5 6.5 4.5 10.5 8.5 14.5Z" fill="#f4efdf" />
+                <path d="M16 25V10" stroke="#e3a53c" stroke-width="2.2" stroke-linecap="round" />
+              </svg>
+              Permaculture Forêt
+            </div>
+            <p class="footer-desc">
+              Guides pratiques, comparatifs honnêtes et techniques de forêt-jardin
+              pour cultiver un sol vivant, en France et sans se ruiner.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Explorer</h4>
+            <a href="/blog/">Tous les articles</a>
+            <a href="/comparatifs/">Comparatifs produits</a>
+            <a href="/a-propos/">À propos</a>
+            <a href="/confidentialite/">Confidentialité</a>
+          </div>
+          <div class="footer-col">
+            <h4>Thématiques</h4>
+            <a href="/blog/">Forêt-jardin</a>
+            <a href="/blog/">Compost & sol vivant</a>
+            <a href="/blog/">Paillage & buttes</a>
+            <a href="/blog/">Plantes compagnes</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© {new Date().getFullYear()} Permaculture Forêt — Tous droits réservés</span>
+          <span>🌱 Cultivé avec soin, sans pesticides</span>
+        </div>
         <p class="footer-note">
-          Ce site participe au Programme Partenaires d'Amazon EU et d'autres
-          programmes d'affiliation. En tant que Partenaire Amazon, nous réalisons
-          un bénéfice sur les achats remplissant les conditions requises.
+          Ce site participe au Programme Partenaires d'Amazon EU et d'autres programmes
+          d'affiliation. En tant que Partenaire Amazon, nous réalisons un bénéfice sur les
+          achats remplissant les conditions requises.
         </p>
       </div>
     </footer>
+
+    <script is:inline>
+      // Feuilles flottantes — ambiance forêt (équivalent nature du starfield)
+      (function () {
+        function init() {
+          const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+          if (reduced) return;
+          const canvas = document.createElement("canvas");
+          canvas.id = "leaves";
+          document.body.prepend(canvas);
+          const ctx = canvas.getContext("2d");
+          let W, H, leaves = [];
+          function resize() {
+            W = canvas.width = window.innerWidth;
+            H = canvas.height = window.innerHeight;
+          }
+          resize();
+          window.addEventListener("resize", resize);
+          const COLORS = ["#7ba05b", "#4f7a3d", "#a9ba90", "#c9a227", "#5f8b4e"];
+          const COUNT = Math.min(26, Math.floor((W * H) / 52000));
+          for (let i = 0; i < COUNT; i++) {
+            leaves.push({
+              x: Math.random() * W,
+              y: Math.random() * H,
+              size: Math.random() * 11 + 7,
+              speed: Math.random() * 0.35 + 0.15,
+              sway: Math.random() * Math.PI * 2,
+              swaySpeed: Math.random() * 0.02 + 0.008,
+              rot: Math.random() * Math.PI * 2,
+              rotSpeed: Math.random() * 0.01 + 0.003,
+              color: COLORS[Math.floor(Math.random() * COLORS.length)],
+              opacity: Math.random() * 0.34 + 0.16,
+            });
+          }
+          let last = 0;
+          function frame(t) {
+            requestAnimationFrame(frame);
+            const dt = Math.min((t - last) / 1000 || 0.016, 0.05);
+            last = t;
+            ctx.clearRect(0, 0, W, H);
+            for (const l of leaves) {
+              l.y += l.speed * dt * 60;
+              l.sway += l.swaySpeed * 60 * dt;
+              l.rot += l.rotSpeed * 60 * dt;
+              l.x += Math.sin(l.sway) * 0.5;
+              if (l.y > H + 40) { l.y = -40; l.x = Math.random() * W; }
+              if (l.x > W + 40) l.x = -40;
+              if (l.x < -40) l.x = W + 40;
+              ctx.save();
+              ctx.translate(l.x, l.y);
+              ctx.rotate(l.rot);
+              ctx.globalAlpha = l.opacity;
+              // Feuille : ellipse + nervure
+              ctx.fillStyle = l.color;
+              ctx.beginPath();
+              ctx.ellipse(0, 0, l.size * 0.5, l.size * 0.28, 0, 0, Math.PI * 2);
+              ctx.fill();
+              ctx.strokeStyle = "rgba(31, 45, 26, 0.35)";
+              ctx.lineWidth = 1;
+              ctx.beginPath();
+              ctx.moveTo(-l.size * 0.5, 0);
+              ctx.lineTo(l.size * 0.5, 0);
+              ctx.stroke();
+              ctx.restore();
+            }
+          }
+          requestAnimationFrame(frame);
+        }
+        document.addEventListener("DOMContentLoaded", init);
+      })();
+
+      // Reveal on scroll
+      (function () {
+        const els = document.querySelectorAll("[data-reveal]");
+        if (!("IntersectionObserver" in window)) {
+          els.forEach((el) => el.classList.add("visible"));
+          return;
+        }
+        const io = new IntersectionObserver(
+          (entries) => {
+            for (const e of entries) {
+              if (e.isIntersecting) {
+                e.target.classList.add("visible");
+                io.unobserve(e.target);
+              }
+            }
+          },
+          { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+        );
+        els.forEach((el) => io.observe(el));
+      })();
+
+      // Burger menu mobile
+      (function () {
+        const burger = document.querySelector(".nav-burger");
+        const links = document.querySelector(".nav-links");
+        if (!burger || !links) return;
+        burger.addEventListener("click", () => {
+          const open = links.classList.toggle("open");
+          burger.setAttribute("aria-expanded", String(open));
+        });
+        links.querySelectorAll("a").forEach((a) =>
+          a.addEventListener("click", () => {
+            links.classList.remove("open");
+            burger.setAttribute("aria-expanded", "false");
+          })
+        );
+      })();
+    </script>
   </body>
 </html>
-
-<style>
-  :root {
-    --primary: #059669;
-    --primary-dark: #047857;
-    --text: #1c1917;
-    --muted: #57534e;
-    --bg: #ffffff;
-    --bg-alt: #fafaf9;
-    --border: #e7e5e4;
-    --radius: 12px;
-  }
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  html {
-    scroll-behavior: smooth;
-  }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    color: var(--text);
-    background: var(--bg);
-    line-height: 1.7;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  .container {
-    max-width: 980px;
-    margin: 0 auto;
-    padding: 0 1.25rem;
-  }
-  .site-header {
-    background: white;
-    border-bottom: 1px solid var(--border);
-    position: sticky;
-    top: 0;
-    z-index: 50;
-  }
-  .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.9rem 1.25rem;
-  }
-  .logo {
-    font-size: 1.25rem;
-    font-weight: 800;
-    color: var(--primary-dark);
-    text-decoration: none;
-  }
-  .nav-links {
-    display: flex;
-    gap: 1.25rem;
-    font-size: 0.92rem;
-  }
-  .nav-links a {
-    color: var(--text);
-    text-decoration: none;
-    font-weight: 500;
-    padding: 4px 0;
-    border-bottom: 2px solid transparent;
-    transition: color 0.15s, border-color 0.15s;
-  }
-  .nav-links a:hover {
-    color: var(--primary);
-    border-bottom-color: var(--primary);
-  }
-  .main {
-    flex: 1;
-    width: 100%;
-    padding-top: 2.5rem;
-    padding-bottom: 3rem;
-  }
-  .site-footer {
-    background: #1c1917;
-    color: #a8a29e;
-    padding: 2.5rem 0;
-    font-size: 0.85rem;
-  }
-  .footer-note {
-    margin-top: 0.75rem;
-    font-size: 0.75rem;
-    color: #78716c;
-  }
-  h1 {
-    font-size: 2.2rem;
-    line-height: 1.25;
-    margin-bottom: 1rem;
-  }
-  h2 {
-    font-size: 1.6rem;
-    margin: 2rem 0 0.8rem;
-  }
-  p {
-    margin-bottom: 1.1rem;
-  }
-  a {
-    color: var(--primary-dark);
-  }
-  @media (max-width: 640px) {
-    .nav {
-      flex-direction: column;
-      gap: 0.5rem;
-      padding: 0.75rem 1rem;
-    }
-    h1 {
-      font-size: 1.7rem;
-    }
-  }
-</style>

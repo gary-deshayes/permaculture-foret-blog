@@ -9,12 +9,14 @@ import AffiliateDisclaimer from "../components/AffiliateDisclaimer.astro";
   title="Comparatifs & meilleurs produits permaculture — Permaculture Forêt"
   description="Nos comparatifs honnêtes des meilleurs produits permaculture : tests, prix, avis. Mis à jour régulièrement."
 >
-  <h1>🛒 Comparatifs & recommandations</h1>
-  <p class="intro">
-    Nous testons et comparons les meilleurs produits permaculture pour vous faire
-    gagner du temps et de l'argent. Chaque sélection est mise à jour
-    régulièrement avec les prix du moment.
-  </p>
+  <div class="page-hero">
+    <h1>Comparatifs & <span class="grad-text italic-accent">recommandations</span></h1>
+    <p class="intro">
+      Nous testons et comparons les meilleurs produits permaculture pour vous faire
+      gagner du temps et de l'argent. Chaque sélection est mise à jour
+      régulièrement avec les prix du moment.
+    </p>
+  </div>
 
   <section>
     <h2>🥇 Le top 3 permaculture</h2>
@@ -110,10 +112,11 @@ import AffiliateDisclaimer from "../components/AffiliateDisclaimer.astro";
     text-align: left;
   }
   .compare-table th {
-    background: var(--bg-alt);
-    font-weight: 700;
+    background: var(--forest);
+    color: #fdfaf0;
+    font-weight: 600;
   }
   .compare-table tr:nth-child(even) td {
-    background: var(--bg-alt);
+    background: rgba(123, 160, 91, 0.06);
   }
 </style>

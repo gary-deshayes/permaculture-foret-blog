@@ -1,5 +1,5 @@
 ---
-// Page d'accueil — hero + articles récents + produits vedettes
+// Page d'accueil — hero forêt + produits vedettes + derniers guides
 import BaseLayout from "../layouts/BaseLayout.astro";
 import ProductCard from "../components/ProductCard.astro";
 import { getCollection } from "astro:content";
@@ -10,21 +10,78 @@ const posts = (await getCollection("blog"))
 
 const SITE_TITLE = "Permaculture Forêt";
 const SITE_DESC =
-  "Guides pratiques et comparatifs honnêtes pour permaculture. Recommandations testées, prix vérifiés.";
+  "Guides pratiques et comparatifs honnêtes pour cultiver autrement : permaculture, forêt-jardin, sol vivant. Recommandations testées, prix vérifiés.";
 ---
 
 <BaseLayout title={`${SITE_TITLE} — Guides & comparatifs permaculture`} description={SITE_DESC}>
+  <!-- ============ HERO ============ -->
   <section class="hero">
-    <h1>🌱 Bienvenue sur {SITE_TITLE}</h1>
-    <p class="hero-desc">
-      {SITE_DESC}
-    </p>
-    <a href="/blog/" class="btn-primary">Explorer les guides →</a>
+    <div class="container hero-grid">
+      <div>
+        <div class="hero-badge" data-reveal>
+          <span class="dot"></span>
+          Permaculture · Agroforesterie · Sol vivant
+        </div>
+        <h1 data-reveal data-delay="1">
+          Cultivez un <span class="grad-text italic-accent">jardin forêt</span> qui se
+          nourrit tout seul
+        </h1>
+        <p class="hero-intro" data-reveal data-delay="2">
+          Des guides pas à pas, des comparatifs honnêtes et des techniques éprouvées
+          pour créer un écosystème comestible — même sur un petit terrain, sans
+          labour et sans produits chimiques.
+        </p>
+        <div class="hero-cta" data-reveal data-delay="3">
+          <a href="/blog/" class="btn btn-primary">Explorer les guides →</a>
+          <a href="/comparatifs/" class="btn btn-ghost">Voir les comparatifs</a>
+        </div>
+        <div class="hero-stats" data-reveal data-delay="4">
+          <div class="hero-stat"><b>{posts.length}+</b><span>guides pratiques</span></div>
+          <div class="hero-stat"><b>100 %</b><span>indépendant</span></div>
+          <div class="hero-stat"><b>0 €</b><span>pour les lecteurs</span></div>
+        </div>
+      </div>
+
+      <div data-reveal data-delay="2">
+        <div class="rings-wrap" aria-hidden="true">
+          <div class="rings-glow"></div>
+          <div class="ring ring-1"></div>
+          <div class="ring ring-2"></div>
+          <div class="ring ring-3"></div>
+          <div class="ring ring-4"></div>
+          <div class="rings-core">🌱</div>
+          <div class="orbit-leaf l1">🍃</div>
+          <div class="orbit-leaf l2">🌿</div>
+          <div class="orbit-leaf l3">🍂</div>
+          <div class="orbit-leaf l4">🌾</div>
+          <div class="rings-caption">La forêt pousse lentement… mais toute seule</div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section class="featured-products">
-    <h2>🏆 Nos recommandations du moment</h2>
-    <div class="products-grid">
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      {[0, 1].map((dup) => (
+        <div class="marquee-item" key={dup}>
+          <span>Permaculture</span><span>Forêt-jardin</span><span>Compost</span><span>Paillage</span><span>Buttes</span><span>Sol vivant</span><span>Plantes compagnes</span><span>Agroforesterie</span><span>Autonomie</span><span>Semis</span>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <!-- ============ PRODUITS VEDETTES ============ -->
+  <section class="container">
+    <div class="kicker" data-reveal>Nos coups de cœur</div>
+    <h2 class="section-title" data-reveal data-delay="1">
+      Recommandations <span class="grad-text italic-accent">du moment</span>
+    </h2>
+    <p class="section-sub" data-reveal data-delay="2">
+      Testés, utilisés, approuvés. Des outils qui respectent le sol et durent dans le
+      temps — sélectionnés sans compromis sur la qualité.
+    </p>
+    <div class="products-grid" data-reveal data-delay="2">
       <ProductCard
         name="Grelinette professionnelle — aération du sol sans effort"
         price="~65 €"
@@ -48,120 +105,70 @@ const SITE_DESC =
         pros={["Limite l'arrosage", "Nourrit le sol", "100 % naturel"]}
       />
     </div>
-    <p class="affiliate-note">
+    <p class="affiliate-note" data-reveal>
       * Liens d'affiliation — prix susceptibles de varier. Voir notre{" "}
       <a href="/comparatifs/">page comparatifs</a>.
     </p>
   </section>
 
-  <section class="recent-posts">
-    <h2>📝 Derniers guides</h2>
-    <div class="posts-grid">
+  <!-- ============ DERNIERS GUIDES ============ -->
+  <section class="container">
+    <div class="kicker" data-reveal>Le carnet de bord</div>
+    <h2 class="section-title" data-reveal data-delay="1">
+      Derniers <span class="grad-text italic-accent">guides</span>
+    </h2>
+    <p class="section-sub" data-reveal data-delay="2">
+      Un nouveau guide pratique chaque semaine : techniques, saisons, erreurs à
+      éviter. Écrits par un jardinier, pas par un chatbot.
+    </p>
+    <div class="posts-grid" data-reveal data-delay="2">
       {posts.map((post) => (
         <a href={`/blog/${post.slug}/`} class="post-card">
-          <div class="post-date">
-            {post.data.pubDate.toLocaleDateString("fr-FR", { dateStyle: "long" })}
+          {post.data.heroImage && (
+            <div class="post-card-img">
+              <img
+                src={post.data.heroImage}
+                alt={post.data.title}
+                width="640"
+                height="360"
+                loading="lazy"
+              />
+            </div>
+          )}
+          <div class="post-card-body">
+            <div class="post-card-date">
+              {post.data.pubDate.toLocaleDateString("fr-FR", { dateStyle: "long" })}
+            </div>
+            <h3>{post.data.title}</h3>
+            <p>{post.data.description}</p>
+            <div class="post-card-meta">
+              <div class="post-card-tags">
+                {(post.data.tags ?? []).slice(0, 2).map((t) => (
+                  <span class="tag">#{t}</span>
+                ))}
+              </div>
+              <span class="post-card-arrow">Lire →</span>
+            </div>
           </div>
-          <h3>{post.data.title}</h3>
-          <p>{post.data.description}</p>
         </a>
       ))}
     </div>
-    <a href="/blog/" class="btn-secondary">Voir tous les articles →</a>
+    <p style="text-align:center;margin-top:36px" data-reveal>
+      <a href="/blog/" class="btn btn-ghost">Voir tous les articles →</a>
+    </p>
+  </section>
+
+  <!-- ============ CTA BANDEAU ============ -->
+  <section class="container">
+    <div class="cta-band" data-reveal>
+      <h2>Prêt à lancer votre première butte ?</h2>
+      <p>
+        Commencez par le guide complet pour débuter en permaculture potagère :
+        10 erreurs à éviter, le bon emplacement, et les premiers gestes.
+      </p>
+      <a href="/blog/guide-complet-debuter-permaculture-potagere/" class="btn btn-cream">
+        Lire le guide débutant →
+      </a>
+    </div>
   </section>
 </BaseLayout>
-
-<style>
-  .hero {
-    text-align: center;
-    padding: 3rem 0 2rem;
-  }
-  .hero-desc {
-    max-width: 620px;
-    margin: 0 auto 1.5rem;
-    color: var(--muted);
-    font-size: 1.1rem;
-  }
-  .btn-primary,
-  .btn-secondary {
-    display: inline-block;
-    background: var(--primary);
-    color: white;
-    padding: 0.75rem 1.75rem;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: 700;
-    transition: background 0.15s;
-  }
-  .btn-primary:hover {
-    background: var(--primary-dark);
-  }
-  .btn-secondary {
-    background: transparent;
-    color: var(--primary-dark);
-    border: 2px solid var(--primary);
-    margin-top: 1.5rem;
-  }
-  .btn-secondary:hover {
-    background: var(--primary);
-    color: white;
-  }
-  section {
-    margin-bottom: 3.5rem;
-  }
-  h2 {
-    margin-bottom: 1.5rem;
-  }
-  .products-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1.25rem;
-  }
-  .affiliate-note {
-    font-size: 0.75rem;
-    color: var(--muted);
-    margin-top: 0.75rem;
-  }
-  .posts-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.25rem;
-    margin-bottom: 1.5rem;
-  }
-  .post-card {
-    display: block;
-    background: var(--bg-alt);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 1.25rem;
-    text-decoration: none;
-    color: var(--text);
-    transition: transform 0.15s, box-shadow 0.15s;
-  }
-  .post-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  }
-  .post-date {
-    font-size: 0.78rem;
-    color: var(--primary);
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 0.4rem;
-  }
-  .post-card h3 {
-    font-size: 1.05rem;
-    margin-bottom: 0.5rem;
-  }
-  .post-card p {
-    font-size: 0.88rem;
-    color: var(--muted);
-    margin: 0;
-  }
-  .recent-posts {
-    text-align: center;
-  }
-  .recent-posts .posts-grid {
-    text-align: left;
-  }
-</style>

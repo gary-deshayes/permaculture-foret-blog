@@ -25,17 +25,18 @@ const { href, text, note = "Prix vérifié — offre partenaire" } = Astro.props
     max-width: 480px;
     margin: 1.5rem auto;
     padding: 0.9rem 1.5rem;
-    background: linear-gradient(135deg, #059669, #047857);
-    color: white;
-    border-radius: 12px;
+    background: var(--grad);
+    color: #fdfaf0;
+    border-radius: 999px;
     text-decoration: none;
-    box-shadow: 0 4px 12px rgba(4, 120, 87, 0.25);
+    box-shadow: 0 8px 22px rgba(31, 77, 46, 0.32);
     transition: transform 0.15s, box-shadow 0.15s;
     text-align: center;
   }
   .affiliate-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 18px rgba(4, 120, 87, 0.35);
+    box-shadow: 0 12px 30px rgba(31, 77, 46, 0.42);
+    color: #fff;
   }
   .affiliate-btn-text {
     display: block;

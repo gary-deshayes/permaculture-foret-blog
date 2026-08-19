@@ -7,12 +7,16 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   title="À propos — Permaculture Forêt"
   description="Découvrez qui nous sommes, pourquoi nous testons des produits permaculture et comment nous gagnons de l'argent sans compromettre notre honnêteté."
 >
-  <h1>🙋 À propos de Permaculture Forêt</h1>
+  <div class="page-hero">
+    <h1>À propos de <span class="grad-text italic-accent">Permaculture Forêt</span></h1>
+    <p>Qui nous sommes, pourquoi nous testons des produits, et comment ce blog vit sans compromettre son indépendance.</p>
+  </div>
 
+  <div class="prose-page">
   <section>
     <h2>Notre mission</h2>
     <p>
-      permaculture est un sujet qui mérite des recommandations honnêtes et
+      La permaculture est un sujet qui mérite des recommandations honnêtes et
       transparentes. Notre mission : vous aider à faire les meilleurs choix
       sans vous noyer sous les informations.
     </p>
@@ -58,15 +62,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       Écris-nous à : <strong>[EMAIL@EXEMPLE.FR]</strong>
     </p>
   </section>
+  </div>
 </BaseLayout>
 
 <style>
-  section {
-    margin: 2rem 0;
+  .prose-page section {
+    padding: 0 0 40px;
   }
   ul,
   ol {
     margin: 0 0 1rem 1.4rem;
+    color: var(--muted);
   }
   li {
     margin-bottom: 0.5rem;

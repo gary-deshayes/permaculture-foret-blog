@@ -13,7 +13,7 @@ interface Props {
   image?: string;
 }
 const { title, description, pubDate, updatedDate, tags = [], image } = Astro.props;
-const site = new URL(Astro.site ?? "https://exemple.fr");
+const site = new URL(Astro.site ?? "https://permaculture-foret.fr");
 const canonical = new URL(Astro.url.pathname, site);
 
 // JSON-LD structuré pour Google (rich results)
@@ -38,16 +38,18 @@ const jsonLd = {
 <BaseLayout title={title} description={description} image={image} type="article">
   <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
 
-  <article class="post">
+  <article class="post" style="padding-top: calc(var(--nav-h) + 44px)">
     <header class="post-header">
       <div class="post-meta">
         <time datetime={pubDate.toISOString()}>
           {pubDate.toLocaleDateString("fr-FR", { dateStyle: "long" })}
         </time>
         {tags.length > 0 && (
-          <span class="post-tags">
-            {tags.map((t) => `#${t}`).join(" · ")}
-          </span>
+          <div class="post-tags">
+            {tags.map((t) => (
+              <span>#{t}</span>
+            ))}
+          </div>
         )}
       </div>
       <h1>{title}</h1>
@@ -74,79 +76,7 @@ const jsonLd = {
 
     <div class="post-nav">
       <a href="/blog/">← Tous les articles</a>
+      <a href="/comparatifs/">Nos comparatifs produits →</a>
     </div>
   </article>
 </BaseLayout>
-
-<style>
-  .post-header {
-    margin-bottom: 1.5rem;
-  }
-  .post-meta {
-    font-size: 0.85rem;
-    color: var(--muted);
-    margin-bottom: 0.5rem;
-    display: flex;
-    gap: 0.75rem;
-    flex-wrap: wrap;
-  }
-  .post-tags {
-    color: var(--primary);
-    font-weight: 600;
-  }
-  .post-desc {
-    font-size: 1.1rem;
-    color: var(--muted);
-  }
-  .post-hero {
-    margin: 0 0 1.5rem;
-    border-radius: var(--radius);
-    overflow: hidden;
-  }
-  .post-hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-    max-height: 480px;
-    object-fit: cover;
-  }
-  .post-content {
-    font-size: 1.02rem;
-  }
-  .post-content img {
-    max-width: 100%;
-    border-radius: var(--radius);
-    height: auto;
-  }
-  .post-content h2 {
-    border-bottom: 1px solid var(--border);
-    padding-bottom: 0.4rem;
-  }
-  .post-content ul,
-  .post-content ol {
-    margin: 0 0 1.1rem 1.4rem;
-  }
-  .post-content blockquote {
-    border-left: 4px solid var(--primary);
-    background: var(--bg-alt);
-    padding: 0.8rem 1.2rem;
-    border-radius: 0 8px 8px 0;
-    margin: 1.2rem 0;
-    color: var(--muted);
-  }
-  .post-content code {
-    background: var(--bg-alt);
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-size: 0.9em;
-  }
-  .post-nav {
-    margin-top: 2.5rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--border);
-  }
-  .post-nav a {
-    font-weight: 600;
-    text-decoration: none;
-  }
-</style>
