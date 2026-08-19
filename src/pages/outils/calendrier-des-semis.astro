@@ -1,27 +1,26 @@
 ---
-// Calendrier des semis interactif — par climat + géolocalisation
+// Calendrier des semis interactif — par date de gelées + géolocalisation
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { ZONES, CITIES, MONTHS, withOffsets } from "../../data/semis.mjs";
+import { ZONES, CITIES, MONTHS, VEGS, weekToDate } from "../../data/semis.mjs";
 
-const vegs = withOffsets();
-const data = JSON.stringify({ zones: ZONES, cities: CITIES, months: MONTHS, vegs });
+const data = JSON.stringify({ zones: ZONES, cities: CITIES, months: MONTHS, vegs: VEGS });
 
 const faq = [
   {
     q: "Que semer en ce moment ?",
-    a: "Le calendrier s'ouvre automatiquement sur le mois en cours, adapté à votre climat. Cliquez sur « Me localiser » ou choisissez votre zone (océanique, bassin parisien, continental, méditerranéen ou montagnard) pour voir les légumes à semer sous abri, en pleine terre et à récolter ce mois-ci.",
+    a: "Le calendrier s'ouvre sur le mois en cours et se règle sur les dernières gelées moyennes de votre région (par défaut celles du Bassin parisien). Cliquez sur « Me localiser » ou choisissez votre ville : chaque légume se sème alors en fonction de votre date de gelées.",
   },
   {
-    q: "Pourquoi les dates changent selon le climat ?",
-    a: "Un même légume se sème 1 à 2 mois plus tôt sur la côte méditerranéenne que dans les Vosges ou en altitude. Le calendrier applique un décalage de saison à chaque climat : les méditerranéens démarrent plus tôt, les montagnards attendent la fin des gelées, les océaniques suivent un rythme doux et humide.",
+    q: "Pourquoi la date des dernières gelées change tout ?",
+    a: "Un même légume se sème plusieurs semaines plus tôt à Nice (gelées fin février) que dans les Vosges (fin avril). Le calendrier calcule chaque légume en semaines relatives aux gelées : la tomate se sème sous abri 9 à 5 semaines avant, la mâche 18 semaines après. Changez la date, tout se décale.",
   },
   {
-    q: "Comment la géolocalisation fonctionne-t-elle ?",
-    a: "Avec votre accord, le site détecte votre position et la compare à une base de villes françaises pour déterminer votre climat approximatif. Aucune donnée n'est envoyée à un serveur : tout se calcule dans votre navigateur. Vous pouvez aussi choisir votre ville ou votre zone manuellement.",
+    q: "Comment la date de gelées est-elle déterminée ?",
+    a: "Chaque ville du sélecteur a une date moyenne approximative (dérivée des normales climatiques). La géolocalisation vous rattache à la ville la plus proche. Vous pouvez ensuite ajuster finement avec le curseur — votre jardin a son propre microclimat : expositions, altitude, sol.",
   },
   {
     q: "Ces dates sont-elles fiables ?",
-    a: "Ce sont des repères moyens issus des pratiques de jardinage françaises. Chaque jardin a son microclimat : expositions, altitude, sol. Observez la météo locale et les gelées tardives avant de vous lancer, surtout en climat continental et montagnard.",
+    a: "Ce sont des repères moyens, pas des certitudes. Observez la météo locale : une année sans gelées tardives permet de semer plus tôt, un printemps froid impose d'attendre. Le paillage et les voiles d'hivernage restent vos meilleurs alliés.",
   },
 ];
 
@@ -37,8 +36,8 @@ const faqJsonLd = {
 ---
 
 <BaseLayout
-  title="Calendrier des semis : que semer par mois, climat et région (2026)"
-  description="Calendrier des semis interactif et gratuit : 30 légumes, 5 climats français (océanique, bassin parisien, continental, méditerranéen, montagnard) et géolocalisation automatique."
+  title="Calendrier des semis par date de gelées : que semer selon votre région (2026)"
+  description="Calendrier des semis interactif et gratuit : 30 légumes calculés en fonction des dernières gelées moyennes de votre ville. Géolocalisation, 80 villes, ajustement fin."
 >
   <script type="application/ld+json" set:html={JSON.stringify(faqJsonLd)} />
   <script type="application/json" id="semis-data" set:html={data} />
@@ -47,11 +46,13 @@ const faqJsonLd = {
   <section class="page-hero semis-hero">
     <div class="kicker" data-reveal>Outil de jardin</div>
     <h1 data-reveal data-delay="1">
-      Calendrier des <span class="grad-text italic-accent">semis</span>
+      Calendrier des <span class="grad-text italic-accent">semis</span> par
+      <span class="grad-text italic-accent">gelées</span>
     </h1>
     <p data-reveal data-delay="2">
-      30 légumes adaptés à <strong>votre climat</strong> : localisez-vous ou
-      choisissez votre zone — les dates se décalent automatiquement.
+      30 légumes calculés sur la <strong>date des dernières gelées</strong> de
+      votre ville. Localisez-vous, choisissez votre climat ou réglez le curseur :
+      chaque date de semis se décale automatiquement.
     </p>
   </section>
 
@@ -64,24 +65,49 @@ const faqJsonLd = {
         <select id="city-select" class="city-select" aria-label="Choisir votre ville">
           <option value="">🏙️ Choisir une ville…</option>
           {CITIES.map((c) => (
-            <option value={c[3]} data-city={c[0]}>
+            <option value={c[3]} data-city={c[0]} data-frost={c[4]}>
               {c[0]} — {ZONES[c[3]].label}
             </option>
           ))}
         </select>
       </div>
-      <p id="geo-status" class="geo-status">Choisissez votre zone ci-dessous…</p>
+      <p id="geo-status" class="geo-status">Choisissez un climat ou une ville…</p>
 
-      <!-- Zones en pills -->
+      <!-- Climats (presets de gelées) -->
       <div class="zone-pills" role="tablist" aria-label="Zone climatique">
         {Object.entries(ZONES).map(([key, z]) => (
-          <button class="zone-pill" data-zone={key} type="button" role="tab">
+          <button class="zone-pill" data-zone={key} data-frost={z.frost} type="button" role="tab">
             <span class="zone-emoji">{z.emoji}</span>
             <span>{z.label}</span>
           </button>
         ))}
       </div>
       <p id="zone-detail" class="zone-detail"></p>
+
+      <!-- Curseur : dernières gelées -->
+      <div class="frost-box">
+        <div class="frost-head">
+          <span class="frost-label">❄️ Dernières gelées moyennes</span>
+          <span id="frost-date" class="frost-date chip">…</span>
+        </div>
+        <input
+          id="frost-slider"
+          class="frost-slider"
+          type="range"
+          min="6"
+          max="24"
+          step="1"
+          value="15"
+          aria-label="Semaine des dernières gelées"
+        />
+        <div class="frost-scale">
+          <span>Fin janvier</span><span>Fin février</span><span>Fin mars</span><span>Fin avril</span><span>Fin mai</span><span>Fin juin</span>
+        </div>
+        <p class="frost-hint">
+          🌡️ C'est la date moyenne après laquelle le gel ne revient plus. Votre
+          jardin a son microclimat : ajustez ce curseur à votre expérience.
+        </p>
+      </div>
 
       <!-- Mois -->
       <div class="month-tabs" role="tablist" aria-label="Mois">
@@ -93,8 +119,8 @@ const faqJsonLd = {
       </div>
 
       <p class="month-heading">
-        🌱 Que semer en <strong id="month-label">…</strong> · climat{" "}
-        <strong id="zone-label">…</strong>
+        🌱 Que semer en <strong id="month-label">…</strong> · gelées ~
+        <strong id="frost-label">…</strong>
       </p>
       <div class="legend">
         <span class="lg lg-abri">Semis sous abri</span>
@@ -104,8 +130,8 @@ const faqJsonLd = {
 
       <div id="semis-grid" class="semis-grid"></div>
       <p class="disclaimer">
-        * Dates indicatives selon le climat choisi — tenez compte des gelées
-        tardives et de votre microclimat. Liens graines : affiliation Amazon.
+        * Dates calculées en semaines relatives aux dernières gelées moyennes —
+        tenez compte de la météo réelle. Liens graines : affiliation Amazon.
       </p>
     </div>
   </section>
@@ -113,7 +139,7 @@ const faqJsonLd = {
   <!-- ============ FAQ ============ -->
   <section id="faq">
     <div class="kicker" data-reveal>Questions fréquentes</div>
-    <h2 class="section-title" data-reveal data-delay="1">FAQ semis & climat</h2>
+    <h2 class="section-title" data-reveal data-delay="1">FAQ semis & gelées</h2>
     <div class="faq-list" data-reveal data-delay="2">
       {faq.map((f) => (
         <details class="faq-item card">
@@ -128,43 +154,80 @@ const faqJsonLd = {
     (function () {
       const data = JSON.parse(document.getElementById("semis-data").textContent);
       const { zones, cities, months, vegs } = data;
-      const state = { zone: null, month: new Date().getMonth() + 1 };
+      const state = { frost: 15, month: new Date().getMonth() + 1 };
 
-      const zoneLabel = document.getElementById("zone-label");
       const zoneDetail = document.getElementById("zone-detail");
       const monthLabel = document.getElementById("month-label");
+      const frostLabel = document.getElementById("frost-label");
+      const frostDate = document.getElementById("frost-date");
+      const frostSlider = document.getElementById("frost-slider");
       const grid = document.getElementById("semis-grid");
       const geoStatus = document.getElementById("geo-status");
       const citySelect = document.getElementById("city-select");
 
-      function shift(months, delta) {
-        const s = months.map((m) => ((m + delta - 1 + 12) % 12) + 1);
-        return [...new Set(s)].sort((a, b) => a - b);
+      // Semaine (1-52) → date lisible
+      function weekToDate(w) {
+        const d = new Date(2026, 0, w * 7 - 3);
+        return d.toLocaleDateString("fr-FR", { day: "numeric", month: "long" });
+      }
+      // Semaine → mois (1-12)
+      function monthOf(w) {
+        return Math.min(12, Math.max(1, Math.floor((w - 1) / 4.34) + 1));
+      }
+      // Fenêtres en semaines relatives → ensemble de mois actifs
+      function windowsToMonths(windows, frost) {
+        const set = new Set();
+        for (const [s, e] of windows) {
+          for (let w = s; w <= e; w++) set.add(monthOf(frost + w));
+        }
+        return [...set];
       }
 
-      function setZone(key) {
-        state.zone = key;
+      // --- Réglage de la date de gelées ---
+      function setFrost(w, via = "manuel") {
+        state.frost = w;
+        frostSlider.value = w;
+        const date = weekToDate(w);
+        frostDate.textContent = `~ ${date}`;
+        frostLabel.textContent = date;
+
+        // Climat correspondant (preset) ?
+        let matched = null;
+        for (const [key, z] of Object.entries(zones)) {
+          if (z.frost === w) matched = key;
+        }
         document.querySelectorAll(".zone-pill").forEach((el) =>
-          el.classList.toggle("active", el.dataset.zone === key)
+          el.classList.toggle("active", el.dataset.zone === matched)
         );
-        const z = zones[key];
-        zoneLabel.textContent = z.label;
-        zoneDetail.textContent = `${z.emoji} ${z.desc}`;
-        geoStatus.textContent = `Climat sélectionné : ${z.label}`;
+        if (matched) {
+          const z = zones[matched];
+          zoneDetail.textContent = `${z.emoji} ${z.desc}`;
+        } else {
+          zoneDetail.textContent = `Calendrier réglé sur des gelées vers ${date} — ajustez le curseur selon votre jardin.`;
+        }
+        if (via === "manuel") geoStatus.textContent = `Gelées réglées vers ${date}`;
         render();
       }
+      frostSlider.addEventListener("input", () => setFrost(parseInt(frostSlider.value, 10)));
+
+      // --- Presets climat ---
       document.querySelectorAll(".zone-pill").forEach((btn) =>
-        btn.addEventListener("click", () => setZone(btn.dataset.zone))
+        btn.addEventListener("click", () => {
+          setFrost(parseInt(btn.dataset.frost, 10), "preset");
+          geoStatus.textContent = `Climat ${zones[btn.dataset.zone].label} — gelées ~ ${weekToDate(parseInt(btn.dataset.frost, 10))}`;
+        })
       );
 
+      // --- Ville ---
       citySelect.addEventListener("change", () => {
         if (citySelect.value) {
-          setZone(citySelect.value);
-          const city = citySelect.options[citySelect.selectedIndex].dataset.city;
-          geoStatus.textContent = `📍 ${city} — climat ${zones[citySelect.value].label}`;
+          const opt = citySelect.options[citySelect.selectedIndex];
+          setFrost(parseInt(opt.dataset.frost, 10), "ville");
+          geoStatus.textContent = `📍 ${opt.dataset.city} — gelées ~ ${weekToDate(parseInt(opt.dataset.frost, 10))} (climat ${zones[citySelect.value].label})`;
         }
       });
 
+      // --- Mois ---
       document.querySelectorAll(".month-tab").forEach((btn) =>
         btn.addEventListener("click", () => setMonth(parseInt(btn.dataset.month, 10)))
       );
@@ -177,9 +240,10 @@ const faqJsonLd = {
         render();
       }
 
+      // --- Géolocalisation ---
       document.getElementById("geo-btn").addEventListener("click", () => {
         if (!navigator.geolocation) {
-          geoStatus.textContent = "Géolocalisation non supportée — choisissez votre zone.";
+          geoStatus.textContent = "Géolocalisation non supportée — choisissez votre ville.";
           return;
         }
         geoStatus.textContent = "📍 Localisation en cours…";
@@ -187,30 +251,30 @@ const faqJsonLd = {
           (pos) => {
             const { latitude: lat, longitude: lon } = pos.coords;
             let best = null, bestD = Infinity;
-            for (const [name, clat, clon, z] of cities) {
+            for (const [name, clat, clon, z, f] of cities) {
               const d = Math.hypot(clat - lat, clon - lon);
-              if (d < bestD) { bestD = d; best = [name, z]; }
+              if (d < bestD) { bestD = d; best = [name, z, f]; }
             }
-            setZone(best[1]);
-            geoStatus.textContent = `📍 Détecté : ${best[0]} — climat ${zones[best[1]].label} (approx.)`;
+            setFrost(best[2], "geo");
+            geoStatus.textContent = `📍 Détecté : ${best[0]} — gelées ~ ${weekToDate(best[2])} (climat ${zones[best[1]].label}, approx.)`;
           },
           () => {
-            geoStatus.textContent = "Géolocalisation refusée ou indisponible — choisissez votre zone.";
+            geoStatus.textContent = "Géolocalisation refusée ou indisponible — choisissez votre ville.";
           },
           { timeout: 6000, maximumAge: 600000 }
         );
       });
 
+      // --- Rendu ---
       function render() {
         const m = state.month;
-        const z = state.zone || "bassin";
+        const frost = state.frost;
         const cards = [];
 
         for (const v of vegs) {
-          const off = (v.off && v.off[z]) || 0;
-          const abri = shift(v.abri, off);
-          const terre = shift(v.terre, off);
-          const recolte = shift(v.recolte, off);
+          const abri = windowsToMonths(v.abri || [], frost);
+          const terre = windowsToMonths(v.terre || [], frost);
+          const recolte = windowsToMonths(v.recolte || [], frost);
           const inAbri = abri.includes(m);
           const inTerre = terre.includes(m);
           const inRecolte = recolte.includes(m);
@@ -244,18 +308,19 @@ const faqJsonLd = {
 
         grid.innerHTML = cards.length
           ? cards.join("")
-          : `<p class="empty">Rien à semer ni récolter en ${months[m - 1]} dans ce climat — profitez-en pour préparer le sol 🌱</p>`;
+          : `<p class="empty">Rien à semer ni récolter en ${months[m - 1]} — profitez-en pour préparer le sol 🌱</p>`;
       }
 
+      // --- Init ---
       setMonth(state.month);
-      setZone("bassin");
+      setFrost(15, "manuel");
     })();
   </script>
 </BaseLayout>
 
 <style>
   .semis-hero { padding-bottom: 8px; }
-  .semis-hero p { max-width: 560px; }
+  .semis-hero p { max-width: 580px; }
 
   /* ============ Panneau outil ============ */
   .semis-section { padding-top: 24px; }
@@ -319,6 +384,71 @@ const faqJsonLd = {
   }
   .zone-emoji { font-size: 16px; }
   .zone-detail { font-size: 13.5px; color: var(--muted); line-height: 1.55; margin: 0 0 20px; }
+
+  /* Curseur gelées */
+  .frost-box {
+    background: rgba(127, 163, 94, 0.09);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 18px 20px 14px;
+    margin-bottom: 22px;
+  }
+  .frost-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .frost-label { font-family: var(--font-display); font-size: 17px; font-weight: 600; color: var(--forest-2); }
+  .frost-date {
+    font-size: 13.5px;
+    font-weight: 700;
+    background: var(--grad);
+    color: #fff;
+    padding: 5px 16px;
+    border-radius: 999px;
+    box-shadow: 0 6px 14px rgba(31, 77, 46, 0.28);
+  }
+  .frost-slider {
+    width: 100%;
+    appearance: none;
+    -webkit-appearance: none;
+    height: 8px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #b3bf9a, #7fa35e 40%, #55803f 70%, #1e4a2b);
+    outline: none;
+    cursor: pointer;
+  }
+  .frost-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--paper);
+    border: 4px solid var(--forest);
+    box-shadow: 0 4px 12px rgba(31, 60, 28, 0.35);
+    cursor: grab;
+  }
+  .frost-slider::-moz-range-thumb {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--paper);
+    border: 4px solid var(--forest);
+    box-shadow: 0 4px 12px rgba(31, 60, 28, 0.35);
+    cursor: grab;
+  }
+  .frost-scale {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10.5px;
+    color: var(--muted);
+    margin-top: 8px;
+  }
+  .frost-hint { font-size: 12.5px; color: var(--muted); margin: 10px 0 0; }
 
   /* Mois */
   .month-tabs {
@@ -445,6 +575,8 @@ const faqJsonLd = {
     .zone-pills { margin: 0 -4px 4px; padding: 2px 4px 10px; }
     .zone-pill { padding: 10px 16px; font-size: 13.5px; }
     .zone-detail { font-size: 13px; margin-bottom: 16px; }
+    .frost-box { padding: 15px 14px 12px; }
+    .frost-label { font-size: 15.5px; }
     .month-tabs { margin: 0 -4px 12px; padding: 2px 4px 10px; }
     .month-tab { padding: 9px 15px; font-size: 13.5px; }
     .month-heading { font-size: 15px; }
