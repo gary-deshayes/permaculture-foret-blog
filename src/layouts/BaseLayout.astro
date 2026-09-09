@@ -1,6 +1,7 @@
 ---
 // Layout de base — SEO complet + navigation nature
 import "../styles/global.css";
+import { Analytics } from "@vercel/analytics/astro";
 
 interface Props {
   title: string;
@@ -257,5 +258,6 @@ const canonical = new URL(Astro.url.pathname, site);
         );
       })();
     </script>
+    <Analytics />
   </body>
 </html>
