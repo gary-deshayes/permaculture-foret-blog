@@ -15,7 +15,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 
 ## P1 — Saisonnalité immédiate (demande au pic en ce moment)
 
-- [ ] que-planter-en-octobre | « que planter en octobre » | liste mois par mois : légumes, aromatiques, fruitiers, bulbes ; tableau semis/plantation/plantation en pleine terre | /blog/planter-ail-automne/, /blog/planter-bulbes-automne/, /outils/calendrier-des-semis/
+- [x] que-planter-en-octobre | « que planter en octobre » | liste mois par mois : légumes, aromatiques, fruitiers, bulbes ; tableau semis/plantation/plantation en pleine terre | /blog/planter-ail-automne/, /blog/planter-bulbes-automne/, /outils/calendrier-des-semis/ → publié /blog/que-planter-en-octobre/ le 2026-09-21
 - [ ] que-semer-en-octobre | « que semer en octobre » | semis à faire en octobre, sous abri et en pleine terre, engrais verts de fin de saison | /blog/engrais-vert-automne/, /blog/semer-mache/, /outils/calendrier-des-semis/
 - [ ] potager-en-octobre | « potager en octobre » | que faire au potager en octobre : récoltes, nettoyage, protection, sol | /blog/compost-feuilles-mortes/, /blog/paillage-potager/, /outils/calendrier-des-semis/
 - [ ] que-planter-en-novembre | « que planter en novembre » | plantations de novembre, arbres/fruitiers en racines nues, ail, échalote | /blog/planter-arbre-fruitier/, /blog/planter-ail-automne/
