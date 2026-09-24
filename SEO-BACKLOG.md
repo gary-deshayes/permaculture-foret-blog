@@ -33,7 +33,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 
 ## P2 — Potager & techniques (evergreen, gros volume FR)
 
-- [ ] mildiou-de-la-tomate | « mildiou tomate traitement » | prévention, bouillie bordelaise : ce qui marche, aération, variétés résistantes | /blog/plantes-compagnes-tomates/, /blog/rotation-cultures-potager/
+- [x] mildiou-de-la-tomate | « mildiou tomate traitement » | prévention, bouillie bordelaise : ce qui marche, aération, variétés résistantes | /blog/plantes-compagnes-tomates/, /blog/rotation-cultures-potager/ → publié /blog/mildiou-de-la-tomate/ le 2026-09-24
 - [ ] maladies-des-tomates | « maladies tomates feuilles jaunes » | diagnostic par symptôme, tableau symptôme→cause→action | /blog/mildiou-de-la-tomate/, /blog/plantes-compagnes-tomates/
 - [ ] oidium-courgette-et-cucurbitacees | « oïdium courgette » | reconnaître, traiter (lait, soufre, bicarbonate), prévenir | /blog/rotation-cultures-potager/, /blog/paillage-potager/
 - [ ] pucerons-au-potager | « pucerons traitement naturel » | coccinelles, purins, savon noir, fourmis, cas des fèves | /blog/purin-ortie/, /blog/auxiliaires-jardin-potager/
