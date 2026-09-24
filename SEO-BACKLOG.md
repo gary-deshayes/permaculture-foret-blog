@@ -29,7 +29,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] pailler-avec-les-feuilles-mortes | « paillage feuilles mortes » | feuilles à éviter (noyer, platane), broyage, épaisseur, intégration au sol | /blog/compost-feuilles-mortes/, /blog/brf-bois-rameal-fragmente/, /blog/paillage-potager/ → publié /blog/pailler-avec-les-feuilles-mortes/ le 2026-09-24
 - [x] planter-un-verger-en-racines-nues | « planter un arbre fruitier racines nues » | période, habillage des racines, jauge, tuteurage, arrosage | /blog/planter-arbre-fruitier/, /blog/taille-arbres-fruitiers/ → publié /blog/planter-un-verger-en-racines-nues/ le 2026-09-24
 - [x] bouturer-les-figuiers-et-grenadiers | « bouturer le figuier » | boutures de bois dur en automne, hormone, substrat, hivernage | /blog/planter-figuier/, /blog/bouturer-groseillier-cassissier-automne/ → publié /blog/bouturer-les-figuiers-et-grenadiers/ le 2026-09-24
-- [ ] forcer-des-endives | « forcer les endives » | culture d'hiver, forçage en cave/sous serre, calendrier | /blog/legumes-perpetuels-potager/, /blog/legumes-hiver-semis-aout/
+- [x] forcer-des-endives | « forcer les endives » | culture d'hiver, forçage en cave/sous serre, calendrier | /blog/legumes-perpetuels-potager/, /blog/legumes-hiver-semis-aout/ → publié /blog/forcer-des-endives/ le 2026-09-24
 
 ## P2 — Potager & techniques (evergreen, gros volume FR)
 
