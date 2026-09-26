@@ -39,7 +39,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] pucerons-au-potager | « pucerons traitement naturel » | coccinelles, purins, savon noir, fourmis, cas des fèves | /blog/purin-ortie/, /blog/auxiliaires-jardin-potager/ → publié /blog/pucerons-au-potager/ le 2026-09-25
 - [x] mouche-de-la-carotte | « mouche de la carotte » | voile, associations, rotation, pièges | /blog/auxiliaires-jardin-potager/, /blog/rotation-cultures-potager/ → publié /blog/mouche-de-la-carotte/ le 2026-09-25
 - [x] aleurodes-et-mouches-blanches | « moucheron blanc serre » | pièges jaunes, lutte en serre, auxiliaires | /blog/auxiliaires-jardin-potager/ → publié /blog/aleurodes-et-mouches-blanches/ le 2026-09-25
-- [ ] campagnols-et-mulots-au-potager | « mulot potager dégâts » | dégâts, pièges, culture en filet, racines protégées | /blog/auxiliaires-jardin-potager/, /blog/paillage-potager/
+- [x] campagnols-et-mulots-au-potager | « mulot potager dégâts » | dégâts, pièges, culture en filet, racines protégées | /blog/auxiliaires-jardin-potager/, /blog/paillage-potager/ → publié /blog/campagnols-et-mulots-au-potager/ le 2026-09-26
 - [ ] les-cendres-de-bois-au-potager | « cendre de bois potager » | dosage, sols acides, ce qu'il ne faut pas faire | /blog/amender-sol-argileux/, /blog/compost-maison/
 - [ ] marc-de-cafe-au-potager | « marc de café jardin » | fertilisant, limaces, dosage, contre-indications | /blog/compost-maison/, /blog/limaces-potager/
 - [ ] coquilles-d-oeufs-au-potager | « coquilles d'œufs jardin » | calcium réellement assimilable, anti-limaces : vérité vs mythe | /blog/limaces-potager/, /blog/amender-sol-argileux/
