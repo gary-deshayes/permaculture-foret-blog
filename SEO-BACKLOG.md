@@ -42,7 +42,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] campagnols-et-mulots-au-potager | « mulot potager dégâts » | dégâts, pièges, culture en filet, racines protégées | /blog/auxiliaires-jardin-potager/, /blog/paillage-potager/ → publié /blog/campagnols-et-mulots-au-potager/ le 2026-09-26
 - [x] les-cendres-de-bois-au-potager | « cendre de bois potager » | dosage, sols acides, ce qu'il ne faut pas faire | /blog/amender-sol-argileux/, /blog/compost-maison/ → publié /blog/les-cendres-de-bois-au-potager/ le 2026-09-26
 - [x] marc-de-cafe-au-potager | « marc de café jardin » | fertilisant, limaces, dosage, contre-indications | /blog/compost-maison/, /blog/limaces-potager/ → publié /blog/marc-de-cafe-au-potager/ le 2026-09-26
-- [ ] coquilles-d-oeufs-au-potager | « coquilles d'œufs jardin » | calcium réellement assimilable, anti-limaces : vérité vs mythe | /blog/limaces-potager/, /blog/amender-sol-argileux/
+- [x] coquilles-d-oeufs-au-potager | « coquilles d'œufs jardin » | calcium réellement assimilable, anti-limaces : vérité vs mythe | /blog/limaces-potager/, /blog/amender-sol-argileux/ → publié /blog/coquilles-d-oeufs-au-potager/ le 2026-09-26
 - [ ] purin-de-consoude | « purin de consoude » | recette, dosage, comparaison avec la potasse de synthèse | /blog/cultiver-consoude-potager/, /blog/purin-ortie/
 - [ ] engrais-verts-d-hiver | « engrais vert hiver » | seigle, vesce, moutarde, phacélie : quoi semer selon le sol et la date | /blog/engrais-vert-automne/, /blog/faux-semis/
 - [ ] ne-jamais-laisser-un-sol-nu | « sol nu jardin » | pourquoi, couverture permanente, comparaison paillage/engrais vert | /blog/paillage-potager/, /blog/brf-bois-rameal-fragmente/
