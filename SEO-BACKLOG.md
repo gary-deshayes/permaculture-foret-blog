@@ -44,7 +44,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] marc-de-cafe-au-potager | « marc de café jardin » | fertilisant, limaces, dosage, contre-indications | /blog/compost-maison/, /blog/limaces-potager/ → publié /blog/marc-de-cafe-au-potager/ le 2026-09-26
 - [x] coquilles-d-oeufs-au-potager | « coquilles d'œufs jardin » | calcium réellement assimilable, anti-limaces : vérité vs mythe | /blog/limaces-potager/, /blog/amender-sol-argileux/ → publié /blog/coquilles-d-oeufs-au-potager/ le 2026-09-26
 - [x] purin-de-consoude | « purin de consoude » | recette, dosage, comparaison avec la potasse de synthèse | /blog/cultiver-consoude-potager/, /blog/purin-ortie/ → publié /blog/purin-de-consoude/ le 2026-09-26
-- [ ] engrais-verts-d-hiver | « engrais vert hiver » | seigle, vesce, moutarde, phacélie : quoi semer selon le sol et la date | /blog/engrais-vert-automne/, /blog/faux-semis/
+- [x] engrais-verts-d-hiver | « engrais vert hiver » | seigle, vesce, moutarde, phacélie : quoi semer selon le sol et la date | /blog/engrais-vert-automne/, /blog/faux-semis/ → publié /blog/engrais-verts-d-hiver/ le 2026-09-27
 - [ ] ne-jamais-laisser-un-sol-nu | « sol nu jardin » | pourquoi, couverture permanente, comparaison paillage/engrais vert | /blog/paillage-potager/, /blog/brf-bois-rameal-fragmente/
 - [ ] le-sol-vivant-explique | « sol vivant » | bactéries, champignons, mycorhizes, réseau trophique du sol | /blog/brf-bois-rameal-fragmente/, /blog/compost-maison/
 - [ ] mycorhizes-et-champignons-du-sol | « mycorhizes potager » | inoculation, plantes hôtes, résultats réalistes | /blog/le-sol-vivant-explique/, /blog/brf-bois-rameal-fragmente/
