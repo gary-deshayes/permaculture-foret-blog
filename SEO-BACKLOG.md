@@ -46,7 +46,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] purin-de-consoude | « purin de consoude » | recette, dosage, comparaison avec la potasse de synthèse | /blog/cultiver-consoude-potager/, /blog/purin-ortie/ → publié /blog/purin-de-consoude/ le 2026-09-26
 - [x] engrais-verts-d-hiver | « engrais vert hiver » | seigle, vesce, moutarde, phacélie : quoi semer selon le sol et la date | /blog/engrais-vert-automne/, /blog/faux-semis/ → publié /blog/engrais-verts-d-hiver/ le 2026-09-27
 - [x] ne-jamais-laisser-un-sol-nu | « sol nu jardin » | pourquoi, couverture permanente, comparaison paillage/engrais vert | /blog/paillage-potager/, /blog/brf-bois-rameal-fragmente/ → publié /blog/ne-jamais-laisser-un-sol-nu/ le 2026-09-27
-- [ ] le-sol-vivant-explique | « sol vivant » | bactéries, champignons, mycorhizes, réseau trophique du sol | /blog/brf-bois-rameal-fragmente/, /blog/compost-maison/
+- [x] le-sol-vivant-explique | « sol vivant » | bactéries, champignons, mycorhizes, réseau trophique du sol | /blog/brf-bois-rameal-fragmente/, /blog/compost-maison/ → publié /blog/le-sol-vivant-explique/ le 2026-09-27
 - [ ] mycorhizes-et-champignons-du-sol | « mycorhizes potager » | inoculation, plantes hôtes, résultats réalistes | /blog/le-sol-vivant-explique/, /blog/brf-bois-rameal-fragmente/
 - [ ] compost-en-hiver | « compost hiver » | ralentissement, équilibre C/N, activateur, couverture | /blog/compost-maison/, /blog/compost-feuilles-mortes/
 - [ ] compost-de-feuilles-en-sac | « compost de feuilles » | méthode rapide en sacs percés, 6 mois, qualité obtenue | /blog/compost-feuilles-mortes/, /blog/compost-maison/
