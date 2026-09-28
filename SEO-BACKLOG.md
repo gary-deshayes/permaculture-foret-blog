@@ -52,7 +52,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] compost-de-feuilles-en-sac | « compost de feuilles » | méthode rapide en sacs percés, 6 mois, qualité obtenue | /blog/compost-feuilles-mortes/, /blog/compost-maison/ → publié /blog/compost-de-feuilles-en-sac/ le 2026-09-28
 - [x] lasagnes-et-buta-permaculture | « culture en lasagnes » | couches, épaisseur, première année, erreurs | /blog/butte-permaculture/, /blog/paillage-potager/ → publié /blog/lasagnes-et-buta-permaculture/ le 2026-09-28
 - [x] fabriquer-un-chassis-froid | « châssis froid jardin » | plan, matériaux de récup, cultures d'hiver, aération | /blog/proteger-le-potager-du-gel/, /blog/legumes-hiver-semis-aout/ → publié /blog/fabriquer-un-chassis-froid/ le 2026-09-28
-- [ ] serre-froide-pour-debutants | « serre froide » | usage, gestion de l'humidité, semis précoces, ventilation | /blog/fabriquer-un-chassis-froid/, /blog/legumes-hiver-semis-aout/
+- [x] serre-froide-pour-debutants | « serre froide » | usage, gestion de l'humidité, semis précoces, ventilation | /blog/fabriquer-un-chassis-froid/, /blog/legumes-hiver-semis-aout/ → publié /blog/serre-froide-pour-debutants/ le 2026-09-28
 - [ ] recuperer-l-eau-de-pluie-au-potager | « récupérateur eau de pluie potager » | dimensionnement, filtres, arrosage gravitaire, oyas | /blog/oyas-irrigation-potager/, /blog/composts-et-arrosage/
 - [ ] arroser-moins-et-mieux | « arroser le potager » | goutte-à-goutte vs oyas, fréquence réelle, paillage | /blog/oyas-irrigation-potager/, /blog/paillage-potager/
 - [ ] planter-des-pommes-de-terre-en-hiver | « patate douce/pomme de terre primeur » | primeurs, forçage, conservation des semences | /blog/rotation-cultures-potager/, /blog/recolter-ses-graines-potager/
