@@ -49,7 +49,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] le-sol-vivant-explique | « sol vivant » | bactéries, champignons, mycorhizes, réseau trophique du sol | /blog/brf-bois-rameal-fragmente/, /blog/compost-maison/ → publié /blog/le-sol-vivant-explique/ le 2026-09-27
 - [x] mycorhizes-et-champignons-du-sol | « mycorhizes potager » | inoculation, plantes hôtes, résultats réalistes | /blog/le-sol-vivant-explique/, /blog/brf-bois-rameal-fragmente/ → publié /blog/mycorhizes-et-champignons-du-sol/ le 2026-09-27
 - [x] compost-en-hiver | « compost hiver » | ralentissement, équilibre C/N, activateur, couverture | /blog/compost-maison/, /blog/compost-feuilles-mortes/ → publié /blog/compost-en-hiver/ le 2026-09-27
-- [ ] compost-de-feuilles-en-sac | « compost de feuilles » | méthode rapide en sacs percés, 6 mois, qualité obtenue | /blog/compost-feuilles-mortes/, /blog/compost-maison/
+- [x] compost-de-feuilles-en-sac | « compost de feuilles » | méthode rapide en sacs percés, 6 mois, qualité obtenue | /blog/compost-feuilles-mortes/, /blog/compost-maison/ → publié /blog/compost-de-feuilles-en-sac/ le 2026-09-28
 - [ ] lasagnes-et-buta-permaculture | « culture en lasagnes » | couches, épaisseur, première année, erreurs | /blog/butte-permaculture/, /blog/paillage-potager/
 - [ ] fabriquer-un-chassis-froid | « châssis froid jardin » | plan, matériaux de récup, cultures d'hiver, aération | /blog/proteger-le-potager-du-gel/, /blog/legumes-hiver-semis-aout/
 - [ ] serre-froide-pour-debutants | « serre froide » | usage, gestion de l'humidité, semis précoces, ventilation | /blog/fabriquer-un-chassis-froid/, /blog/legumes-hiver-semis-aout/
