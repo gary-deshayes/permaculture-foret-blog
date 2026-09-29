@@ -57,7 +57,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] arroser-moins-et-mieux | « arroser le potager » | goutte-à-goutte vs oyas, fréquence réelle, paillage | /blog/oyas-irrigation-potager/, /blog/paillage-potager/ → publié /blog/arroser-moins-et-mieux/ le 2026-09-29
 - [x] planter-des-pommes-de-terre-en-hiver | « patate douce/pomme de terre primeur » | primeurs, forçage, conservation des semences | /blog/rotation-cultures-potager/, /blog/recolter-ses-graines-potager/ → publié /blog/planter-des-pommes-de-terre-en-hiver/ le 2026-09-29
 - [x] les-legumes-oublies-du-potager | « légumes anciens potager » | panais, topinambour, crosne, scorsonère : culture et cuisine | /blog/legumes-perpetuels-potager/, /blog/legumes-hiver-semis-aout/ → publié /blog/les-legumes-oublies-du-potager/ le 2026-09-29
-- [ ] cultiver-des-champignons-au-potager | « cultiver des champignons » | pleurotes sur paille, strophaires sur copeaux, cycle et rendement | /blog/cultiver-champignons-sur-buches/, /blog/brf-bois-rameal-fragmente/
+- [x] cultiver-des-champignons-au-potager | « cultiver des champignons » | pleurotes sur paille, strophaires sur copeaux, cycle et rendement | /blog/cultiver-champignons-sur-buches/, /blog/brf-bois-rameal-fragmente/ → publié /blog/cultiver-des-champignons-au-potager/ le 2026-09-29
 - [ ] greffer-un-arbre-fruitier | « greffer un fruitier » | greffe en fente/écusson, période, matériel, taux de réussite | /blog/planter-arbre-fruitier/, /blog/bouturer-les-figuiers-et-grenadiers/
 - [ ] semis-en-pleine-terre-sans-travail-du-sol | « semer sans travail du sol » | ouverture de sillons, mulch, levée, limaces | /blog/grelinette-potager/, /blog/paillage-potager/
 
