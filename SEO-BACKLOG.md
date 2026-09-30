@@ -63,7 +63,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 
 ## P3 — Comparatifs & argent (intention d'achat, à linker vers /comparatifs)
 
-- [ ] meilleure-grelinette | « meilleure grelinette » | comparatif modèles, prix, critères, verdict d'usage | /comparatifs/, /blog/grelinette-potager/
+- [x] meilleure-grelinette | « meilleure grelinette » | comparatif modèles, prix, critères, verdict d'usage | /comparatifs/, /blog/grelinette-potager/ → publié /blog/meilleure-grelinette/ le 2026-09-30
 - [ ] meilleur-composteur-de-jardin | « meilleur composteur jardin » | bac plastique/bois/rotatif, capacité, prix, verdict | /comparatifs/, /blog/compost-maison/
 - [ ] meilleur-broyeur-de-vegetaux | « broyeur de végétaux » | critères BRF, modèles thermiques/électriques, budget | /comparatifs/, /blog/brf-bois-rameal-fragmente/
 - [ ] meilleur-recuperateur-d-eau-de-pluie | « meilleur récupérateur eau de pluie » | 300/500/1000 L, pose, raccord, filtres | /comparatifs/, /blog/recuperer-l-eau-de-pluie-au-potager/
