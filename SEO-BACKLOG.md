@@ -59,7 +59,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] les-legumes-oublies-du-potager | « légumes anciens potager » | panais, topinambour, crosne, scorsonère : culture et cuisine | /blog/legumes-perpetuels-potager/, /blog/legumes-hiver-semis-aout/ → publié /blog/les-legumes-oublies-du-potager/ le 2026-09-29
 - [x] cultiver-des-champignons-au-potager | « cultiver des champignons » | pleurotes sur paille, strophaires sur copeaux, cycle et rendement | /blog/cultiver-champignons-sur-buches/, /blog/brf-bois-rameal-fragmente/ → publié /blog/cultiver-des-champignons-au-potager/ le 2026-09-29
 - [x] greffer-un-arbre-fruitier | « greffer un fruitier » | greffe en fente/écusson, période, matériel, taux de réussite | /blog/planter-arbre-fruitier/, /blog/bouturer-les-figuiers-et-grenadiers/ → publié /blog/greffer-un-arbre-fruitier/ le 2026-09-29
-- [ ] semis-en-pleine-terre-sans-travail-du-sol | « semer sans travail du sol » | ouverture de sillons, mulch, levée, limaces | /blog/grelinette-potager/, /blog/paillage-potager/
+- [x] semis-en-pleine-terre-sans-travail-du-sol | « semer sans travail du sol » | ouverture de sillons, mulch, levée, limaces | /blog/grelinette-potager/, /blog/paillage-potager/ → publié /blog/semis-en-pleine-terre-sans-travail-du-sol/ le 2026-09-30
 
 ## P3 — Comparatifs & argent (intention d'achat, à linker vers /comparatifs)
 
