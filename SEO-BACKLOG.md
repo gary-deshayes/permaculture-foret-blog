@@ -68,7 +68,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] meilleur-broyeur-de-vegetaux | « broyeur de végétaux » | critères BRF, modèles thermiques/électriques, budget | /comparatifs/, /blog/brf-bois-rameal-fragmente/ → publié /blog/meilleur-broyeur-de-vegetaux/ le 2026-09-30
 - [x] meilleur-recuperateur-d-eau-de-pluie | « meilleur récupérateur eau de pluie » | 300/500/1000 L, pose, raccord, filtres | /comparatifs/, /blog/recuperer-l-eau-de-pluie-au-potager/ → publié /blog/meilleur-recuperateur-d-eau-de-pluie/ le 2026-09-30
 - [x] meilleur-modele-de-potager-en-carre | « kit potager en carré » | kits bois/composite, prix au m², montage | /comparatifs/, /blog/potager-en-carres/ → publié /blog/meilleur-modele-de-potager-en-carre/ le 2026-10-01
-- [ ] meilleur-voile-d-hivernage | « voile d'hivernage » | grammage (17/30/60 g), usage réel, durée de vie | /comparatifs/, /blog/proteger-le-potager-du-gel/
+- [x] meilleur-voile-d-hivernage | « voile d'hivernage » | grammage (17/30/60 g), usage réel, durée de vie | /comparatifs/, /blog/proteger-le-potager-du-gel/ → publié /blog/meilleur-voile-d-hivernage/ le 2026-10-01
 - [ ] meilleur-goutte-a-goutte-pour-potager | « kit goutte à goutte » | programmateurs, débit, prix, installation | /comparatifs/, /blog/arroser-moins-et-mieux/
 - [ ] meilleurs-outils-de-jardinage-pour-debuter | « outils jardinage débutant » | la liste courte : ce qui sert vraiment, ce qu'on regrette d'acheter | /comparatifs/, /blog/grelinette-potager/
 - [ ] combien-coute-un-potager-potager-30-m2 | « prix potager » | budget réaliste année 1 vs année 2, amortissement | /comparatifs/, /blog/guide-complet-debuter-permaculture-potagere/
