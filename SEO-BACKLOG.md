@@ -72,7 +72,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] meilleur-goutte-a-goutte-pour-potager | « kit goutte à goutte » | programmateurs, débit, prix, installation | /comparatifs/, /blog/arroser-moins-et-mieux/ → publié /blog/meilleur-goutte-a-goutte-pour-potager/ le 2026-10-01
 - [x] meilleurs-outils-de-jardinage-pour-debuter | « outils jardinage débutant » | la liste courte : ce qui sert vraiment, ce qu'on regrette d'acheter | /comparatifs/, /blog/grelinette-potager/ → publié /blog/meilleurs-outils-de-jardinage-pour-debuter/ le 2026-10-01
 - [x] combien-coute-un-potager-de-30-m2 | « prix potager » | budget réaliste année 1 vs année 2, amortissement | /comparatifs/, /blog/guide-complet-debuter-permaculture-potagere/ → publié /blog/combien-coute-un-potager-de-30-m2/ le 2026-10-01
-- [ ] meilleure-ombriere-et-filets-de-protection | « filet de protection potager » | anti-insectes, anti-oiseaux, ombrage 30/50 % | /comparatifs/, /blog/auxiliaires-jardin-potager/
+- [x] meilleure-ombriere-et-filets-de-protection | « filet de protection potager » | anti-insectes, anti-oiseaux, ombrage 30/50 % | /comparatifs/, /blog/auxiliaires-jardin-potager/ → publié /blog/meilleure-ombriere-et-filets-de-protection/ le 2026-10-02
 
 ## P4 — Fruitiers & verger
 
