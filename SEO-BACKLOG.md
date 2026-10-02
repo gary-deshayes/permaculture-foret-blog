@@ -78,7 +78,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 
 - [x] taille-du-pommier | « taille du pommier » | taille de formation vs fructification, période, gestes | /blog/taille-arbres-fruitiers/, /blog/planter-arbre-fruitier/ → publié /blog/taille-du-pommier/ le 2026-10-02
 - [x] taille-du-cerisier | « taille cerisier » | après récolte ou fin d'hiver, éviter la gomme, astuces | /blog/taille-arbres-fruitiers/ → publié /blog/taille-du-cerisier/ le 2026-10-02
-- [ ] taille-de-la-vigne | « taille de la vigne » | taille d'hiver, coursons, grappes, rendement | /blog/taille-arbres-fruitiers/
+- [x] taille-de-la-vigne | « taille de la vigne » | taille d'hiver, coursons, grappes, rendement | /blog/taille-arbres-fruitiers/ → publié /blog/taille-de-la-vigne/ le 2026-10-02
 - [ ] planter-des-fruitiers-dans-un-petit-jardin | « fruitiers petit jardin » | porte-greffes nains, palissage, espaliers | /blog/planter-arbre-fruitier/, /blog/forêt-jardin/
 - [ ] fruitiers-en-pot-sur-une-terrasse | « fruitier en pot » | variétés, substrat, arrosage, hivernage | /blog/planter-des-fruitiers-dans-un-petit-jardin/, /blog/planter-figuier/
 - [ ] myrtillier-et-baies-rouges-chez-soi | « cultiver le myrtillier » | terre de bruyère, pH, association, rendement | /blog/planter-framboisiers-automne/, /blog/bouturer-groseillier-cassissier-automne/
