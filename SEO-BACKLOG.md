@@ -76,7 +76,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 
 ## P4 — Fruitiers & verger
 
-- [ ] taille-du-pommier | « taille du pommier » | taille de formation vs fructification, période, gestes | /blog/taille-arbres-fruitiers/, /blog/planter-arbre-fruitier/
+- [x] taille-du-pommier | « taille du pommier » | taille de formation vs fructification, période, gestes | /blog/taille-arbres-fruitiers/, /blog/planter-arbre-fruitier/ → publié /blog/taille-du-pommier/ le 2026-10-02
 - [ ] taille-du-cerisier | « taille cerisier » | après récolte ou fin d'hiver, éviter la gomme, astuces | /blog/taille-arbres-fruitiers/
 - [ ] taille-de-la-vigne | « taille de la vigne » | taille d'hiver, coursons, grappes, rendement | /blog/taille-arbres-fruitiers/
 - [ ] planter-des-fruitiers-dans-un-petit-jardin | « fruitiers petit jardin » | porte-greffes nains, palissage, espaliers | /blog/planter-arbre-fruitier/, /blog/forêt-jardin/
