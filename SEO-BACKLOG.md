@@ -80,7 +80,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] taille-du-cerisier | « taille cerisier » | après récolte ou fin d'hiver, éviter la gomme, astuces | /blog/taille-arbres-fruitiers/ → publié /blog/taille-du-cerisier/ le 2026-10-02
 - [x] taille-de-la-vigne | « taille de la vigne » | taille d'hiver, coursons, grappes, rendement | /blog/taille-arbres-fruitiers/ → publié /blog/taille-de-la-vigne/ le 2026-10-02
 - [x] planter-des-fruitiers-dans-un-petit-jardin | « fruitiers petit jardin » | porte-greffes nains, palissage, espaliers | /blog/planter-arbre-fruitier/, /blog/forêt-jardin/ (inexistant : remplacé par /blog/foret-jardin-creation/) → publié /blog/planter-des-fruitiers-dans-un-petit-jardin/ le 2026-10-02
-- [ ] fruitiers-en-pot-sur-une-terrasse | « fruitier en pot » | variétés, substrat, arrosage, hivernage | /blog/planter-des-fruitiers-dans-un-petit-jardin/, /blog/planter-figuier/
+- [x] fruitiers-en-pot-sur-une-terrasse | « fruitier en pot » | variétés, substrat, arrosage, hivernage | /blog/planter-des-fruitiers-dans-un-petit-jardin/, /blog/planter-figuier/ → publié /blog/fruitiers-en-pot-sur-une-terrasse/ le 2026-10-03
 - [ ] myrtillier-et-baies-rouges-chez-soi | « cultiver le myrtillier » | terre de bruyère, pH, association, rendement | /blog/planter-framboisiers-automne/, /blog/bouturer-groseillier-cassissier-automne/
 - [ ] cerisiers-et-oiseaux | « protéger les cerises des oiseaux » | filets, effaroucheurs, arbres pièges | /blog/auxiliaires-jardin-potager/, /blog/taille-du-cerisier/
 - [ ] traiter-les-arbres-en-hiver-sans-phytos | « traitement hiver fruitiers » | huile blanche, bouillie, nettoyage des écorces, pou de San José | /blog/taille-du-pommier/, /blog/auxiliaires-jardin-potager/
