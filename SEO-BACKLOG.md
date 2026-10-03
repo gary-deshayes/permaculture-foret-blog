@@ -83,7 +83,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] fruitiers-en-pot-sur-une-terrasse | « fruitier en pot » | variétés, substrat, arrosage, hivernage | /blog/planter-des-fruitiers-dans-un-petit-jardin/, /blog/planter-figuier/ → publié /blog/fruitiers-en-pot-sur-une-terrasse/ le 2026-10-03
 - [x] myrtillier-et-baies-rouges-chez-soi | « cultiver le myrtillier » | terre de bruyère, pH, association, rendement | /blog/planter-framboisiers-automne/, /blog/bouturer-groseillier-cassissier-automne/ → publié /blog/myrtillier-et-baies-rouges-chez-soi/ le 2026-10-03
 - [x] cerisiers-et-oiseaux | « protéger les cerises des oiseaux » | filets, effaroucheurs, arbres pièges | /blog/auxiliaires-jardin-potager/, /blog/taille-du-cerisier/ → publié /blog/cerisiers-et-oiseaux/ le 2026-10-03
-- [ ] traiter-les-arbres-en-hiver-sans-phytos | « traitement hiver fruitiers » | huile blanche, bouillie, nettoyage des écorces, pou de San José | /blog/taille-du-pommier/, /blog/auxiliaires-jardin-potager/
+- [x] traiter-les-arbres-en-hiver-sans-phytos | « traitement hiver fruitiers » | huile blanche, bouillie, nettoyage des écorces, pou de San José | /blog/taille-du-pommier/, /blog/auxiliaires-jardin-potager/ → publié /blog/traiter-les-arbres-en-hiver-sans-phytos/ le 2026-10-03
 - [ ] le-verger-en-permaculture | « verger permaculture » | strates, couvre-sol, guilde, pâturage (canards/poules) | /blog/foret-jardin-creation/, /blog/le-sol-vivant-explique/
 - [ ] recolter-et-conserver-les-pommes | « conserver les pommes » | tri, cagettes, cave, durée par variété | /blog/recolte-courges-conservation/, /blog/taille-du-pommier/
 
