@@ -84,7 +84,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] myrtillier-et-baies-rouges-chez-soi | « cultiver le myrtillier » | terre de bruyère, pH, association, rendement | /blog/planter-framboisiers-automne/, /blog/bouturer-groseillier-cassissier-automne/ → publié /blog/myrtillier-et-baies-rouges-chez-soi/ le 2026-10-03
 - [x] cerisiers-et-oiseaux | « protéger les cerises des oiseaux » | filets, effaroucheurs, arbres pièges | /blog/auxiliaires-jardin-potager/, /blog/taille-du-cerisier/ → publié /blog/cerisiers-et-oiseaux/ le 2026-10-03
 - [x] traiter-les-arbres-en-hiver-sans-phytos | « traitement hiver fruitiers » | huile blanche, bouillie, nettoyage des écorces, pou de San José | /blog/taille-du-pommier/, /blog/auxiliaires-jardin-potager/ → publié /blog/traiter-les-arbres-en-hiver-sans-phytos/ le 2026-10-03
-- [ ] le-verger-en-permaculture | « verger permaculture » | strates, couvre-sol, guilde, pâturage (canards/poules) | /blog/foret-jardin-creation/, /blog/le-sol-vivant-explique/
+- [x] le-verger-en-permaculture | « verger permaculture » | strates, couvre-sol, guilde, pâturage (canards/poules) | /blog/foret-jardin-creation/, /blog/le-sol-vivant-explique/ → publié /blog/le-verger-en-permaculture/ le 2026-10-03
 - [ ] recolter-et-conserver-les-pommes | « conserver les pommes » | tri, cagettes, cave, durée par variété | /blog/recolte-courges-conservation/, /blog/taille-du-pommier/
 
 ## P5 — Design, biodiversité, forêt-jardin
