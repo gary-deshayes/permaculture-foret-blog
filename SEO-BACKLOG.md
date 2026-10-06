@@ -90,7 +90,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 ## P5 — Design, biodiversité, forêt-jardin
 
 - [x] guildes-de-plantation | « guilde de plantation » | construire une guilde : arbre pivot, fixateurs, couvre-sol | /blog/foret-jardin-creation/, /blog/le-verger-en-permaculture/ → publié /blog/guildes-de-plantation/ le 2026-10-06
-- [ ] la-foret-jardin-annee-1-2-3 | « forêt jardin évolution » | à quoi ça ressemble après 1, 3, 5 ans, ce qui marche/rate | /blog/foret-jardin-creation/, /blog/mini-foret-miyawaki/
+- [x] la-foret-jardin-annee-1-2-3 | « forêt jardin évolution » | à quoi ça ressemble après 1, 3, 5 ans, ce qui marche/rate | /blog/foret-jardin-creation/, /blog/mini-foret-miyawaki/ → publié /blog/la-foret-jardin-annee-1-2-3/ le 2026-10-06
 - [ ] les-7-strates-de-la-foret-comestible | « strates forêt comestible » | canopée, arbustes, lianes, herbacées, couvre-sol, racines | /blog/foret-jardin-creation/, /blog/guide-complet-debuter-permaculture-potagere/
 - [ ] haie-diversifiee-plutot-que-thuya | « haie champêtre » | brise-vent, habitat auxiliaires, choix d'essences, entretien | /blog/haie-comestible/, /blog/auxiliaires-jardin-potager/
 - [ ] creer-une-mare-au-jardin | « mare de jardin » | bâche, pentes, plantes, grenouilles : apport réel contre limaces | /blog/limaces-potager/, /blog/auxiliaires-jardin-potager/
