@@ -85,7 +85,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] cerisiers-et-oiseaux | « protéger les cerises des oiseaux » | filets, effaroucheurs, arbres pièges | /blog/auxiliaires-jardin-potager/, /blog/taille-du-cerisier/ → publié /blog/cerisiers-et-oiseaux/ le 2026-10-03
 - [x] traiter-les-arbres-en-hiver-sans-phytos | « traitement hiver fruitiers » | huile blanche, bouillie, nettoyage des écorces, pou de San José | /blog/taille-du-pommier/, /blog/auxiliaires-jardin-potager/ → publié /blog/traiter-les-arbres-en-hiver-sans-phytos/ le 2026-10-03
 - [x] le-verger-en-permaculture | « verger permaculture » | strates, couvre-sol, guilde, pâturage (canards/poules) | /blog/foret-jardin-creation/, /blog/le-sol-vivant-explique/ → publié /blog/le-verger-en-permaculture/ le 2026-10-03
-- [x] recolter-et-conserver-les-pommes | « conserver les pommes » | tri, cagettes, cave, durée par variété | /blog/recolte-courges-conservation/, /blog/taille-du-pommier/ → déjà en ligne /blog/recolter-et-conserver-les-pommes/ le 2026-10-04 (publié hors pipeline, ligne cochée le 2026-10-06)
+- [ ] recolter-et-conserver-les-pommes | « conserver les pommes » | tri, cagettes, cave, durée par variété | /blog/recolte-courges-conservation/, /blog/taille-du-pommier/ (ATTENTION 2026-10-06 : article + photo écrits le 2026-10-04 par un run interrompu, présents sur disque mais non commités et non publiés — 404 vérifié. À republier en priorité au prochain run.)
 
 ## P5 — Design, biodiversité, forêt-jardin
 
