@@ -85,11 +85,11 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] cerisiers-et-oiseaux | « protéger les cerises des oiseaux » | filets, effaroucheurs, arbres pièges | /blog/auxiliaires-jardin-potager/, /blog/taille-du-cerisier/ → publié /blog/cerisiers-et-oiseaux/ le 2026-10-03
 - [x] traiter-les-arbres-en-hiver-sans-phytos | « traitement hiver fruitiers » | huile blanche, bouillie, nettoyage des écorces, pou de San José | /blog/taille-du-pommier/, /blog/auxiliaires-jardin-potager/ → publié /blog/traiter-les-arbres-en-hiver-sans-phytos/ le 2026-10-03
 - [x] le-verger-en-permaculture | « verger permaculture » | strates, couvre-sol, guilde, pâturage (canards/poules) | /blog/foret-jardin-creation/, /blog/le-sol-vivant-explique/ → publié /blog/le-verger-en-permaculture/ le 2026-10-03
-- [ ] recolter-et-conserver-les-pommes | « conserver les pommes » | tri, cagettes, cave, durée par variété | /blog/recolte-courges-conservation/, /blog/taille-du-pommier/
+- [x] recolter-et-conserver-les-pommes | « conserver les pommes » | tri, cagettes, cave, durée par variété | /blog/recolte-courges-conservation/, /blog/taille-du-pommier/ → déjà en ligne /blog/recolter-et-conserver-les-pommes/ le 2026-10-04 (publié hors pipeline, ligne cochée le 2026-10-06)
 
 ## P5 — Design, biodiversité, forêt-jardin
 
-- [ ] guildes-de-plantation | « guilde de plantation » | construire une guilde : arbre pivot, fixateurs, couvre-sol | /blog/foret-jardin-creation/, /blog/le-verger-en-permaculture/
+- [x] guildes-de-plantation | « guilde de plantation » | construire une guilde : arbre pivot, fixateurs, couvre-sol | /blog/foret-jardin-creation/, /blog/le-verger-en-permaculture/ → publié /blog/guildes-de-plantation/ le 2026-10-06
 - [ ] la-foret-jardin-annee-1-2-3 | « forêt jardin évolution » | à quoi ça ressemble après 1, 3, 5 ans, ce qui marche/rate | /blog/foret-jardin-creation/, /blog/mini-foret-miyawaki/
 - [ ] les-7-strates-de-la-foret-comestible | « strates forêt comestible » | canopée, arbustes, lianes, herbacées, couvre-sol, racines | /blog/foret-jardin-creation/, /blog/guide-complet-debuter-permaculture-potagere/
 - [ ] haie-diversifiee-plutot-que-thuya | « haie champêtre » | brise-vent, habitat auxiliaires, choix d'essences, entretien | /blog/haie-comestible/, /blog/auxiliaires-jardin-potager/
