@@ -105,7 +105,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 ## P6 — Deuxième vague (backlog initial épuisé le 2026-10-08, prolongement par l'éditeur SEO)
 
 - [x] planter-des-asperges | « planter des asperges » | préparer le sol, griffes mâles, calendrier automne/printemps, 3 ans sans récolte | /blog/engrais-verts-d-hiver/, /blog/rotation-cultures-potager/, /blog/paillage-potager/, /comparatifs/ → publié /blog/planter-des-asperges/ le 2026-10-08
-- [ ] potager-en-novembre | « potager en novembre » | récoltes, protection, buttes, plan de l'an prochain | /blog/preparer-le-potager-pour-l-hiver/, /blog/proteger-le-potager-du-gel/, /blog/que-planter-en-novembre/
+- [x] potager-en-novembre | « potager en novembre » | récoltes, protection, buttes, plan de l'an prochain | /blog/preparer-le-potager-pour-l-hiver/, /blog/proteger-le-potager-du-gel/, /blog/que-planter-en-novembre/ → publié /blog/potager-en-novembre/ le 2026-10-08
 - [ ] cultiver-la-rhubarbe | « cultiver la rhubarbe » | plantation, division, forçage, récolte sur 10 ans | /blog/legumes-perpetuels-potager/, /blog/planter-des-asperges/
 - [ ] paillage-carton-au-potager | « paillage carton » | méthode sans encre, superposition, résultat sur 6 mois | /blog/paillage-potager/, /blog/ne-jamais-laisser-un-sol-nu/
 - [ ] potager-sur-balcon | « potager balcon » | bacs, substrat, arrosage, variétés qui donnent | /blog/potager-en-carres/, /blog/arroser-moins-et-mieux/
