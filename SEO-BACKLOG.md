@@ -100,7 +100,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] nourrir-le-sol-avec-le-broyat-de-branches | « BRF quand et comment » | calendrier, essences, dosage, effets sur 3 ans | /blog/brf-bois-rameal-fragmente/, /blog/le-sol-vivant-explique/ → publié /blog/nourrir-le-sol-avec-le-broyat-de-branches/ le 2026-10-07
 - [x] paysagisme-comestible-devant-la-maison | « jardin comestible paysager » | massifs productifs, aromatiques persistantes, esthétique | /blog/spirale-aromatique/, /blog/legumes-perpetuels-potager/ → publié /blog/paysagisme-comestible-devant-la-maison/ le 2026-10-08
 - [x] permaculture-et-climat-de-la-moitie-nord | « permaculture France nord » | microclimats, jours courts, gelées tardives, choix variétal | /blog/planter-un-verger-en-racines-nues/, /blog/guide-complet-debuter-permaculture-potagere/ + /blog/butte-permaculture/, /blog/haie-diversifiee-plutot-que-thuya/, /blog/amender-sol-argileux/, /blog/semer-mache/, /blog/serre-froide-pour-debutants/, /comparatifs/ → publié /blog/permaculture-et-climat-de-la-moitie-nord/ le 2026-10-08
-- [ ] le-calendrier-lunaire-au-potager-realite-ou-mythe | « calendrier lunaire jardin » | ce que dit la recherche, ce qu'on observe au jardin | /outils/calendrier-des-semis/, /blog/semis-en-pleine-terre-sans-travail-du-sol/
+- [x] le-calendrier-lunaire-au-potager-realite-ou-mythe | « calendrier lunaire jardin » | ce que dit la recherche, ce qu'on observe au jardin | /outils/calendrier-des-semis/, /blog/semis-en-pleine-terre-sans-travail-du-sol/ + /blog/faux-semis/, /comparatifs/ → publié /blog/le-calendrier-lunaire-au-potager-realite-ou-mythe/ le 2026-10-08
 
 ---
 
