@@ -102,6 +102,25 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] permaculture-et-climat-de-la-moitie-nord | « permaculture France nord » | microclimats, jours courts, gelées tardives, choix variétal | /blog/planter-un-verger-en-racines-nues/, /blog/guide-complet-debuter-permaculture-potagere/ + /blog/butte-permaculture/, /blog/haie-diversifiee-plutot-que-thuya/, /blog/amender-sol-argileux/, /blog/semer-mache/, /blog/serre-froide-pour-debutants/, /comparatifs/ → publié /blog/permaculture-et-climat-de-la-moitie-nord/ le 2026-10-08
 - [x] le-calendrier-lunaire-au-potager-realite-ou-mythe | « calendrier lunaire jardin » | ce que dit la recherche, ce qu'on observe au jardin | /outils/calendrier-des-semis/, /blog/semis-en-pleine-terre-sans-travail-du-sol/ + /blog/faux-semis/, /comparatifs/ → publié /blog/le-calendrier-lunaire-au-potager-realite-ou-mythe/ le 2026-10-08
 
+## P6 — Deuxième vague (backlog initial épuisé le 2026-10-08, prolongement par l'éditeur SEO)
+
+- [x] planter-des-asperges | « planter des asperges » | préparer le sol, griffes mâles, calendrier automne/printemps, 3 ans sans récolte | /blog/engrais-verts-d-hiver/, /blog/rotation-cultures-potager/, /blog/paillage-potager/, /comparatifs/ → publié /blog/planter-des-asperges/ le 2026-10-08
+- [ ] potager-en-novembre | « potager en novembre » | récoltes, protection, buttes, plan de l'an prochain | /blog/preparer-le-potager-pour-l-hiver/, /blog/proteger-le-potager-du-gel/, /blog/que-planter-en-novembre/
+- [ ] cultiver-la-rhubarbe | « cultiver la rhubarbe » | plantation, division, forçage, récolte sur 10 ans | /blog/legumes-perpetuels-potager/, /blog/planter-des-asperges/
+- [ ] paillage-carton-au-potager | « paillage carton » | méthode sans encre, superposition, résultat sur 6 mois | /blog/paillage-potager/, /blog/ne-jamais-laisser-un-sol-nu/
+- [ ] potager-sur-balcon | « potager balcon » | bacs, substrat, arrosage, variétés qui donnent | /blog/potager-en-carres/, /blog/arroser-moins-et-mieux/
+- [ ] cultiver-le-noisetier | « cultiver le noisetier » | plantation, taille, récolte des noisettes, variétés | /blog/haie-diversifiee-plutot-que-thuya/, /blog/taille-arbres-fruitiers/
+- [ ] planter-un-cognassier | « cognassier » | porte-greffe, taille, coings, gelée | /blog/planter-arbre-fruitier/, /blog/recolter-et-conserver-les-pommes/
+- [ ] que-semer-en-decembre | « que semer en décembre » | ce qui lève vraiment sous abri, repos du potager | /blog/que-semer-en-octobre/, /blog/serre-froide-pour-debutants/
+- [ ] semis-en-caissette-et-repiquage | « semis en caissette » | terreau, lumière, repiquage, erreurs de débutant | /blog/legumes-hiver-semis-aout/, /blog/grelinette-potager/
+- [ ] cultiver-des-tomates-sous-serre | « tomates sous serre » | conduite, taille, aération, maladies | /blog/maladies-des-tomates/, /blog/mildiou-de-la-tomate/
+- [ ] cultiver-le-sureau | « sureau noir » | plantation, taille, sirop, oiseaux | /blog/haie-comestible/, /blog/auxiliaires-jardin-potager/
+- [ ] compost-bokashi | « bokashi » | seau, activateur, jus, usage réel au potager | /blog/compost-maison/, /blog/lombricompost/
+- [ ] plantes-melliferes-au-potager | « plantes mellifères » | fleurir le potager, pollinisateurs, ce qui marche | /blog/semis-prairie-fleurie/, /blog/auxiliaires-jardin-potager/
+- [ ] conserver-les-legumes-racines-en-silo | « silo à légumes » | conservation des racines, sable, cave, erreurs | /blog/recolter-et-conserver-les-carottes/, /blog/faire-des-conserves-au-potager/
+- [ ] multiplier-les-aromatiques | « bouturer les aromatiques » | romarin, thym, sauge : boutures et marcottage | /blog/spirale-aromatique/, /blog/hiverner-plantes-aromatiques/
+- [ ] engrais-verts-de-printemps | « engrais vert printemps » | phacélie, moutarde, sarrasin selon le sol | /blog/engrais-verts-d-hiver/, /blog/faux-semis/
+
 ---
 
 ## Terminé
