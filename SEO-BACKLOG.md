@@ -108,7 +108,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] potager-en-novembre | « potager en novembre » | récoltes, protection, buttes, plan de l'an prochain | /blog/preparer-le-potager-pour-l-hiver/, /blog/proteger-le-potager-du-gel/, /blog/que-planter-en-novembre/ → publié /blog/potager-en-novembre/ le 2026-10-08
 - [x] cultiver-la-rhubarbe | « cultiver la rhubarbe » | plantation, division, forçage, récolte sur 10 ans | /blog/legumes-perpetuels-potager/, /blog/planter-des-asperges/ → publié /blog/cultiver-la-rhubarbe/ le 2026-10-09
 - [x] paillage-carton-au-potager | « paillage carton » | méthode sans encre, superposition, résultat sur 6 mois | /blog/paillage-potager/, /blog/ne-jamais-laisser-un-sol-nu/ → publié /blog/paillage-carton-au-potager/ le 2026-10-09
-- [ ] potager-sur-balcon | « potager balcon » | bacs, substrat, arrosage, variétés qui donnent | /blog/potager-en-carres/, /blog/arroser-moins-et-mieux/
+- [x] potager-sur-balcon | « potager balcon » | bacs, substrat, arrosage, variétés qui donnent | /blog/potager-en-carres/, /blog/arroser-moins-et-mieux/ → publié /blog/potager-sur-balcon/ le 2026-10-09
 - [ ] cultiver-le-noisetier | « cultiver le noisetier » | plantation, taille, récolte des noisettes, variétés | /blog/haie-diversifiee-plutot-que-thuya/, /blog/taille-arbres-fruitiers/
 - [ ] planter-un-cognassier | « cognassier » | porte-greffe, taille, coings, gelée | /blog/planter-arbre-fruitier/, /blog/recolter-et-conserver-les-pommes/
 - [ ] que-semer-en-decembre | « que semer en décembre » | ce qui lève vraiment sous abri, repos du potager | /blog/que-semer-en-octobre/, /blog/serre-froide-pour-debutants/
