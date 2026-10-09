@@ -110,7 +110,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] paillage-carton-au-potager | « paillage carton » | méthode sans encre, superposition, résultat sur 6 mois | /blog/paillage-potager/, /blog/ne-jamais-laisser-un-sol-nu/ → publié /blog/paillage-carton-au-potager/ le 2026-10-09
 - [x] potager-sur-balcon | « potager balcon » | bacs, substrat, arrosage, variétés qui donnent | /blog/potager-en-carres/, /blog/arroser-moins-et-mieux/ → publié /blog/potager-sur-balcon/ le 2026-10-09
 - [x] cultiver-le-noisetier | « cultiver le noisetier » | plantation, taille, récolte des noisettes, variétés | /blog/haie-diversifiee-plutot-que-thuya/, /blog/taille-arbres-fruitiers/ → publié /blog/cultiver-le-noisetier/ le 2026-10-09
-- [ ] planter-un-cognassier | « cognassier » | porte-greffe, taille, coings, gelée | /blog/planter-arbre-fruitier/, /blog/recolter-et-conserver-les-pommes/
+- [x] planter-un-cognassier | « cognassier » | porte-greffe, taille, coings, gelée | /blog/planter-arbre-fruitier/, /blog/recolter-et-conserver-les-pommes/ → publié /blog/planter-un-cognassier/ le 2026-10-09
 - [ ] que-semer-en-decembre | « que semer en décembre » | ce qui lève vraiment sous abri, repos du potager | /blog/que-semer-en-octobre/, /blog/serre-froide-pour-debutants/
 - [ ] semis-en-caissette-et-repiquage | « semis en caissette » | terreau, lumière, repiquage, erreurs de débutant | /blog/legumes-hiver-semis-aout/, /blog/grelinette-potager/
 - [ ] cultiver-des-tomates-sous-serre | « tomates sous serre » | conduite, taille, aération, maladies | /blog/maladies-des-tomates/, /blog/mildiou-de-la-tomate/
