@@ -114,7 +114,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] que-semer-en-decembre | « que semer en décembre » | ce qui lève vraiment sous abri, repos du potager | /blog/que-semer-en-octobre/, /blog/serre-froide-pour-debutants/ → publié /blog/que-semer-en-decembre/ le 2026-10-10
 - [x] semis-en-caissette-et-repiquage | « semis en caissette » | terreau, lumière, repiquage, erreurs de débutant | /blog/legumes-hiver-semis-aout/, /blog/grelinette-potager/ → publié /blog/semis-en-caissette-et-repiquage/ le 2026-10-10
 - [x] cultiver-des-tomates-sous-serre | « tomates sous serre » | conduite, taille, aération, maladies | /blog/maladies-des-tomates/, /blog/mildiou-de-la-tomate/ → publié /blog/cultiver-des-tomates-sous-serre/ le 2026-10-10
-- [ ] cultiver-le-sureau | « sureau noir » | plantation, taille, sirop, oiseaux | /blog/haie-comestible/, /blog/auxiliaires-jardin-potager/
+- [x] cultiver-le-sureau | « sureau noir » | plantation, taille, sirop, oiseaux | /blog/haie-comestible/, /blog/auxiliaires-jardin-potager/ → publié /blog/cultiver-le-sureau/ le 2026-10-10
 - [ ] compost-bokashi | « bokashi » | seau, activateur, jus, usage réel au potager | /blog/compost-maison/, /blog/lombricompost/
 - [ ] plantes-melliferes-au-potager | « plantes mellifères » | fleurir le potager, pollinisateurs, ce qui marche | /blog/semis-prairie-fleurie/, /blog/auxiliaires-jardin-potager/
 - [ ] conserver-les-legumes-racines-en-silo | « silo à légumes » | conservation des racines, sable, cave, erreurs | /blog/recolter-et-conserver-les-carottes/, /blog/faire-des-conserves-au-potager/
