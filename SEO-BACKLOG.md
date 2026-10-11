@@ -119,7 +119,13 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] plantes-melliferes-au-potager | « plantes mellifères » | fleurir le potager, pollinisateurs, ce qui marche | /blog/semis-prairie-fleurie/, /blog/auxiliaires-jardin-potager/ → publié /blog/plantes-melliferes-au-potager/ le 2026-10-11
 - [x] conserver-les-legumes-racines-en-silo | « silo à légumes » | conservation des racines, sable, cave, erreurs | /blog/recolter-et-conserver-les-carottes/, /blog/faire-des-conserves-au-potager/ → publié /blog/conserver-les-legumes-racines-en-silo/ le 2026-10-11
 - [x] multiplier-les-aromatiques | « bouturer les aromatiques » | romarin, thym, sauge : boutures et marcottage | /blog/spirale-aromatique/, /blog/hiverner-plantes-aromatiques/ → publié /blog/multiplier-les-aromatiques/ le 2026-10-11
-- [ ] engrais-verts-de-printemps | « engrais vert printemps » | phacélie, moutarde, sarrasin selon le sol | /blog/engrais-verts-d-hiver/, /blog/faux-semis/
+- [x] engrais-verts-de-printemps | « engrais vert printemps » | phacélie, moutarde, sarrasin selon le sol | /blog/engrais-verts-d-hiver/, /blog/faux-semis/ + /blog/engrais-vert-automne/, /blog/rotation-cultures-potager/, /blog/ne-jamais-laisser-un-sol-nu/, /comparatifs/ → publié /blog/engrais-verts-de-printemps/ le 2026-10-11
+
+## P7 — Suite de la saisonnalité (P6 épuisé le 2026-10-11, prolongement par l'éditeur SEO)
+
+- [ ] potager-en-decembre | « potager en décembre » | récoltes d'hiver, sol couvert, entretien des outils, plan de l'an prochain | /blog/que-semer-en-decembre/, /blog/preparer-le-potager-pour-l-hiver/, /blog/compost-en-hiver/
+- [ ] que-planter-en-decembre | « que planter en décembre » | ce qui se plante encore : fruitiers en racines nues, bulbes de fin de saison, framboisiers | /blog/planter-un-verger-en-racines-nues/, /blog/planter-framboisiers-automne/, /blog/planter-bulbes-automne/
+- [ ] potager-en-janvier | « potager en janvier » | repos du sol, taille des fruitiers, commandes de graines, châssis et abris | /blog/taille-du-pommier/, /blog/fabriquer-un-chassis-froid/, /blog/semis-en-caissette-et-repiquage/
 
 ---
 
