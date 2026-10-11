@@ -95,4 +95,6 @@ Voilà comment je m'organise en sortie d'hiver. Les planches qui porteront des c
 
 Rien de ces règles n'est absolu, et c'est tant mieux. Le sol décide, pas le tableau. Mais tu as là l'essentiel : une espèce pour chaque sol, une date pour chaque espèce, et une seule chose à ne jamais rater, la fauche avant les graines.
 
-Pour aller plus loin, mes articles sur la <a href="/blog/engrais-vert-automne/">couverture du sol en fin d'été</a>, la <a href="/blog/rotation-cultures-potager/">rotation des cultures au potager</a> et le principe de <a href="/blog/ne-jamais-laisser-un-sol-nu/">ne jamais laisser un sol nu</a> complètent le sujet. Et si tu veux t'équiper pour broyer ou faucher sans y passer tes dimanches, la page <a href="/comparatifs/">comparatifs</a> du site recense le matériel que j'ai testé.
+Pour aller plus loin, mes articles sur la <a href="/blog/engrais-vert-automne/">couverture du sol en fin d'été</a>, la <a href="/blog/rotation-cultures-potager/">rotation des cultures au potager</a> et le principe de <a href="/blog/ne-jamais-laisser-un-sol-nu/">ne jamais laisser un sol nu</a> complètent le sujet. Pour t'équiper, la page <a href="/comparatifs/">comparatifs</a> recense le matériel de broyage et de fauchage.
+
+Photo d'illustration : Andrew Curtis, Wikimedia Commons (CC BY-SA 2.0).
