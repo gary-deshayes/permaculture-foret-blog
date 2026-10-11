@@ -117,7 +117,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] cultiver-le-sureau | « sureau noir » | plantation, taille, sirop, oiseaux | /blog/haie-comestible/, /blog/auxiliaires-jardin-potager/ → publié /blog/cultiver-le-sureau/ le 2026-10-10
 - [x] compost-bokashi | « bokashi » | seau, activateur, jus, usage réel au potager | /blog/compost-maison/, /blog/lombricompost/ → publié /blog/compost-bokashi/ le 2026-10-10
 - [x] plantes-melliferes-au-potager | « plantes mellifères » | fleurir le potager, pollinisateurs, ce qui marche | /blog/semis-prairie-fleurie/, /blog/auxiliaires-jardin-potager/ → publié /blog/plantes-melliferes-au-potager/ le 2026-10-11
-- [ ] conserver-les-legumes-racines-en-silo | « silo à légumes » | conservation des racines, sable, cave, erreurs | /blog/recolter-et-conserver-les-carottes/, /blog/faire-des-conserves-au-potager/
+- [x] conserver-les-legumes-racines-en-silo | « silo à légumes » | conservation des racines, sable, cave, erreurs | /blog/recolter-et-conserver-les-carottes/, /blog/faire-des-conserves-au-potager/ → publié /blog/conserver-les-legumes-racines-en-silo/ le 2026-10-11
 - [ ] multiplier-les-aromatiques | « bouturer les aromatiques » | romarin, thym, sauge : boutures et marcottage | /blog/spirale-aromatique/, /blog/hiverner-plantes-aromatiques/
 - [ ] engrais-verts-de-printemps | « engrais vert printemps » | phacélie, moutarde, sarrasin selon le sol | /blog/engrais-verts-d-hiver/, /blog/faux-semis/
 
