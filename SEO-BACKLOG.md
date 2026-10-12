@@ -127,6 +127,14 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] que-planter-en-decembre | « que planter en décembre » | ce qui se plante encore : fruitiers en racines nues, bulbes de fin de saison, framboisiers | /blog/planter-un-verger-en-racines-nues/, /blog/planter-framboisiers-automne/, /blog/planter-bulbes-automne/ → publié /blog/que-planter-en-decembre/ le 2026-10-12
 - [x] potager-en-janvier | « potager en janvier » | repos du sol, taille des fruitiers, commandes de graines, châssis et abris | /blog/taille-du-pommier/, /blog/fabriquer-un-chassis-froid/, /blog/semis-en-caissette-et-repiquage/ → publié /blog/potager-en-janvier/ le 2026-10-12
 
+## P8 — Suite de la saisonnalité (P7 épuisé le 2026-10-12, prolongement par l'éditeur SEO)
+
+- [ ] que-semer-en-janvier | « que semer en janvier » | ce qui lève vraiment sous abri chauffé, oignons et poireaux précoces, ce qui attend février | /blog/potager-en-janvier/, /blog/semis-en-caissette-et-repiquage/, /blog/serre-froide-pour-debutants/
+- [ ] que-planter-en-janvier | « que planter en janvier » | fruitiers en racines nues, arbustes à racines nues, framboisiers, bulbes forcés | /blog/planter-un-verger-en-racines-nues/, /blog/que-planter-en-decembre/, /blog/planter-framboisiers-automne/
+- [ ] tailler-les-arbres-fruitiers-en-hiver | « taille hiver fruitiers » | ce qui se taille et ce qui attend, gestes, jours à éviter, cicatrisation | /blog/taille-du-pommier/, /blog/taille-du-cerisier/, /blog/traiter-les-arbres-en-hiver-sans-phytos/
+- [ ] potager-en-fevrier | « potager en février » | premiers semis, taille de fin d'hiver, sol qui ressuye, plan de printemps | /blog/preparer-le-potager-pour-l-hiver/, /blog/semis-en-caissette-et-repiquage/, /blog/rotation-cultures-potager/
+- [ ] bouturer-les-baies-en-hiver | « bouturer le cassissier » | boutures de bois dur prélevées en janvier-février, substrat, reprise | /blog/bouturer-groseillier-cassissier-automne/, /blog/planter-framboisiers-automne/
+
 ---
 
 ## Terminé
