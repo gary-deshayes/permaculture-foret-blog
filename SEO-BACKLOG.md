@@ -125,7 +125,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 
 - [x] potager-en-decembre | « potager en décembre » | récoltes d'hiver, sol couvert, entretien des outils, plan de l'an prochain | /blog/que-semer-en-decembre/, /blog/preparer-le-potager-pour-l-hiver/, /blog/compost-en-hiver/ → publié /blog/potager-en-decembre/ le 2026-10-11
 - [x] que-planter-en-decembre | « que planter en décembre » | ce qui se plante encore : fruitiers en racines nues, bulbes de fin de saison, framboisiers | /blog/planter-un-verger-en-racines-nues/, /blog/planter-framboisiers-automne/, /blog/planter-bulbes-automne/ → publié /blog/que-planter-en-decembre/ le 2026-10-12
-- [ ] potager-en-janvier | « potager en janvier » | repos du sol, taille des fruitiers, commandes de graines, châssis et abris | /blog/taille-du-pommier/, /blog/fabriquer-un-chassis-froid/, /blog/semis-en-caissette-et-repiquage/
+- [x] potager-en-janvier | « potager en janvier » | repos du sol, taille des fruitiers, commandes de graines, châssis et abris | /blog/taille-du-pommier/, /blog/fabriquer-un-chassis-froid/, /blog/semis-en-caissette-et-repiquage/ → publié /blog/potager-en-janvier/ le 2026-10-12
 
 ---
 
