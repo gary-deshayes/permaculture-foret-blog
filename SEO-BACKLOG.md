@@ -133,7 +133,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] que-planter-en-janvier | « que planter en janvier » | fruitiers en racines nues, arbustes à racines nues, framboisiers, bulbes forcés | /blog/planter-un-verger-en-racines-nues/, /blog/que-planter-en-decembre/, /blog/planter-framboisiers-automne/ → publié /blog/que-planter-en-janvier/ le 2026-10-12
 - [x] tailler-les-arbres-fruitiers-en-hiver | « taille hiver fruitiers » | ce qui se taille et ce qui attend, gestes, jours à éviter, cicatrisation | /blog/taille-du-pommier/, /blog/taille-du-cerisier/, /blog/traiter-les-arbres-en-hiver-sans-phytos/ → publié /blog/tailler-les-arbres-fruitiers-en-hiver/ le 2026-10-12
 - [x] potager-en-fevrier | « potager en février » | premiers semis, taille de fin d'hiver, sol qui ressuye, plan de printemps | /blog/preparer-le-potager-pour-l-hiver/, /blog/semis-en-caissette-et-repiquage/, /blog/rotation-cultures-potager/ → publié /blog/potager-en-fevrier/ le 2026-10-13
-- [ ] bouturer-les-baies-en-hiver | « bouturer le cassissier » | boutures de bois dur prélevées en janvier-février, substrat, reprise | /blog/bouturer-groseillier-cassissier-automne/, /blog/planter-framboisiers-automne/
+- [x] bouturer-les-baies-en-hiver | « bouturer le cassissier » | boutures de bois dur prélevées en janvier-février, substrat, reprise | /blog/bouturer-groseillier-cassissier-automne/, /blog/planter-framboisiers-automne/ → publié /blog/bouturer-les-baies-en-hiver/ le 2026-10-13
 
 ---
 
