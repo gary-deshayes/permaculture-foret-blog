@@ -141,7 +141,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 
 - [x] que-semer-en-fevrier | « que semer en février » | semis précoces sous abri chauffé, poireaux/oignons, premières laitues, ce qui attend mars | /blog/potager-en-fevrier/, /blog/que-semer-en-janvier/, /blog/semis-en-caissette-et-repiquage/, /blog/serre-froide-pour-debutants/ → publié /blog/que-semer-en-fevrier/ le 2026-10-13
 - [x] que-planter-en-fevrier | « que planter en février » | dernières racines nues, pommes de terre primeur en forçage, framboisiers, premiers semis en pleine terre | /blog/planter-un-verger-en-racines-nues/, /blog/que-planter-en-janvier/, /blog/planter-framboisiers-automne/, /comparatifs/ → publié /blog/que-planter-en-fevrier/ le 2026-10-13
-- [ ] meilleur-secateur | « meilleur sécateur » | comparatif coupe-branches/sécateurs by-pass, prix, affûtage, verdict d'usage | /comparatifs/, /blog/taille-du-pommier/, /blog/greffer-un-arbre-fruitier/
+- [x] meilleur-secateur | « meilleur sécateur » | comparatif coupe-branches/sécateurs by-pass, prix, affûtage, verdict d'usage | /comparatifs/, /blog/taille-du-pommier/, /blog/greffer-un-arbre-fruitier/ → publié /blog/meilleur-secateur/ le 2026-10-13
 
 ---
 
