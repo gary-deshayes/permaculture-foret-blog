@@ -147,7 +147,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 
 ## P10 — Suite de la saisonnalité (P9 épuisé le 2026-10-13, prolongement par l'éditeur SEO)
 
-- [ ] que-semer-en-mars | « que semer en mars » | semis au chaud des tomates/aubergines, pleine terre des premiers légumes rustiques, engrais verts | /blog/que-semer-en-fevrier/, /blog/semis-en-caissette-et-repiquage/, /blog/serre-froide-pour-debutants/, /blog/engrais-verts-de-printemps/
+- [x] que-semer-en-mars | « que semer en mars » | semis au chaud des tomates/aubergines, pleine terre des premiers légumes rustiques, engrais verts | /blog/que-semer-en-fevrier/, /blog/semis-en-caissette-et-repiquage/, /blog/serre-froide-pour-debutants/, /blog/engrais-verts-de-printemps/ → publié /blog/que-semer-en-mars/ le 2026-10-14
 - [ ] que-planter-en-mars | « que planter en mars » | pommes de terre, oignons, échalotes, premières salades, plantation des fraisiers | /blog/planter-des-pommes-de-terre-en-hiver/, /blog/planter-fraisiers/, /blog/rotation-cultures-potager/, /comparatifs/
 - [ ] potager-en-mars | « potager en mars » | réveil du sol, faux semis, planches, premiers semis et plantations, protection des gelées tardives | /blog/potager-en-fevrier/, /blog/faux-semis/, /blog/permaculture-et-climat-de-la-moitie-nord/
 - [ ] semis-de-tomates | « semis de tomates » | date selon région, terreau, lumière, repiquage, erreurs qui filent les plants | /blog/semis-en-caissette-et-repiquage/, /blog/cultiver-des-tomates-sous-serre/, /blog/maladies-des-tomates/
