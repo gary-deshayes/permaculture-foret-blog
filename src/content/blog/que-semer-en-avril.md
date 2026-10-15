@@ -33,6 +33,8 @@ Le dernier repère ne coûte rien : quand le mouron et le séneçon lèvent part
 
 Les dates sont les miennes, en climat de moitié nord avec gelées jusqu'à la mi-mai. Compte dix jours de moins si tu es dans le Sud, et l'inverse en altitude ou en terrain humide.
 
+Plusieurs lignes prolongent des semis du mois précédent : si tes pois et tes premières laitues sont partis en mars, ne resème pas, suis simplement les levées. Le détail du mois dernier est dans [que semer en mars](https://permaculture-foret.fr/blog/que-semer-en-mars/), utile si tu as pris du retard et te demandes ce qui est encore rattrapable.
+
 | Culture | Où semer | Ma date | Sol minimum | Levée observée |
 |---|---|---|---|---|
 | Carotte | pleine terre, planche rappuyée | du 5 au 20 | 8-10 °C | 15 à 25 jours |
