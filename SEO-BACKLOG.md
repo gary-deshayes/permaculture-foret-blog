@@ -160,7 +160,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] arroser-les-tomates | « arroser les tomates » | fréquence réelle, au pied, irrégularité et cul noir, goutte-à-goutte et oyas | /blog/arroser-moins-et-mieux/, /blog/planter-les-tomates-en-pleine-terre/, /blog/maladies-des-tomates/ → publié /blog/arroser-les-tomates/ le 2026-10-15
 - [x] que-semer-en-avril | « que semer en avril » | derniers semis au chaud, pleine terre, engrais verts et fleurs compagnes | /blog/que-semer-en-mars/, /blog/semis-en-caissette-et-repiquage/, /blog/faux-semis/ → publié /blog/que-semer-en-avril/ le 2026-10-15
 - [x] que-planter-en-avril | « que planter en avril » | tomates et aubergines sous abri, pommes de terre, salades, premières plantations en pleine terre | /blog/planter-les-tomates-en-pleine-terre/, /blog/que-planter-en-mars/, /blog/planter-fraisiers/ → publié /blog/que-planter-en-avril/ le 2026-10-15
-- [ ] potager-en-avril | « potager en avril » | sol qui se réchauffe, limaces, désherbage, mises en place, gelées tardives | /blog/limaces-potager/, /blog/potager-en-mars/, /blog/paillage-potager/
+- [x] potager-en-avril | « potager en avril » | sol qui se réchauffe, limaces, désherbage, mises en place, gelées tardives | /blog/limaces-potager/, /blog/potager-en-mars/, /blog/paillage-potager/ → publié /blog/potager-en-avril/ le 2026-10-15
 - [ ] tailler-les-tomates | « tailler les tomates » | gourmands, déterminées contre indéterminées, quand s'arrêter, erreurs | /blog/cultiver-des-tomates-sous-serre/, /blog/semis-de-tomates/, /blog/maladies-des-tomates/
 
 ---
