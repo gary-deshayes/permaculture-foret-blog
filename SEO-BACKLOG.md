@@ -157,7 +157,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 ## P11 — Suite de la saisonnalité (P10 épuisé le 2026-10-14, prolongement par l'éditeur SEO)
 
 - [x] planter-les-tomates-en-pleine-terre | « quand planter les tomates » | date par région, profondeur de plantation, tuteurage, première quinzaine critique | /blog/semis-de-tomates/, /blog/cultiver-des-tomates-sous-serre/, /blog/plantes-compagnes-tomates/, /comparatifs/ → publié /blog/planter-les-tomates-en-pleine-terre/ le 2026-10-14
-- [ ] arroser-les-tomates | « arroser les tomates » | fréquence réelle, au pied, irrégularité et cul noir, goutte-à-goutte et oyas | /blog/arroser-moins-et-mieux/, /blog/planter-les-tomates-en-pleine-terre/, /blog/maladies-des-tomates/
+- [x] arroser-les-tomates | « arroser les tomates » | fréquence réelle, au pied, irrégularité et cul noir, goutte-à-goutte et oyas | /blog/arroser-moins-et-mieux/, /blog/planter-les-tomates-en-pleine-terre/, /blog/maladies-des-tomates/ → publié /blog/arroser-les-tomates/ le 2026-10-15
 - [ ] que-semer-en-avril | « que semer en avril » | derniers semis au chaud, pleine terre, engrais verts et fleurs compagnes | /blog/que-semer-en-mars/, /blog/semis-en-caissette-et-repiquage/, /blog/faux-semis/
 - [ ] que-planter-en-avril | « que planter en avril » | tomates et aubergines sous abri, pommes de terre, salades, premières plantations en pleine terre | /blog/planter-les-tomates-en-pleine-terre/, /blog/que-planter-en-mars/, /blog/planter-fraisiers/
 - [ ] potager-en-avril | « potager en avril » | sol qui se réchauffe, limaces, désherbage, mises en place, gelées tardives | /blog/limaces-potager/, /blog/potager-en-mars/, /blog/paillage-potager/
