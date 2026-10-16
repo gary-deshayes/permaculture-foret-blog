@@ -167,7 +167,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 
 ## P12 — Suite de la saisonnalité (P11 épuisé le 2026-10-16, prolongement par l'éditeur SEO)
 
-- [ ] potager-en-mai | « potager en mai » | mois charnière : sol réchauffé, dernières gelées, mise en place des tomates, premiers semis directs | /blog/planter-les-tomates-en-pleine-terre/, /blog/limaces-potager/, /blog/potager-en-avril/
+- [x] potager-en-mai | « potager en mai » | mois charnière : sol réchauffé, dernières gelées, mise en place des tomates, premiers semis directs | /blog/planter-les-tomates-en-pleine-terre/, /blog/limaces-potager/, /blog/potager-en-avril/ → publié /blog/potager-en-mai/ le 2026-10-16
 - [ ] que-semer-en-mai | « que semer en mai » | semis directs en pleine terre, courges et cucurbitacées, fleurs compagnes, rattrapage des retardataires | /blog/que-semer-en-avril/, /blog/semis-en-caissette-et-repiquage/, /blog/plantes-melliferes-au-potager/
 - [ ] que-planter-en-mai | « que planter en mai » | tomates, aubergines, courges, aromatiques, fraisiers remontants : ce qui attend la fin des gelées | /blog/que-planter-en-avril/, /blog/planter-les-tomates-en-pleine-terre/, /blog/planter-fraisiers/
 - [ ] cultiver-les-courges | « cultiver les courges » | semis, place au potager, taille, pollinisation manuelle, récolte et conservation | /blog/recolte-courges-conservation/, /blog/oidium-courgette-et-cucurbitacees/, /blog/rotation-cultures-potager/
