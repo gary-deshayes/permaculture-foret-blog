@@ -180,7 +180,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 ## P13 — Aromatiques, haies et cultures de fond (P12 épuisé le 2026-10-17, prolongement par l'éditeur SEO)
 
 - [x] cultiver-la-lavande | « cultiver la lavande » | sol drainé, taille après floraison, bouturage, usages et erreurs | /blog/spirale-aromatique/, /blog/multiplier-les-aromatiques/, /blog/hiverner-plantes-aromatiques/ → publié /blog/cultiver-la-lavande/ le 2026-10-17
-- [ ] planter-une-haie-champetre-en-novembre | « planter une haie » | période, préparation du sol, paillage, distances, entretien les 3 premières années | /blog/haie-diversifiee-plutot-que-thuya/, /blog/haie-comestible/, /blog/pailler-avec-les-feuilles-mortes/
+- [x] planter-une-haie-champetre-en-novembre | « planter une haie » | période, préparation du sol, paillage, distances, entretien les 3 premières années | /blog/haie-diversifiee-plutot-que-thuya/, /blog/haie-comestible/, /blog/pailler-avec-les-feuilles-mortes/ → publié /blog/planter-une-haie-champetre-en-novembre/ le 2026-10-17
 - [ ] cultiver-l-oseille | « cultiver l'oseille » | semis, sol frais, coupes successives, variétés et cuisine | /blog/legumes-perpetuels-potager/, /blog/rotation-cultures-potager/, /comparatifs/
 
 ---
