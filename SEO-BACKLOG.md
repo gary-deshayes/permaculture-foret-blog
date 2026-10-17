@@ -172,7 +172,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] que-planter-en-mai | « que planter en mai » | tomates, aubergines, courges, aromatiques, fraisiers remontants : ce qui attend la fin des gelées | /blog/que-planter-en-avril/, /blog/planter-les-tomates-en-pleine-terre/, /blog/planter-fraisiers/ → publié /blog/que-planter-en-mai/ le 2026-10-16
 - [x] cultiver-les-courges | « cultiver les courges » | semis, place au potager, taille, pollinisation manuelle, récolte et conservation | /blog/recolte-courges-conservation/, /blog/oidium-courgette-et-cucurbitacees/, /blog/rotation-cultures-potager/ → publié /blog/cultiver-les-courges/ le 2026-10-16
 - [x] cultiver-les-concombres | « cultiver le concombre » | conduite verticale, arrosage, amertume, variétés résistantes à l'oïdium | /blog/oidium-courgette-et-cucurbitacees/, /blog/cultiver-des-tomates-sous-serre/, /blog/rotation-cultures-potager/ → publié /blog/cultiver-les-concombres/ le 2026-10-17
-- [ ] tailler-les-fraisiers | « tailler les fraisiers » | nettoyage après récolte, suppression des stolons, rajeunissement d'une planche de 3 ans | /blog/planter-fraisiers/, /blog/rotation-cultures-potager/, /blog/paillage-potager/
+- [x] tailler-les-fraisiers | « tailler les fraisiers » | nettoyage après récolte, suppression des stolons, rajeunissement d'une planche de 3 ans | /blog/planter-fraisiers/, /blog/rotation-cultures-potager/, /blog/paillage-potager/ → publié /blog/tailler-les-fraisiers/ le 2026-10-17
 - [ ] cultiver-la-bourrache | « cultiver la bourrache » | semis, fleurs comestibles, plante mellifère et engrais vert, place au potager | /blog/plantes-melliferes-au-potager/, /blog/semis-prairie-fleurie/, /blog/rotation-cultures-potager/
 
 ---
