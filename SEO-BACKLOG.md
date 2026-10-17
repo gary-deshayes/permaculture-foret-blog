@@ -173,7 +173,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] cultiver-les-courges | « cultiver les courges » | semis, place au potager, taille, pollinisation manuelle, récolte et conservation | /blog/recolte-courges-conservation/, /blog/oidium-courgette-et-cucurbitacees/, /blog/rotation-cultures-potager/ → publié /blog/cultiver-les-courges/ le 2026-10-16
 - [x] cultiver-les-concombres | « cultiver le concombre » | conduite verticale, arrosage, amertume, variétés résistantes à l'oïdium | /blog/oidium-courgette-et-cucurbitacees/, /blog/cultiver-des-tomates-sous-serre/, /blog/rotation-cultures-potager/ → publié /blog/cultiver-les-concombres/ le 2026-10-17
 - [x] tailler-les-fraisiers | « tailler les fraisiers » | nettoyage après récolte, suppression des stolons, rajeunissement d'une planche de 3 ans | /blog/planter-fraisiers/, /blog/rotation-cultures-potager/, /blog/paillage-potager/ → publié /blog/tailler-les-fraisiers/ le 2026-10-17
-- [ ] cultiver-la-bourrache | « cultiver la bourrache » | semis, fleurs comestibles, plante mellifère et engrais vert, place au potager | /blog/plantes-melliferes-au-potager/, /blog/semis-prairie-fleurie/, /blog/rotation-cultures-potager/
+- [x] cultiver-la-bourrache | « cultiver la bourrache » | semis, fleurs comestibles, plante mellifère et engrais vert, place au potager | /blog/plantes-melliferes-au-potager/, /blog/semis-prairie-fleurie/, /blog/rotation-cultures-potager/ → publié /blog/cultiver-la-bourrache/ le 2026-10-17
 
 ---
 
