@@ -181,7 +181,18 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 
 - [x] cultiver-la-lavande | « cultiver la lavande » | sol drainé, taille après floraison, bouturage, usages et erreurs | /blog/spirale-aromatique/, /blog/multiplier-les-aromatiques/, /blog/hiverner-plantes-aromatiques/ → publié /blog/cultiver-la-lavande/ le 2026-10-17
 - [x] planter-une-haie-champetre-en-novembre | « planter une haie » | période, préparation du sol, paillage, distances, entretien les 3 premières années | /blog/haie-diversifiee-plutot-que-thuya/, /blog/haie-comestible/, /blog/pailler-avec-les-feuilles-mortes/ → publié /blog/planter-une-haie-champetre-en-novembre/ le 2026-10-17
-- [ ] cultiver-l-oseille | « cultiver l'oseille » | semis, sol frais, coupes successives, variétés et cuisine | /blog/legumes-perpetuels-potager/, /blog/rotation-cultures-potager/, /comparatifs/
+- [x] cultiver-l-oseille | « cultiver l'oseille » | semis, sol frais, coupes successives, variétés et cuisine | /blog/legumes-perpetuels-potager/, /blog/rotation-cultures-potager/, /comparatifs/ → publié /blog/cultiver-l-oseille/ le 2026-10-18
+
+---
+
+## P14 — Aromatiques, feuilles et cultures de fond (P13 épuisé le 2026-10-18, prolongement par l'éditeur SEO)
+
+- [ ] cultiver-le-cresson-de-fontaine | « cresson de fontaine » | culture en bac ou ruisseau, eau fraîche, coupes, risques sanitaires | /blog/cultiver-l-oseille/, /blog/legumes-perpetuels-potager/, /comparatifs/
+- [ ] cultiver-la-melisse | « cultiver la mélisse » | semis, envahissement, coupes, séchage, usage en tisane | /blog/multiplier-les-aromatiques/, /blog/spirale-aromatique/, /blog/hiverner-plantes-aromatiques/
+- [ ] plantain-et-plantes-sauvages-du-jardin | « plantes sauvages comestibles jardin » | identifier, récolter, intégrer au potager sans laisser envahir | /blog/legumes-perpetuels-potager/, /blog/auxiliaires-jardin-potager/, /comparatifs/
+- [ ] cultiver-les-navets-et-raves | « cultiver le navet » | semis d'automne, sol, variétés, mouche du navet, conservation | /blog/rotation-cultures-potager/, /blog/recolter-et-conserver-les-carottes/, /blog/semer-mache/
+- [ ] pailler-avec-la-tonte-de-pelouse | « paillage tonte de pelouse » | épaisseur, séchage préalable, azote, erreurs (fermentation) | /blog/paillage-potager/, /blog/ne-jamais-laisser-un-sol-nu/, /blog/compost-maison/
+- [ ] cultiver-en-serres-tunnels | « serre tunnel potager » | choix du modèle, ancrage, aération, cultures d'hiver et de printemps | /comparatifs/, /blog/serre-froide-pour-debutants/, /blog/fabriquer-un-chassis-froid/
 
 ---
 
