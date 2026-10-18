@@ -187,7 +187,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 
 ## P14 — Aromatiques, feuilles et cultures de fond (P13 épuisé le 2026-10-18, prolongement par l'éditeur SEO)
 
-- [ ] cultiver-le-cresson-de-fontaine | « cresson de fontaine » | culture en bac ou ruisseau, eau fraîche, coupes, risques sanitaires | /blog/cultiver-l-oseille/, /blog/legumes-perpetuels-potager/, /comparatifs/
+- [x] cultiver-le-cresson-de-fontaine | « cresson de fontaine » | culture en bac ou ruisseau, eau fraîche, coupes, risques sanitaires | /blog/cultiver-l-oseille/, /blog/legumes-perpetuels-potager/, /comparatifs/ → publié /blog/cultiver-le-cresson-de-fontaine/ le 2026-10-18
 - [ ] cultiver-la-melisse | « cultiver la mélisse » | semis, envahissement, coupes, séchage, usage en tisane | /blog/multiplier-les-aromatiques/, /blog/spirale-aromatique/, /blog/hiverner-plantes-aromatiques/
 - [ ] plantain-et-plantes-sauvages-du-jardin | « plantes sauvages comestibles jardin » | identifier, récolter, intégrer au potager sans laisser envahir | /blog/legumes-perpetuels-potager/, /blog/auxiliaires-jardin-potager/, /comparatifs/
 - [ ] cultiver-les-navets-et-raves | « cultiver le navet » | semis d'automne, sol, variétés, mouche du navet, conservation | /blog/rotation-cultures-potager/, /blog/recolter-et-conserver-les-carottes/, /blog/semer-mache/
