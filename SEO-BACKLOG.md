@@ -191,7 +191,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] cultiver-la-melisse | « cultiver la mélisse » | semis, envahissement, coupes, séchage, usage en tisane | /blog/multiplier-les-aromatiques/, /blog/spirale-aromatique/, /blog/hiverner-plantes-aromatiques/ → publié /blog/cultiver-la-melisse/ le 2026-10-18
 - [x] plantain-et-plantes-sauvages-du-jardin | « plantes sauvages comestibles jardin » | identifier, récolter, intégrer au potager sans laisser envahir | /blog/legumes-perpetuels-potager/, /blog/auxiliaires-jardin-potager/, /comparatifs/ → publié /blog/plantain-et-plantes-sauvages-du-jardin/ le 2026-10-18
 - [x] cultiver-les-navets-et-raves | « cultiver le navet » | semis d'automne, sol, variétés, mouche du navet, conservation | /blog/rotation-cultures-potager/, /blog/recolter-et-conserver-les-carottes/, /blog/semer-mache/ → publié /blog/cultiver-les-navets-et-raves/ le 2026-10-18
-- [ ] pailler-avec-la-tonte-de-pelouse | « paillage tonte de pelouse » | épaisseur, séchage préalable, azote, erreurs (fermentation) | /blog/paillage-potager/, /blog/ne-jamais-laisser-un-sol-nu/, /blog/compost-maison/
+- [x] pailler-avec-la-tonte-de-pelouse | « paillage tonte de pelouse » | épaisseur, séchage préalable, azote, erreurs (fermentation) | /blog/paillage-potager/, /blog/ne-jamais-laisser-un-sol-nu/, /blog/compost-maison/ → publié /blog/pailler-avec-la-tonte-de-pelouse/ le 2026-10-19
 - [ ] cultiver-en-serres-tunnels | « serre tunnel potager » | choix du modèle, ancrage, aération, cultures d'hiver et de printemps | /comparatifs/, /blog/serre-froide-pour-debutants/, /blog/fabriquer-un-chassis-froid/
 
 ---
