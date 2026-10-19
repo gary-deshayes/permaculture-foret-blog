@@ -198,7 +198,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 
 ## P15 — Cultures de la saison chaude et aromatiques (P14 épuisé le 2026-10-19, prolongement par l'éditeur SEO)
 
-- [ ] cultiver-le-persil | « cultiver le persil » | semis lent, trempage des graines, sol, coupes successives, persil d'hiver | /blog/multiplier-les-aromatiques/, /blog/spirale-aromatique/, /blog/hiverner-plantes-aromatiques/
+- [x] cultiver-le-persil | « cultiver le persil » | semis lent, trempage des graines, sol, coupes successives, persil d'hiver | /blog/multiplier-les-aromatiques/, /blog/spirale-aromatique/, /blog/hiverner-plantes-aromatiques/ → publié /blog/cultiver-le-persil/ le 2026-10-19
 - [ ] cultiver-les-poivrons-et-piments | « cultiver les poivrons » | semis précoces, chaleur, taille, variétés adaptées au nord, récolte | /blog/cultiver-en-serres-tunnels/, /blog/semis-en-caissette-et-repiquage/, /blog/cultiver-des-tomates-sous-serre/
 - [ ] cultiver-les-aubergines | « cultiver les aubergines » | chaleur, taille, pollinisation manuelle, variétés précoces | /blog/cultiver-en-serres-tunnels/, /blog/cultiver-les-poivrons-et-piments/, /blog/rotation-cultures-potager/
 - [ ] cultiver-la-ciboulette | « cultiver la ciboulette » | semis ou division, coupes, repos hivernal, culture en pot | /blog/multiplier-les-aromatiques/, /blog/legumes-perpetuels-potager/, /blog/spirale-aromatique/
