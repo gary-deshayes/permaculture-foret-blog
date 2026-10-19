@@ -192,7 +192,17 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] plantain-et-plantes-sauvages-du-jardin | « plantes sauvages comestibles jardin » | identifier, récolter, intégrer au potager sans laisser envahir | /blog/legumes-perpetuels-potager/, /blog/auxiliaires-jardin-potager/, /comparatifs/ → publié /blog/plantain-et-plantes-sauvages-du-jardin/ le 2026-10-18
 - [x] cultiver-les-navets-et-raves | « cultiver le navet » | semis d'automne, sol, variétés, mouche du navet, conservation | /blog/rotation-cultures-potager/, /blog/recolter-et-conserver-les-carottes/, /blog/semer-mache/ → publié /blog/cultiver-les-navets-et-raves/ le 2026-10-18
 - [x] pailler-avec-la-tonte-de-pelouse | « paillage tonte de pelouse » | épaisseur, séchage préalable, azote, erreurs (fermentation) | /blog/paillage-potager/, /blog/ne-jamais-laisser-un-sol-nu/, /blog/compost-maison/ → publié /blog/pailler-avec-la-tonte-de-pelouse/ le 2026-10-19
-- [ ] cultiver-en-serres-tunnels | « serre tunnel potager » | choix du modèle, ancrage, aération, cultures d'hiver et de printemps | /comparatifs/, /blog/serre-froide-pour-debutants/, /blog/fabriquer-un-chassis-froid/
+- [x] cultiver-en-serres-tunnels | « serre tunnel potager » | choix du modèle, ancrage, aération, cultures d'hiver et de printemps | /comparatifs/, /blog/serre-froide-pour-debutants/, /blog/fabriquer-un-chassis-froid/ → publié /blog/cultiver-en-serres-tunnels/ le 2026-10-19
+
+---
+
+## P15 — Cultures de la saison chaude et aromatiques (P14 épuisé le 2026-10-19, prolongement par l'éditeur SEO)
+
+- [ ] cultiver-le-persil | « cultiver le persil » | semis lent, trempage des graines, sol, coupes successives, persil d'hiver | /blog/multiplier-les-aromatiques/, /blog/spirale-aromatique/, /blog/hiverner-plantes-aromatiques/
+- [ ] cultiver-les-poivrons-et-piments | « cultiver les poivrons » | semis précoces, chaleur, taille, variétés adaptées au nord, récolte | /blog/cultiver-en-serres-tunnels/, /blog/semis-en-caissette-et-repiquage/, /blog/cultiver-des-tomates-sous-serre/
+- [ ] cultiver-les-aubergines | « cultiver les aubergines » | chaleur, taille, pollinisation manuelle, variétés précoces | /blog/cultiver-en-serres-tunnels/, /blog/cultiver-les-poivrons-et-piments/, /blog/rotation-cultures-potager/
+- [ ] cultiver-la-ciboulette | « cultiver la ciboulette » | semis ou division, coupes, repos hivernal, culture en pot | /blog/multiplier-les-aromatiques/, /blog/legumes-perpetuels-potager/, /blog/spirale-aromatique/
+- [ ] cultiver-les-patates-douces | « cultiver la patate douce » | plants, chaleur, buttes, récolte avant les gelées, conservation | /blog/cultiver-en-serres-tunnels/, /blog/planter-des-pommes-de-terre-en-hiver/, /blog/rotation-cultures-potager/
 
 ---
 
