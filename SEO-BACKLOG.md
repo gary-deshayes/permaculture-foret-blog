@@ -210,7 +210,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 
 - [x] cultiver-les-poireaux | « cultiver les poireaux » | semis, repiquage en juin-juillet, buttage, variétés d'hiver, conservation en jauge | /blog/rotation-cultures-potager/, /blog/legumes-hiver-semis-aout/, /blog/planter-l-echalote/ → publié /blog/cultiver-les-poireaux/ le 2026-10-20
 - [x] cultiver-les-blettes | « cultiver les blettes » | semis, coupes successives, résistance au gel, cuisine des cardes | /blog/legumes-perpetuels-potager/, /blog/rotation-cultures-potager/, /comparatifs/ → publié /blog/cultiver-les-blettes/ le 2026-10-20
-- [ ] cultiver-le-celeri-branche | « cultiver le céleri branche » | sol frais, semis précoce, plantation sans enterrer le collet, blanchiment | /blog/legumes-hiver-semis-aout/, /blog/arroser-moins-et-mieux/, /blog/rotation-cultures-potager/
+- [x] cultiver-le-celeri-branche | « cultiver le céleri branche » | sol frais, semis précoce, plantation sans enterrer le collet, blanchiment | /blog/legumes-hiver-semis-aout/, /blog/arroser-moins-et-mieux/, /blog/rotation-cultures-potager/ → publié /blog/cultiver-le-celeri-branche/ le 2026-10-20
 - [ ] cultiver-le-chou-de-milan | « cultiver le chou de Milan » | semis d'été, plantation, mouches et piérides, résistance au gel, conservation | /blog/mouche-de-la-carotte/, /blog/auxiliaires-jardin-potager/, /blog/rotation-cultures-potager/
 
 ---
