@@ -202,7 +202,16 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] cultiver-les-poivrons-et-piments | « cultiver les poivrons » | semis précoces, chaleur, taille, variétés adaptées au nord, récolte | /blog/cultiver-en-serres-tunnels/, /blog/semis-en-caissette-et-repiquage/, /blog/cultiver-des-tomates-sous-serre/ → publié /blog/cultiver-les-poivrons-et-piments/ le 2026-10-19
 - [x] cultiver-les-aubergines | « cultiver les aubergines » | chaleur, taille, pollinisation manuelle, variétés précoces | /blog/cultiver-en-serres-tunnels/, /blog/cultiver-les-poivrons-et-piments/, /blog/rotation-cultures-potager/ → publié /blog/cultiver-les-aubergines/ le 2026-10-19
 - [x] cultiver-la-ciboulette | « cultiver la ciboulette » | semis ou division, coupes, repos hivernal, culture en pot | /blog/multiplier-les-aromatiques/, /blog/legumes-perpetuels-potager/, /blog/spirale-aromatique/ → publié /blog/cultiver-la-ciboulette/ le 2026-10-20
-- [ ] cultiver-les-patates-douces | « cultiver la patate douce » | plants, chaleur, buttes, récolte avant les gelées, conservation | /blog/cultiver-en-serres-tunnels/, /blog/planter-des-pommes-de-terre-en-hiver/, /blog/rotation-cultures-potager/
+- [x] cultiver-les-patates-douces | « cultiver la patate douce » | plants, chaleur, buttes, récolte avant les gelées, conservation | /blog/cultiver-en-serres-tunnels/, /blog/planter-des-pommes-de-terre-en-hiver/, /blog/rotation-cultures-potager/ → publié /blog/cultiver-les-patates-douces/ le 2026-10-20
+
+---
+
+## P16 — Légumes de fond et cultures d'hiver (P15 épuisé le 2026-10-20, prolongement par l'éditeur SEO)
+
+- [ ] cultiver-les-poireaux | « cultiver les poireaux » | semis, repiquage en juin-juillet, buttage, variétés d'hiver, conservation en jauge | /blog/rotation-cultures-potager/, /blog/legumes-hiver-semis-aout/, /blog/planter-l-echalote/
+- [ ] cultiver-les-blettes | « cultiver les blettes » | semis, coupes successives, résistance au gel, cuisine des cardes | /blog/legumes-perpetuels-potager/, /blog/rotation-cultures-potager/, /comparatifs/
+- [ ] cultiver-le-celeri-branche | « cultiver le céleri branche » | sol frais, semis précoce, plantation sans enterrer le collet, blanchiment | /blog/legumes-hiver-semis-aout/, /blog/arroser-moins-et-mieux/, /blog/rotation-cultures-potager/
+- [ ] cultiver-le-chou-de-milan | « cultiver le chou de Milan » | semis d'été, plantation, mouches et piérides, résistance au gel, conservation | /blog/mouche-de-la-carotte/, /blog/auxiliaires-jardin-potager/, /blog/rotation-cultures-potager/
 
 ---
 
