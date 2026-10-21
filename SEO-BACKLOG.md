@@ -211,7 +211,19 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] cultiver-les-poireaux | « cultiver les poireaux » | semis, repiquage en juin-juillet, buttage, variétés d'hiver, conservation en jauge | /blog/rotation-cultures-potager/, /blog/legumes-hiver-semis-aout/, /blog/planter-l-echalote/ → publié /blog/cultiver-les-poireaux/ le 2026-10-20
 - [x] cultiver-les-blettes | « cultiver les blettes » | semis, coupes successives, résistance au gel, cuisine des cardes | /blog/legumes-perpetuels-potager/, /blog/rotation-cultures-potager/, /comparatifs/ → publié /blog/cultiver-les-blettes/ le 2026-10-20
 - [x] cultiver-le-celeri-branche | « cultiver le céleri branche » | sol frais, semis précoce, plantation sans enterrer le collet, blanchiment | /blog/legumes-hiver-semis-aout/, /blog/arroser-moins-et-mieux/, /blog/rotation-cultures-potager/ → publié /blog/cultiver-le-celeri-branche/ le 2026-10-20
-- [ ] cultiver-le-chou-de-milan | « cultiver le chou de Milan » | semis d'été, plantation, mouches et piérides, résistance au gel, conservation | /blog/mouche-de-la-carotte/, /blog/auxiliaires-jardin-potager/, /blog/rotation-cultures-potager/
+- [x] cultiver-le-chou-de-milan | « cultiver le chou de Milan » | semis d'été, plantation, mouches et piérides, résistance au gel, conservation | /blog/mouche-de-la-carotte/, /blog/auxiliaires-jardin-potager/, /blog/rotation-cultures-potager/ → publié /blog/cultiver-le-chou-de-milan/ le 2026-10-21
+
+---
+
+## P17 — Famille des choux et légumes d'hiver (P16 épuisé le 2026-10-21, prolongement par l'éditeur SEO)
+
+- [ ] cultiver-le-chou-fleur | « cultiver le chou-fleur » | semis échelonnés, variétés d'hiver et de printemps, carence en bore, pomme qui avorte | /blog/cultiver-le-chou-de-milan/, /blog/rotation-cultures-potager/, /comparatifs/
+- [ ] cultiver-les-choux-de-bruxelles | « cultiver les choux de Bruxelles » | semis d'avril-mai, pincement du bourgeon terminal, récolte après les gelées, conservation sur pied | /blog/cultiver-le-chou-de-milan/, /blog/auxiliaires-jardin-potager/, /blog/legumes-hiver-semis-aout/
+- [ ] conserver-les-choux-pour-l-hiver | « conserver le chou » | sur pied, en jauge, en cave, lactofermentation, congélation : durées réelles | /blog/cultiver-le-chou-de-milan/, /blog/faire-des-conserves-au-potager/, /blog/conserver-les-legumes-racines-en-silo/
+- [ ] cultiver-le-cardon | « cultiver le cardon » | semis, sol profond, blanchiment en novembre, résistance au gel, cuisine des côtes | /blog/cultiver-les-blettes/, /blog/cultiver-le-celeri-branche/, /comparatifs/
+- [ ] cultiver-le-chou-kale | « cultiver le chou kale » | semis, coupes successives, résistance au gel, variétés frisées contre variétés à feuilles plates | /blog/cultiver-le-chou-de-milan/, /blog/legumes-perpetuels-potager/, /comparatifs/
+- [ ] cultiver-le-chou-rave | « cultiver le chou-rave » | semis rapides, sol frais, récolte jeune, variétés violettes | /blog/rotation-cultures-potager/, /blog/cultiver-les-navets-et-raves/, /comparatifs/
+- [ ] cultiver-le-chou-chinois | « cultiver le chou chinois » | semis d'automne, montée à graines, altises, récolte en 60 jours | /blog/cultiver-le-chou-de-milan/, /blog/auxiliaires-jardin-potager/, /blog/rotation-cultures-potager/
 
 ---
 
