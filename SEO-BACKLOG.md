@@ -217,7 +217,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 
 ## P17 — Famille des choux et légumes d'hiver (P16 épuisé le 2026-10-21, prolongement par l'éditeur SEO)
 
-- [ ] cultiver-le-chou-fleur | « cultiver le chou-fleur » | semis échelonnés, variétés d'hiver et de printemps, carence en bore, pomme qui avorte | /blog/cultiver-le-chou-de-milan/, /blog/rotation-cultures-potager/, /comparatifs/
+- [x] cultiver-le-chou-fleur | « cultiver le chou-fleur » | semis échelonnés, variétés d'hiver et de printemps, carence en bore, pomme qui avorte | /blog/cultiver-le-chou-de-milan/, /blog/rotation-cultures-potager/, /comparatifs/ → publié /blog/cultiver-le-chou-fleur/ le 2026-10-21
 - [ ] cultiver-les-choux-de-bruxelles | « cultiver les choux de Bruxelles » | semis d'avril-mai, pincement du bourgeon terminal, récolte après les gelées, conservation sur pied | /blog/cultiver-le-chou-de-milan/, /blog/auxiliaires-jardin-potager/, /blog/legumes-hiver-semis-aout/
 - [ ] conserver-les-choux-pour-l-hiver | « conserver le chou » | sur pied, en jauge, en cave, lactofermentation, congélation : durées réelles | /blog/cultiver-le-chou-de-milan/, /blog/faire-des-conserves-au-potager/, /blog/conserver-les-legumes-racines-en-silo/
 - [ ] cultiver-le-cardon | « cultiver le cardon » | semis, sol profond, blanchiment en novembre, résistance au gel, cuisine des côtes | /blog/cultiver-les-blettes/, /blog/cultiver-le-celeri-branche/, /comparatifs/
