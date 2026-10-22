@@ -229,7 +229,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 
 ## P18 — Légumineuses, racines et aromatiques de garrigue (P17 épuisé le 2026-10-22, prolongement par l'éditeur SEO)
 
-- [ ] cultiver-les-haricots-verts | « cultiver les haricots verts » | semis après le 15 mai, nains contre à rames, récolte tous les deux jours, pucerons | /blog/rotation-cultures-potager/, /blog/pucerons-au-potager/, /blog/paillage-potager/, /comparatifs/
+- [x] cultiver-les-haricots-verts | « cultiver les haricots verts » | semis après le 15 mai, nains contre à rames, récolte tous les deux jours, pucerons | /blog/rotation-cultures-potager/, /blog/pucerons-au-potager/, /blog/paillage-potager/, /comparatifs/ → publié /blog/cultiver-les-haricots-verts/ le 2026-10-22
 - [ ] cultiver-les-petits-pois | « cultiver les petits pois » | semis de fin d'hiver, support, oïdium de fin de saison, récolte jeune | /blog/rotation-cultures-potager/, /blog/engrais-verts-d-hiver/, /blog/auxiliaires-jardin-potager/
 - [ ] cultiver-la-betterave-rouge | « cultiver la betterave » | sol profond, semis direct, éclaircissage, conservation en silo | /blog/conserver-les-legumes-racines-en-silo/, /blog/recolter-et-conserver-les-carottes/, /blog/rotation-cultures-potager/
 - [ ] cultiver-le-panais | « cultiver le panais » | levée lente, sol profond, mouche de la carotte, récolte après les gelées | /blog/les-legumes-oublies-du-potager/, /blog/cultiver-les-navets-et-raves/, /blog/mouche-de-la-carotte/
