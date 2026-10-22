@@ -223,7 +223,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] cultiver-le-cardon | « cultiver le cardon » | semis, sol profond, blanchiment en novembre, résistance au gel, cuisine des côtes | /blog/cultiver-les-blettes/, /blog/cultiver-le-celeri-branche/, /comparatifs/ → publié /blog/cultiver-le-cardon/ le 2026-10-21
 - [x] cultiver-le-chou-kale | « cultiver le chou kale » | semis, coupes successives, résistance au gel, variétés frisées contre variétés à feuilles plates | /blog/cultiver-le-chou-de-milan/, /blog/legumes-perpetuels-potager/, /comparatifs/ → publié /blog/cultiver-le-chou-kale/ le 2026-10-22
 - [x] cultiver-le-chou-rave | « cultiver le chou-rave » | semis rapides, sol frais, récolte jeune, variétés violettes | /blog/rotation-cultures-potager/, /blog/cultiver-les-navets-et-raves/, /comparatifs/ → publié /blog/cultiver-le-chou-rave/ le 2026-10-22
-- [ ] cultiver-le-chou-chinois | « cultiver le chou chinois » | semis d'automne, montée à graines, altises, récolte en 60 jours | /blog/cultiver-le-chou-de-milan/, /blog/auxiliaires-jardin-potager/, /blog/rotation-cultures-potager/
+- [x] cultiver-le-chou-chinois | « cultiver le chou chinois » | semis d'automne, montée à graines, altises, récolte en 60 jours | /blog/cultiver-le-chou-de-milan/, /blog/auxiliaires-jardin-potager/, /blog/rotation-cultures-potager/ → publié /blog/cultiver-le-chou-chinois/ le 2026-10-22
 
 ---
 
