@@ -234,7 +234,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] cultiver-la-betterave-rouge | « cultiver la betterave » | sol profond, semis direct, éclaircissage, conservation en silo | /blog/conserver-les-legumes-racines-en-silo/, /blog/recolter-et-conserver-les-carottes/, /blog/rotation-cultures-potager/ → publié /blog/cultiver-la-betterave-rouge/ le 2026-10-23
 - [x] cultiver-le-panais | « cultiver le panais » | levée lente, sol profond, mouche de la carotte, récolte après les gelées | /blog/les-legumes-oublies-du-potager/, /blog/cultiver-les-navets-et-raves/, /blog/mouche-de-la-carotte/ → publié /blog/cultiver-le-panais/ le 2026-10-23
 - [x] cultiver-le-romarin | « cultiver le romarin » | sol drainé et calcaire, taille après floraison, bouturage, culture en pot | /blog/multiplier-les-aromatiques/, /blog/spirale-aromatique/, /blog/hiverner-plantes-aromatiques/ → publié /blog/cultiver-le-romarin/ le 2026-10-23
-- [ ] cultiver-le-thym | « cultiver le thym » | sol sec et caillouteux, tailles, boutures, différences de parfum entre thyms | /blog/spirale-aromatique/, /blog/multiplier-les-aromatiques/, /comparatifs/
+- [x] cultiver-le-thym | « cultiver le thym » | sol sec et caillouteux, tailles, boutures, différences de parfum entre thyms | /blog/spirale-aromatique/, /blog/multiplier-les-aromatiques/, /comparatifs/ → publié /blog/cultiver-le-thym/ le 2026-10-23
 
 ---
 
