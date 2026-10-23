@@ -238,6 +238,16 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 
 ---
 
+## P19 — Aromatiques vivaces de plein air (P18 épuisé le 2026-10-23, prolongement par l'éditeur SEO)
+
+- [ ] cultiver-la-sauge | « cultiver la sauge » | sol drainé, taille après floraison, boutures, sauge officinale contre sauge sclarée, cuisine | /blog/multiplier-les-aromatiques/, /blog/spirale-aromatique/, /blog/cultiver-le-thym/, /comparatifs/
+- [ ] cultiver-l-estragon | « cultiver l'estragon » | estragon français contre russe, division obligatoire, repos hivernal, place au potager | /blog/multiplier-les-aromatiques/, /blog/hiverner-plantes-aromatiques/, /blog/legumes-perpetuels-potager/
+- [ ] cultiver-l-origan | « cultiver l'origan » | sol sec, coupes, marcottage, séchage, origine méditerranéenne | /blog/cultiver-le-thym/, /blog/spirale-aromatique/, /comparatifs/
+- [ ] cultiver-le-basilic | « cultiver le basilic » | semis au chaud, pincement des fleurs, variétés, erreurs de mi-ombre | /blog/semis-en-caissette-et-repiquage/, /blog/cultiver-des-tomates-sous-serre/, /blog/spirale-aromatique/
+- [ ] cultiver-la-sarriette | « cultiver la sarriette » | annuelle ou vivace, sol caillouteux, semis direct, usage en légumes secs | /blog/cultiver-le-thym/, /blog/multiplier-les-aromatiques/, /comparatifs/
+
+---
+
 ## Terminé
 
 (cocher les lignes ci-dessus au fur et à mesure ; ajouter ici le slug publié et la date)
