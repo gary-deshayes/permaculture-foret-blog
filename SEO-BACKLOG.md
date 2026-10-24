@@ -243,7 +243,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] cultiver-la-sauge | « cultiver la sauge » | sol drainé, taille après floraison, boutures, sauge officinale contre sauge sclarée, cuisine | /blog/multiplier-les-aromatiques/, /blog/spirale-aromatique/, /blog/cultiver-le-thym/, /comparatifs/ → publié /blog/cultiver-la-sauge/ le 2026-10-23
 - [x] cultiver-l-estragon | « cultiver l'estragon » | estragon français contre russe, division obligatoire, repos hivernal, place au potager | /blog/multiplier-les-aromatiques/, /blog/hiverner-plantes-aromatiques/, /blog/legumes-perpetuels-potager/ → publié /blog/cultiver-l-estragon/ le 2026-10-24
 - [x] cultiver-l-origan | « cultiver l'origan » | sol sec, coupes, marcottage, séchage, origine méditerranéenne | /blog/cultiver-le-thym/, /blog/spirale-aromatique/, /comparatifs/ → publié /blog/cultiver-l-origan/ le 2026-10-24
-- [ ] cultiver-le-basilic | « cultiver le basilic » | semis au chaud, pincement des fleurs, variétés, erreurs de mi-ombre | /blog/semis-en-caissette-et-repiquage/, /blog/cultiver-des-tomates-sous-serre/, /blog/spirale-aromatique/
+- [x] cultiver-le-basilic | « cultiver le basilic » | semis au chaud, pincement des fleurs, variétés, erreurs de mi-ombre | /blog/semis-en-caissette-et-repiquage/, /blog/cultiver-des-tomates-sous-serre/, /blog/spirale-aromatique/ → publié /blog/cultiver-le-basilic/ le 2026-10-24
 - [ ] cultiver-la-sarriette | « cultiver la sarriette » | annuelle ou vivace, sol caillouteux, semis direct, usage en légumes secs | /blog/cultiver-le-thym/, /blog/multiplier-les-aromatiques/, /comparatifs/
 
 ---
