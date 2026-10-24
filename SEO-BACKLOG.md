@@ -248,6 +248,15 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 
 ---
 
+## P20 — Aromatiques et herbes à infusion (P19 épuisé le 2026-10-24, prolongement par l'éditeur SEO)
+
+- [x] cultiver-la-menthe | « cultiver la menthe » | confinement en pot enterré, variétés poivrée/verte, coupes avant floraison, rouille | /blog/multiplier-les-aromatiques/, /blog/spirale-aromatique/, /blog/hiverner-plantes-aromatiques/, /blog/cultiver-la-melisse/ → publié /blog/cultiver-la-menthe/ le 2026-10-24
+- [ ] cultiver-la-coriandre | « cultiver la coriandre » | semis direct échelonné, montée à graines, variétés de feuilles contre graines, récolte | /blog/cultiver-le-persil/, /blog/semis-en-caissette-et-repiquage/, /blog/cultiver-la-melisse/, /comparatifs/
+- [ ] cultiver-le-cerfeuil | « cultiver le cerfeuil » | semis d'automne et de printemps, ombre fraîche, coupes, séchage qui perd le goût | /blog/cultiver-le-persil/, /blog/cultiver-l-oseille/, /blog/hiverner-plantes-aromatiques/
+- [ ] cultiver-la-camomille | « cultiver la camomille » | semis de surface, sol pauvre, récolte des fleurs, séchage et tisane | /blog/plantes-melliferes-au-potager/, /blog/cultiver-la-melisse/, /comparatifs/
+
+---
+
 ## Terminé
 
 (cocher les lignes ci-dessus au fur et à mesure ; ajouter ici le slug publié et la date)
