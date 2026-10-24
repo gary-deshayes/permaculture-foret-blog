@@ -244,7 +244,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] cultiver-l-estragon | « cultiver l'estragon » | estragon français contre russe, division obligatoire, repos hivernal, place au potager | /blog/multiplier-les-aromatiques/, /blog/hiverner-plantes-aromatiques/, /blog/legumes-perpetuels-potager/ → publié /blog/cultiver-l-estragon/ le 2026-10-24
 - [x] cultiver-l-origan | « cultiver l'origan » | sol sec, coupes, marcottage, séchage, origine méditerranéenne | /blog/cultiver-le-thym/, /blog/spirale-aromatique/, /comparatifs/ → publié /blog/cultiver-l-origan/ le 2026-10-24
 - [x] cultiver-le-basilic | « cultiver le basilic » | semis au chaud, pincement des fleurs, variétés, erreurs de mi-ombre | /blog/semis-en-caissette-et-repiquage/, /blog/cultiver-des-tomates-sous-serre/, /blog/spirale-aromatique/ → publié /blog/cultiver-le-basilic/ le 2026-10-24
-- [ ] cultiver-la-sarriette | « cultiver la sarriette » | annuelle ou vivace, sol caillouteux, semis direct, usage en légumes secs | /blog/cultiver-le-thym/, /blog/multiplier-les-aromatiques/, /comparatifs/
+- [x] cultiver-la-sarriette | « cultiver la sarriette » | annuelle ou vivace, sol caillouteux, semis direct, usage en légumes secs | /blog/cultiver-le-thym/, /blog/multiplier-les-aromatiques/, /comparatifs/ → publié /blog/cultiver-la-sarriette/ le 2026-10-24
 
 ---
 
