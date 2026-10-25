@@ -252,7 +252,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 
 - [x] cultiver-la-menthe | « cultiver la menthe » | confinement en pot enterré, variétés poivrée/verte, coupes avant floraison, rouille | /blog/multiplier-les-aromatiques/, /blog/spirale-aromatique/, /blog/hiverner-plantes-aromatiques/, /blog/cultiver-la-melisse/ → publié /blog/cultiver-la-menthe/ le 2026-10-24
 - [x] cultiver-la-coriandre | « cultiver la coriandre » | semis direct échelonné, montée à graines, variétés de feuilles contre graines, récolte | /blog/cultiver-le-persil/, /blog/semis-en-caissette-et-repiquage/, /blog/cultiver-la-melisse/, /comparatifs/ → publié /blog/cultiver-la-coriandre/ le 2026-10-25
-- [ ] cultiver-le-cerfeuil | « cultiver le cerfeuil » | semis d'automne et de printemps, ombre fraîche, coupes, séchage qui perd le goût | /blog/cultiver-le-persil/, /blog/cultiver-l-oseille/, /blog/hiverner-plantes-aromatiques/
+- [x] cultiver-le-cerfeuil | « cultiver le cerfeuil » | semis d'automne et de printemps, ombre fraîche, coupes, séchage qui perd le goût | /blog/cultiver-le-persil/, /blog/cultiver-l-oseille/, /blog/hiverner-plantes-aromatiques/ → publié /blog/cultiver-le-cerfeuil/ le 2026-10-25
 - [ ] cultiver-la-camomille | « cultiver la camomille » | semis de surface, sol pauvre, récolte des fleurs, séchage et tisane | /blog/plantes-melliferes-au-potager/, /blog/cultiver-la-melisse/, /comparatifs/
 
 ---
