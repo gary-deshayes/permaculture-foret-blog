@@ -257,6 +257,17 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 
 ---
 
+## P21 — Prolongement (P20 épuisé le 2026-10-25, ajouté par l'éditeur SEO)
+
+- [ ] cultiver-la-verveine-citronnelle | « verveine citronnelle » | bouturage, taille annuelle, gel, séchage des feuilles, différence avec la verveine officinale | /blog/cultiver-la-melisse/, /blog/multiplier-les-aromatiques/, /blog/hiverner-plantes-aromatiques/
+- [ ] cultiver-la-roquette | « cultiver la roquette » | semis échelonnés, montée à graines en chaleur, altises, roquette sauvage vivace contre annuelle | /blog/rotation-cultures-potager/, /blog/semis-en-caissette-et-repiquage/, /blog/auxiliaires-jardin-potager/
+- [ ] cultiver-le-fenouil | « cultiver le fenouil » | fenouil bulbe contre fenouil doux, semis direct, buttage, mouche du fenouil, fenouil vivace | /blog/rotation-cultures-potager/, /blog/cultiver-le-celeri-branche/, /comparatifs/
+- [ ] lutter-contre-le-liseron | « liseron potager » | pourquoi l'arrachage seul échoue, bâche d'occultation, carton, paillis répété, cohabitation raisonnée | /blog/ne-jamais-laisser-un-sol-nu/, /blog/paillage-carton-au-potager/, /blog/paillage-potager/
+- [ ] tuteurer-les-tomates | « tuteurer les tomates » | tuteurs bois/triangle, ficelle, pincements, variétés déterminées sans tuteur | /blog/planter-les-tomates-en-pleine-terre/, /blog/tailler-les-tomates/, /comparatifs/
+- [ ] cultiver-les-fraises-des-bois | « fraises des bois » | semis, couverture du sol, rendement réel, oiseaux et limaces | /blog/planter-fraisiers/, /blog/tailler-les-fraisiers/, /blog/limaces-potager/
+
+---
+
 ## Terminé
 
 (cocher les lignes ci-dessus au fur et à mesure ; ajouter ici le slug publié et la date)
