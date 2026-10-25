@@ -260,7 +260,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 ## P21 — Prolongement (P20 épuisé le 2026-10-25, ajouté par l'éditeur SEO)
 
 - [x] cultiver-la-verveine-citronnelle | « verveine citronnelle » | bouturage, taille annuelle, gel, séchage des feuilles, différence avec la verveine officinale | /blog/cultiver-la-melisse/, /blog/multiplier-les-aromatiques/, /blog/hiverner-plantes-aromatiques/ → publié /blog/cultiver-la-verveine-citronnelle/ le 2026-10-25
-- [ ] cultiver-la-roquette | « cultiver la roquette » | semis échelonnés, montée à graines en chaleur, altises, roquette sauvage vivace contre annuelle | /blog/rotation-cultures-potager/, /blog/semis-en-caissette-et-repiquage/, /blog/auxiliaires-jardin-potager/
+- [x] cultiver-la-roquette | « cultiver la roquette » | semis échelonnés, montée à graines en chaleur, altises, roquette sauvage vivace contre annuelle | /blog/rotation-cultures-potager/, /blog/semis-en-caissette-et-repiquage/, /blog/auxiliaires-jardin-potager/ → publié /blog/cultiver-la-roquette/ le 2026-10-25
 - [ ] cultiver-le-fenouil | « cultiver le fenouil » | fenouil bulbe contre fenouil doux, semis direct, buttage, mouche du fenouil, fenouil vivace | /blog/rotation-cultures-potager/, /blog/cultiver-le-celeri-branche/, /comparatifs/
 - [ ] lutter-contre-le-liseron | « liseron potager » | pourquoi l'arrachage seul échoue, bâche d'occultation, carton, paillis répété, cohabitation raisonnée | /blog/ne-jamais-laisser-un-sol-nu/, /blog/paillage-carton-au-potager/, /blog/paillage-potager/
 - [ ] tuteurer-les-tomates | « tuteurer les tomates » | tuteurs bois/triangle, ficelle, pincements, variétés déterminées sans tuteur | /blog/planter-les-tomates-en-pleine-terre/, /blog/tailler-les-tomates/, /comparatifs/
