@@ -264,7 +264,17 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] cultiver-le-fenouil | « cultiver le fenouil » | fenouil bulbe contre fenouil doux, semis direct, buttage, mouche du fenouil, fenouil vivace | /blog/rotation-cultures-potager/, /blog/cultiver-le-celeri-branche/, /comparatifs/ → publié /blog/cultiver-le-fenouil/ le 2026-10-26
 - [x] lutter-contre-le-liseron | « liseron potager » | pourquoi l'arrachage seul échoue, bâche d'occultation, carton, paillis répété, cohabitation raisonnée | /blog/ne-jamais-laisser-un-sol-nu/, /blog/paillage-carton-au-potager/, /blog/paillage-potager/ → publié /blog/lutter-contre-le-liseron/ le 2026-10-26
 - [x] tuteurer-les-tomates | « tuteurer les tomates » | tuteurs bois/triangle, ficelle, pincements, variétés déterminées sans tuteur | /blog/planter-les-tomates-en-pleine-terre/, /blog/tailler-les-tomates/, /comparatifs/ → publié /blog/tuteurer-les-tomates/ le 2026-10-26
-- [ ] cultiver-les-fraises-des-bois | « fraises des bois » | semis, couverture du sol, rendement réel, oiseaux et limaces | /blog/planter-fraisiers/, /blog/tailler-les-fraisiers/, /blog/limaces-potager/
+- [x] cultiver-les-fraises-des-bois | « fraises des bois » | semis, couverture du sol, rendement réel, oiseaux et limaces | /blog/planter-fraisiers/, /blog/tailler-les-fraisiers/, /blog/limaces-potager/ → publié /blog/cultiver-les-fraises-des-bois/ le 2026-10-26
+
+---
+
+## P22 — Légumes de la belle saison et fruitiers grimpants (P21 épuisé le 2026-10-26, ajouté par l'éditeur SEO)
+
+- [ ] cultiver-les-artichauts | « cultiver les artichauts » | œilletons, sol profond et frais, protection hivernale, récolte étalée sur quatre ans | /blog/legumes-perpetuels-potager/, /blog/cultiver-le-cardon/, /comparatifs/
+- [ ] cultiver-les-radis | « cultiver les radis » | semis échelonnés toutes les deux semaines, arrosage régulier contre le radis creux, altises, variétés d'hiver | /blog/cultiver-la-roquette/, /blog/rotation-cultures-potager/, /blog/auxiliaires-jardin-potager/
+- [ ] cultiver-les-feves | « cultiver les fèves » | semis d'automne contre semis de printemps, pucerons noirs et pincement des sommités, azote restitué | /blog/pucerons-au-potager/, /blog/engrais-verts-d-hiver/, /blog/rotation-cultures-potager/
+- [ ] cultiver-les-melons | « cultiver le melon » | semis au chaud, taille en deux temps, variétés précoces pour le nord, arrosage et goût | /blog/cultiver-en-serres-tunnels/, /blog/cultiver-les-concombres/, /comparatifs/
+- [ ] cultiver-le-kiwi | « cultiver le kiwi » | actinidia mâle et femelle, palissage, taille d'hiver, gelées de printemps | /blog/planter-des-fruitiers-dans-un-petit-jardin/, /blog/taille-arbres-fruitiers/, /comparatifs/
 
 ---
 
