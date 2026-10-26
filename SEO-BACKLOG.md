@@ -263,7 +263,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] cultiver-la-roquette | « cultiver la roquette » | semis échelonnés, montée à graines en chaleur, altises, roquette sauvage vivace contre annuelle | /blog/rotation-cultures-potager/, /blog/semis-en-caissette-et-repiquage/, /blog/auxiliaires-jardin-potager/ → publié /blog/cultiver-la-roquette/ le 2026-10-25
 - [x] cultiver-le-fenouil | « cultiver le fenouil » | fenouil bulbe contre fenouil doux, semis direct, buttage, mouche du fenouil, fenouil vivace | /blog/rotation-cultures-potager/, /blog/cultiver-le-celeri-branche/, /comparatifs/ → publié /blog/cultiver-le-fenouil/ le 2026-10-26
 - [x] lutter-contre-le-liseron | « liseron potager » | pourquoi l'arrachage seul échoue, bâche d'occultation, carton, paillis répété, cohabitation raisonnée | /blog/ne-jamais-laisser-un-sol-nu/, /blog/paillage-carton-au-potager/, /blog/paillage-potager/ → publié /blog/lutter-contre-le-liseron/ le 2026-10-26
-- [ ] tuteurer-les-tomates | « tuteurer les tomates » | tuteurs bois/triangle, ficelle, pincements, variétés déterminées sans tuteur | /blog/planter-les-tomates-en-pleine-terre/, /blog/tailler-les-tomates/, /comparatifs/
+- [x] tuteurer-les-tomates | « tuteurer les tomates » | tuteurs bois/triangle, ficelle, pincements, variétés déterminées sans tuteur | /blog/planter-les-tomates-en-pleine-terre/, /blog/tailler-les-tomates/, /comparatifs/ → publié /blog/tuteurer-les-tomates/ le 2026-10-26
 - [ ] cultiver-les-fraises-des-bois | « fraises des bois » | semis, couverture du sol, rendement réel, oiseaux et limaces | /blog/planter-fraisiers/, /blog/tailler-les-fraisiers/, /blog/limaces-potager/
 
 ---
