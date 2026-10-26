@@ -270,7 +270,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 
 ## P22 — Légumes de la belle saison et fruitiers grimpants (P21 épuisé le 2026-10-26, ajouté par l'éditeur SEO)
 
-- [ ] cultiver-les-artichauts | « cultiver les artichauts » | œilletons, sol profond et frais, protection hivernale, récolte étalée sur quatre ans | /blog/legumes-perpetuels-potager/, /blog/cultiver-le-cardon/, /comparatifs/
+- [x] cultiver-les-artichauts | « cultiver les artichauts » | œilletons, sol profond et frais, protection hivernale, récolte étalée sur quatre ans | /blog/legumes-perpetuels-potager/, /blog/cultiver-le-cardon/, /comparatifs/ → publié /blog/cultiver-les-artichauts/ le 2026-10-26
 - [ ] cultiver-les-radis | « cultiver les radis » | semis échelonnés toutes les deux semaines, arrosage régulier contre le radis creux, altises, variétés d'hiver | /blog/cultiver-la-roquette/, /blog/rotation-cultures-potager/, /blog/auxiliaires-jardin-potager/
 - [ ] cultiver-les-feves | « cultiver les fèves » | semis d'automne contre semis de printemps, pucerons noirs et pincement des sommités, azote restitué | /blog/pucerons-au-potager/, /blog/engrais-verts-d-hiver/, /blog/rotation-cultures-potager/
 - [ ] cultiver-les-melons | « cultiver le melon » | semis au chaud, taille en deux temps, variétés précoces pour le nord, arrosage et goût | /blog/cultiver-en-serres-tunnels/, /blog/cultiver-les-concombres/, /comparatifs/
