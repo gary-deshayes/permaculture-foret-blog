@@ -276,6 +276,13 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] cultiver-les-melons | « cultiver le melon » | semis au chaud, taille en deux temps, variétés précoces pour le nord, arrosage et goût | /blog/cultiver-en-serres-tunnels/, /blog/cultiver-les-concombres/, /comparatifs/ → publié /blog/cultiver-les-melons/ le 2026-10-27
 - [x] cultiver-le-kiwi | « cultiver le kiwi » | actinidia mâle et femelle, palissage, taille d'hiver, gelées de printemps | /blog/planter-des-fruitiers-dans-un-petit-jardin/, /blog/taille-arbres-fruitiers/, /comparatifs/ → publié /blog/cultiver-le-kiwi/ le 2026-10-27
 
+## P23 — Fruitiers grimpants et arbustes à baies (P22 épuisé le 2026-10-27, ajouté par l'éditeur SEO)
+
+- [ ] cultiver-la-vigne-de-table | « vigne de table » | treille et palissage, variétés précoces sans pépins pour le nord, taille, mildiou et guêpes | /blog/taille-de-la-vigne/, /blog/greffer-un-arbre-fruitier/, /comparatifs/
+- [ ] cultiver-le-grenadier | « cultiver le grenadier » | rusticité réelle, pot et plein air, taille, gelées, qualité des grenades au nord | /blog/bouturer-les-figuiers-et-grenadiers/, /blog/le-jardin-foret-comestible-en-climat-sec/
+- [ ] cultiver-le-cassis | « cultiver le cassissier » | plantation, taille de fructification, variétés à gros fruits, gelée et maladies | /blog/tailler-le-groseillier/, /blog/bouturer-les-baies-en-hiver/, /comparatifs/
+- [ ] proteger-les-plantes-en-pot-du-gel | « protéger les plantes en pot du gel » | racines prises par le gel, paillage, surélévation, voile, hivernage collectif | /blog/proteger-le-potager-du-gel/, /blog/fruitiers-en-pot-sur-une-terrasse/, /comparatifs/
+
 ---
 
 ## Terminé
