@@ -278,7 +278,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 
 ## P23 — Fruitiers grimpants et arbustes à baies (P22 épuisé le 2026-10-27, ajouté par l'éditeur SEO)
 
-- [ ] cultiver-la-vigne-de-table | « vigne de table » | treille et palissage, variétés précoces sans pépins pour le nord, taille, mildiou et guêpes | /blog/taille-de-la-vigne/, /blog/greffer-un-arbre-fruitier/, /comparatifs/
+- [x] cultiver-la-vigne-de-table | « vigne de table » | treille et palissage, variétés précoces sans pépins pour le nord, taille, mildiou et guêpes | /blog/taille-de-la-vigne/, /blog/greffer-un-arbre-fruitier/, /comparatifs/ → publié /blog/cultiver-la-vigne-de-table/ le 2026-10-27
 - [ ] cultiver-le-grenadier | « cultiver le grenadier » | rusticité réelle, pot et plein air, taille, gelées, qualité des grenades au nord | /blog/bouturer-les-figuiers-et-grenadiers/, /blog/le-jardin-foret-comestible-en-climat-sec/
 - [ ] cultiver-le-cassis | « cultiver le cassissier » | plantation, taille de fructification, variétés à gros fruits, gelée et maladies | /blog/tailler-le-groseillier/, /blog/bouturer-les-baies-en-hiver/, /comparatifs/
 - [ ] proteger-les-plantes-en-pot-du-gel | « protéger les plantes en pot du gel » | racines prises par le gel, paillage, surélévation, voile, hivernage collectif | /blog/proteger-le-potager-du-gel/, /blog/fruitiers-en-pot-sur-une-terrasse/, /comparatifs/
