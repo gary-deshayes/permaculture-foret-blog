@@ -285,6 +285,17 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 
 ---
 
+## P24 — Entretien d'hiver et fruitiers (P23 épuisé le 2026-10-28, ajouté par l'éditeur SEO)
+
+- [ ] hiverner-les-geraniums-et-pelargoniums | « hiverner les géraniums » | quand les rentrer, taille avant hivernage, boutures de secours, lumière et arrosage en hiver | /blog/proteger-les-plantes-en-pot-du-gel/, /blog/multiplier-les-aromatiques/, /comparatifs/
+- [ ] creer-une-haie-seche | « haie sèche » | branchettes et rondins empilés, habitat auxiliaires, brise-vent, matériaux gratuits | /blog/haie-diversifiee-plutot-que-thuya/, /blog/abriter-les-auxiliaires-en-hiver/, /blog/brf-bois-rameal-fragmente/
+- [ ] taille-du-figuier | « taille du figuier » | figues-fleurs et figues d'automne, bois de l'année, période, gel et reprise | /blog/planter-figuier/, /blog/bouturer-les-figuiers-et-grenadiers/, /blog/taille-arbres-fruitiers/
+- [ ] planter-un-prunier | « planter un prunier » | porte-greffes, pollinisation croisée, variétés self-fertiles, sol et trou de plantation | /blog/planter-un-verger-en-racines-nues/, /blog/taille-arbres-fruitiers/, /blog/planter-arbre-fruitier/
+- [ ] entretenir-la-pelouse-sans-produits | « entretien pelouse naturelle » | tonte haute, mulching, mousse et trèfle, prairie fleurie plutôt que gazon | /blog/pailler-avec-la-tonte-de-pelouse/, /blog/semis-prairie-fleurie/, /comparatifs/
+- [ ] conserver-les-legumes-en-cave-et-en-jarre | « conserver les légumes l'hiver » | cave, jarre enterrée, caisse de sable, humidité et température par légume | /blog/conserver-les-legumes-racines-en-silo/, /blog/recolter-et-conserver-les-carottes/, /blog/conserver-les-choux-pour-l-hiver/
+
+---
+
 ## Terminé
 
 (cocher les lignes ci-dessus au fur et à mesure ; ajouter ici le slug publié et la date)
