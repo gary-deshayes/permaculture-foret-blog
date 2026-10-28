@@ -287,7 +287,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 
 ## P24 — Entretien d'hiver et fruitiers (P23 épuisé le 2026-10-28, ajouté par l'éditeur SEO)
 
-- [ ] hiverner-les-geraniums-et-pelargoniums | « hiverner les géraniums » | quand les rentrer, taille avant hivernage, boutures de secours, lumière et arrosage en hiver | /blog/proteger-les-plantes-en-pot-du-gel/, /blog/multiplier-les-aromatiques/, /comparatifs/
+- [x] hiverner-les-geraniums-et-pelargoniums | « hiverner les géraniums » | quand les rentrer, taille avant hivernage, boutures de secours, lumière et arrosage en hiver | /blog/proteger-les-plantes-en-pot-du-gel/, /blog/multiplier-les-aromatiques/, /comparatifs/ → publié /blog/hiverner-les-geraniums-et-pelargoniums/ le 2026-10-28
 - [ ] creer-une-haie-seche | « haie sèche » | branchettes et rondins empilés, habitat auxiliaires, brise-vent, matériaux gratuits | /blog/haie-diversifiee-plutot-que-thuya/, /blog/abriter-les-auxiliaires-en-hiver/, /blog/brf-bois-rameal-fragmente/
 - [ ] taille-du-figuier | « taille du figuier » | figues-fleurs et figues d'automne, bois de l'année, période, gel et reprise | /blog/planter-figuier/, /blog/bouturer-les-figuiers-et-grenadiers/, /blog/taille-arbres-fruitiers/
 - [ ] planter-un-prunier | « planter un prunier » | porte-greffes, pollinisation croisée, variétés self-fertiles, sol et trou de plantation | /blog/planter-un-verger-en-racines-nues/, /blog/taille-arbres-fruitiers/, /blog/planter-arbre-fruitier/
