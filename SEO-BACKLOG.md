@@ -292,7 +292,16 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] taille-du-figuier | « taille du figuier » | figues-fleurs et figues d'automne, bois de l'année, période, gel et reprise | /blog/planter-figuier/, /blog/bouturer-les-figuiers-et-grenadiers/, /blog/taille-arbres-fruitiers/ → publié /blog/taille-du-figuier/ le 2026-10-29
 - [x] planter-un-prunier | « planter un prunier » | porte-greffes, pollinisation croisée, variétés self-fertiles, sol et trou de plantation | /blog/planter-un-verger-en-racines-nues/, /blog/taille-arbres-fruitiers/, /blog/planter-arbre-fruitier/ → publié /blog/planter-un-prunier/ le 2026-10-29
 - [x] entretenir-la-pelouse-sans-produits | « entretien pelouse naturelle » | tonte haute, mulching, mousse et trèfle, prairie fleurie plutôt que gazon | /blog/pailler-avec-la-tonte-de-pelouse/, /blog/semis-prairie-fleurie/, /comparatifs/ → publié /blog/entretenir-la-pelouse-sans-produits/ le 2026-10-29
-- [ ] conserver-les-legumes-en-cave-et-en-jarre | « conserver les légumes l'hiver » | cave, jarre enterrée, caisse de sable, humidité et température par légume | /blog/conserver-les-legumes-racines-en-silo/, /blog/recolter-et-conserver-les-carottes/, /blog/conserver-les-choux-pour-l-hiver/
+- [x] conserver-les-legumes-en-cave-et-en-jarre | « conserver les légumes l'hiver » | cave, jarre enterrée, caisse de sable, humidité et température par légume | /blog/conserver-les-legumes-racines-en-silo/, /blog/recolter-et-conserver-les-carottes/, /blog/conserver-les-choux-pour-l-hiver/ → publié /blog/conserver-les-legumes-en-cave-et-en-jarre/ le 2026-10-29
+
+---
+
+## P25 — Conservation sèche, outillage et verger (P24 épuisé le 2026-10-29, ajouté par l'éditeur SEO)
+
+- [ ] conserver-l-ail-et-les-oignons | « conserver l'ail » | séchage, tressage, clayette à 60-70 % d'humidité, durées réelles et causes de pourriture | /blog/conserver-les-legumes-en-cave-et-en-jarre/, /blog/conserver-les-legumes-racines-en-silo/, /blog/faire-des-conserves-au-potager/
+- [ ] tailler-les-rosiers | « tailler les rosiers » | taille d'hiver, rosiers remontants contre anciens, gestes et période selon le climat | /blog/taille-arbres-fruitiers/, /blog/auxiliaires-jardin-potager/, /comparatifs/
+- [ ] entretenir-et-affuter-les-outils-de-jardin | « affûter les outils de jardin » | nettoyage, affûtage biseau, huilage, rangement d'hiver, ce qui se répare | /blog/grelinette-potager/, /blog/meilleur-secateur/, /comparatifs/
+- [ ] planter-un-noyer | « planter un noyer » | distance, racine pivot, juglone et cultures alentour, récolte et séchage des noix | /blog/cultiver-le-noisetier/, /blog/planter-un-verger-en-racines-nues/, /blog/taille-arbres-fruitiers/
 
 ---
 
