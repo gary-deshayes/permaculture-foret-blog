@@ -301,7 +301,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] conserver-l-ail-et-les-oignons | « conserver l'ail » | séchage, tressage, clayette à 60-70 % d'humidité, durées réelles et causes de pourriture | /blog/conserver-les-legumes-en-cave-et-en-jarre/, /blog/conserver-les-legumes-racines-en-silo/, /blog/faire-des-conserves-au-potager/ → publié /blog/conserver-l-ail-et-les-oignons/ le 2026-10-29
 - [x] tailler-les-rosiers | « tailler les rosiers » | taille d'hiver, rosiers remontants contre anciens, gestes et période selon le climat | /blog/taille-arbres-fruitiers/, /blog/auxiliaires-jardin-potager/, /comparatifs/ → publié /blog/tailler-les-rosiers/ le 2026-10-30
 - [x] entretenir-et-affuter-les-outils-de-jardin | « affûter les outils de jardin » | nettoyage, affûtage biseau, huilage, rangement d'hiver, ce qui se répare | /blog/grelinette-potager/, /blog/meilleur-secateur/, /comparatifs/ → publié /blog/entretenir-et-affuter-les-outils-de-jardin/ le 2026-10-30
-- [ ] planter-un-noyer | « planter un noyer » | distance, racine pivot, juglone et cultures alentour, récolte et séchage des noix | /blog/cultiver-le-noisetier/, /blog/planter-un-verger-en-racines-nues/, /blog/taille-arbres-fruitiers/
+- [x] planter-un-noyer | « planter un noyer » | distance, racine pivot, juglone et cultures alentour, récolte et séchage des noix | /blog/cultiver-le-noisetier/, /blog/planter-un-verger-en-racines-nues/, /blog/taille-arbres-fruitiers/ → publié /blog/planter-un-noyer/ le 2026-10-30
 
 ---
 
