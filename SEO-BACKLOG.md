@@ -307,7 +307,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 
 ## P26 — Verger, petits fruits et techniques de fond (P25 épuisé le 2026-10-30, ajouté par l'éditeur SEO)
 
-- [ ] cultiver-le-poirier | « cultiver le poirier » | porte-greffes, pollinisation croisée, mise à fruit lente, tavelure et psylle | /blog/planter-arbre-fruitier/, /blog/taille-arbres-fruitiers/, /blog/planter-un-verger-en-racines-nues/, /comparatifs/
+- [x] cultiver-le-poirier | « cultiver le poirier » | porte-greffes, pollinisation croisée, mise à fruit lente, tavelure et psylle | /blog/planter-arbre-fruitier/, /blog/taille-arbres-fruitiers/, /blog/planter-un-verger-en-racines-nues/, /comparatifs/ → publié /blog/cultiver-le-poirier/ le 2026-10-30
 - [ ] taille-du-poirier | « taille du poirier » | formation en gobelet, coursonnes, bois de deux ans, période | /blog/taille-du-pommier/, /blog/taille-arbres-fruitiers/, /comparatifs/
 - [ ] planter-un-kaki | « planter un kaki » | rusticité réelle, variétés précoces, sol drainé, récolte après les gelées | /blog/planter-figuier/, /blog/fruitiers-en-pot-sur-une-terrasse/, /blog/permaculture-et-climat-de-la-moitie-nord/
 - [ ] cultiver-les-topinambours | « cultiver le topinambour » | tubercules, envahissement maîtrisé, hauteur en brise-vent, récolte échelonnée d'hiver | /blog/les-legumes-oublies-du-potager/, /blog/creer-une-haie-seche/, /blog/conserver-les-legumes-racines-en-silo/
