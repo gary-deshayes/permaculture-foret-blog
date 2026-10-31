@@ -314,6 +314,14 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] faire-son-terreau-de-semis | « faire son terreau » | compost tamisé, terre de jardin, sable, ratios testés, stérilisation douce | /blog/compost-maison/, /blog/semis-en-caissette-et-repiquage/, /blog/semer-mache/ → publié /blog/faire-son-terreau-de-semis/ le 2026-10-31
 - [x] cultiver-le-murier-platane | « mûrier platane » | ombre d'été, taille en tétard, fruits tardifs, oiseaux | /blog/planter-figuier/, /blog/haie-comestible/, /blog/cultiver-le-kiwi/ → publié /blog/cultiver-le-murier-platane/ le 2026-10-31
 
+## P27 — Verger et techniques sans travail du sol (P26 épuisé le 2026-10-31, ajouté par l'éditeur SEO)
+
+- [x] pommes-de-terre-sous-paillage | « pomme de terre sous paillage » | planche préparée à l'automne, foin contre paille, rendement mesuré, limaces et taupins, arrachage à la main | /blog/paillage-potager/, /blog/ne-jamais-laisser-un-sol-nu/, /blog/planter-des-pommes-de-terre-en-hiver/ → publié /blog/pommes-de-terre-sous-paillage/ le 2026-10-31
+- [ ] palisser-un-fruitier-en-espalier | « palisser un fruitier » | formes en espalier, mur et piquets, taille de formation, variétés adaptées aux petits jardins | /blog/taille-arbres-fruitiers/, /blog/planter-des-fruitiers-dans-un-petit-jardin/, /comparatifs/
+- [ ] planter-un-cerisier | « planter un cerisier » | porte-greffes, pollinisation, sol et distances, protection des oiseaux dès la première année | /blog/taille-du-cerisier/, /blog/planter-arbre-fruitier/, /blog/cerisiers-et-oiseaux/
+- [ ] cultiver-les-oignons | « cultiver les oignons » | semis contre bulbilles, sol, arrosage et montaison, récolte et séchage | /blog/conserver-l-ail-et-les-oignons/, /blog/rotation-cultures-potager/, /blog/planter-l-echalote/
+- [ ] compost-de-surface-au-potager | « compost de surface » | épandage sans enfouissement, dose annuelle, effet sur les vers, différence avec le paillage | /blog/compost-maison/, /blog/le-sol-vivant-explique/, /blog/ne-jamais-laisser-un-sol-nu/
+
 ---
 
 ## Terminé
