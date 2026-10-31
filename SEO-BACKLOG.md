@@ -312,7 +312,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] planter-un-kaki | « planter un kaki » | rusticité réelle, variétés précoces, sol drainé, récolte après les gelées | /blog/planter-figuier/, /blog/fruitiers-en-pot-sur-une-terrasse/, /blog/permaculture-et-climat-de-la-moitie-nord/ → publié /blog/planter-un-kaki/ le 2026-10-31
 - [x] cultiver-les-topinambours | « cultiver le topinambour » | tubercules, envahissement maîtrisé, hauteur en brise-vent, récolte échelonnée d'hiver | /blog/les-legumes-oublies-du-potager/, /blog/creer-une-haie-seche/, /blog/conserver-les-legumes-racines-en-silo/ → publié /blog/cultiver-les-topinambours/ le 2026-10-31
 - [x] faire-son-terreau-de-semis | « faire son terreau » | compost tamisé, terre de jardin, sable, ratios testés, stérilisation douce | /blog/compost-maison/, /blog/semis-en-caissette-et-repiquage/, /blog/semer-mache/ → publié /blog/faire-son-terreau-de-semis/ le 2026-10-31
-- [ ] cultiver-le-murier-platane | « mûrier platane » | ombre d'été, taille en tétard, fruits tardifs, oiseaux | /blog/planter-figuier/, /blog/haie-comestible/, /blog/cultiver-le-kiwi/
+- [x] cultiver-le-murier-platane | « mûrier platane » | ombre d'été, taille en tétard, fruits tardifs, oiseaux | /blog/planter-figuier/, /blog/haie-comestible/, /blog/cultiver-le-kiwi/ → publié /blog/cultiver-le-murier-platane/ le 2026-10-31
 
 ---
 
