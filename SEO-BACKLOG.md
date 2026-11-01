@@ -318,7 +318,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 
 - [x] pommes-de-terre-sous-paillage | « pomme de terre sous paillage » | planche préparée à l'automne, foin contre paille, rendement mesuré, limaces et taupins, arrachage à la main | /blog/paillage-potager/, /blog/ne-jamais-laisser-un-sol-nu/, /blog/planter-des-pommes-de-terre-en-hiver/ → publié /blog/pommes-de-terre-sous-paillage/ le 2026-10-31
 - [x] palisser-un-fruitier-en-espalier | « palisser un fruitier » | formes en espalier, mur et piquets, taille de formation, variétés adaptées aux petits jardins | /blog/taille-arbres-fruitiers/, /blog/planter-des-fruitiers-dans-un-petit-jardin/, /comparatifs/ → publié /blog/palisser-un-fruitier-en-espalier/ le 2026-11-01
-- [ ] planter-un-cerisier | « planter un cerisier » | porte-greffes, pollinisation, sol et distances, protection des oiseaux dès la première année | /blog/taille-du-cerisier/, /blog/planter-arbre-fruitier/, /blog/cerisiers-et-oiseaux/
+- [x] planter-un-cerisier | « planter un cerisier » | porte-greffes, pollinisation, sol et distances, protection des oiseaux dès la première année | /blog/taille-du-cerisier/, /blog/planter-arbre-fruitier/, /blog/cerisiers-et-oiseaux/ → publié /blog/planter-un-cerisier/ le 2026-11-01
 - [ ] cultiver-les-oignons | « cultiver les oignons » | semis contre bulbilles, sol, arrosage et montaison, récolte et séchage | /blog/conserver-l-ail-et-les-oignons/, /blog/rotation-cultures-potager/, /blog/planter-l-echalote/
 - [ ] compost-de-surface-au-potager | « compost de surface » | épandage sans enfouissement, dose annuelle, effet sur les vers, différence avec le paillage | /blog/compost-maison/, /blog/le-sol-vivant-explique/, /blog/ne-jamais-laisser-un-sol-nu/
 
