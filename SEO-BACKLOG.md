@@ -322,6 +322,14 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] cultiver-les-oignons | « cultiver les oignons » | semis contre bulbilles, sol, arrosage et montaison, récolte et séchage | /blog/conserver-l-ail-et-les-oignons/, /blog/rotation-cultures-potager/, /blog/planter-l-echalote/ → publié /blog/cultiver-les-oignons/ le 2026-11-01
 - [x] compost-de-surface-au-potager | « compost de surface » | épandage sans enfouissement, dose annuelle, effet sur les vers, différence avec le paillage | /blog/compost-maison/, /blog/le-sol-vivant-explique/, /blog/ne-jamais-laisser-un-sol-nu/ → publié /blog/compost-de-surface-au-potager/ le 2026-11-01
 
+## P28 — Amendements et protection d'hiver (P27 épuisé le 2026-11-01, ajouté par l'éditeur SEO)
+
+- [x] fumier-au-potager | « fumier au potager » | quel fumier, frais ou composté, doses au m², période d'épandage, cultures à éviter, risque aminopyralid | /blog/compost-de-surface-au-potager/, /blog/amender-sol-argileux/, /blog/ne-jamais-laisser-un-sol-nu/, /blog/compost-maison/, /comparatifs/ → publié /blog/fumier-au-potager/ le 2026-11-01
+- [ ] blanchir-les-troncs-des-fruitiers | « blanchir les troncs des fruitiers » | badigeon chaux/argile, rôle contre le gel et le soleil d'hiver, recette, période | /blog/taille-du-pommier/, /blog/traiter-les-arbres-en-hiver-sans-phytos/, /blog/planter-arbre-fruitier/
+- [ ] proteger-les-fruitiers-des-rongeurs | « protéger les arbres des rongeurs » | campagnols et lapins, manchon, filet, buttage, dégâts d'écorce en hiver | /blog/campagnols-et-mulots-au-potager/, /blog/planter-arbre-fruitier/, /comparatifs/
+- [ ] tester-le-ph-de-son-sol | « tester le pH du sol » | test vinaigre/bicarbonate, kit colorimétrique, ce qu'on en fait réellement au potager | /blog/amender-sol-argileux/, /blog/les-cendres-de-bois-au-potager/, /blog/ne-jamais-laisser-un-sol-nu/
+- [ ] pailler-les-fruitiers | « pailler les fruitiers » | mulch au pied des arbres, BRF contre foin, distance au tronc, effet sur la mise à fruit | /blog/brf-bois-rameal-fragmente/, /blog/paillage-potager/, /blog/le-verger-en-permaculture/
+
 ---
 
 ## Terminé
