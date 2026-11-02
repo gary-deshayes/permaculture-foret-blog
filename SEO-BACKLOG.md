@@ -334,7 +334,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 
 ## P29 — Prolongement (P28 épuisé le 2026-11-02, ajouté par l'éditeur SEO)
 
-- [ ] purin-de-prele | « purin de prêle » | prévention mildiou et oïdium, recette et dilution, quand ça marche vraiment et quand ça ne sert à rien | /blog/purin-ortie/, /blog/mildiou-de-la-tomate/, /blog/oidium-courgette-et-cucurbitacees/
+- [x] purin-de-prele | « purin de prêle » | prévention mildiou et oïdium, recette et dilution, quand ça marche vraiment et quand ça ne sert à rien | /blog/purin-ortie/, /blog/mildiou-de-la-tomate/, /blog/oidium-courgette-et-cucurbitacees/ → publié /blog/purin-de-prele/ le 2026-11-02
 - [ ] nourrir-les-oiseaux-en-hiver | « nourrir les oiseaux en hiver » | graines par espèce, mangeoire propre, hygiène et maladies, prédateurs, erreurs de débutant | /blog/auxiliaires-jardin-potager/, /blog/abriter-les-auxiliaires-en-hiver/, /comparatifs/
 - [ ] meilleur-taille-haie | « meilleur taille-haie » | électrique filaire contre batterie, lame et écartement, poids, budget, verdict d'usage sur une haie champêtre | /comparatifs/, /blog/haie-diversifiee-plutot-que-thuya/, /blog/entretenir-et-affuter-les-outils-de-jardin/
 - [ ] hiverner-les-bulbes-de-printemps | « hiverner les bulbes » | tulipes et narcisses en pot, erreurs de conservation, plantation tardive de novembre, protection contre les rongeurs | /blog/planter-bulbes-automne/, /blog/proteger-les-plantes-en-pot-du-gel/, /blog/proteger-les-fruitiers-des-rongeurs/
