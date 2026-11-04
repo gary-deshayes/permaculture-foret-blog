@@ -353,7 +353,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 
 ## P31 — Hiver et début de printemps (P30 épuisé le 2026-11-04, ajouté par l'éditeur SEO)
 
-- [ ] tailler-les-arbustes-a-floraison-printaniere | « taille forsythia » | forsythia, lilas, deutzia, weigelia : on taille après la floraison, ce qui se rabat en hiver, cas du buddleia et de l'hortensia | /blog/tailler-les-hortensias/, /blog/taille-arbres-fruitiers/, /blog/tailler-les-vivaces-en-hiver/
+- [x] tailler-les-arbustes-a-floraison-printaniere | « taille forsythia » | forsythia, lilas, deutzia, weigelia : on taille après la floraison, ce qui se rabat en hiver, cas du buddleia et de l'hortensia | /blog/tailler-les-hortensias/, /blog/taille-arbres-fruitiers/, /blog/tailler-les-vivaces-en-hiver/ → publié /blog/tailler-les-arbustes-a-floraison-printaniere/ le 2026-11-04
 - [ ] diviser-les-vivaces | « diviser les vivaces » | quand le pied s'épuise, division à la fourche en septembre ou au printemps, reprise, plants à donner | /blog/tailler-les-vivaces-en-hiver/, /blog/cultiver-les-hellebores/, /blog/legumes-perpetuels-potager/
 - [ ] gerer-l-eau-au-jardin-noue-et-bassin-sec | « jardin de pluie » | noue, bassin sec, point bas, plantes qui absorbent, ruissellement et sol argileux | /blog/recuperer-l-eau-de-pluie-au-potager/, /blog/arroser-moins-et-mieux/, /blog/amender-sol-argileux/, /comparatifs/
 - [ ] les-engrais-organiques-du-commerce | « engrais organique potager » | corne broyée, sang séché, guano, farine d'os : azote disponible quand, doses, ce qui ne sert à rien | /blog/fumier-au-potager/, /blog/compost-de-surface-au-potager/, /comparatifs/
