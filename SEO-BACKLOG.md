@@ -358,7 +358,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] gerer-l-eau-au-jardin-noue-et-bassin-sec | « jardin de pluie » | noue, bassin sec, point bas, plantes qui absorbent, ruissellement et sol argileux | /blog/recuperer-l-eau-de-pluie-au-potager/, /blog/arroser-moins-et-mieux/, /blog/amender-sol-argileux/, /comparatifs/ → publié /blog/gerer-l-eau-au-jardin-noue-et-bassin-sec/ le 2026-11-05
 - [x] les-engrais-organiques-du-commerce | « engrais organique potager » | corne broyée, sang séché, guano, farine d'os : azote disponible quand, doses, ce qui ne sert à rien | /blog/fumier-au-potager/, /blog/compost-de-surface-au-potager/, /comparatifs/ → publié /blog/les-engrais-organiques-du-commerce/ le 2026-11-05
 - [x] cultiver-les-pommes-de-terre | « cultiver les pommes de terre » | préparation, variétés précoces/tardives, buttage, doryphores, mildiou, rendement au m² | /blog/planter-des-pommes-de-terre-en-hiver/, /blog/pommes-de-terre-sous-paillage/, /blog/rotation-cultures-potager/, /comparatifs/ → publié /blog/cultiver-les-pommes-de-terre/ le 2026-11-05
-- [ ] couvre-sol-persistants | « couvre-sol persistant » | couvrir un talus ou une zone difficile sans tondre : géraniums vivaces, bugle, lierre, millepertuis, distances de plantation | /blog/ne-jamais-laisser-un-sol-nu/, /blog/paillage-potager/, /blog/haie-diversifiee-plutot-que-thuya/
+- [x] couvre-sol-persistants | « couvre-sol persistant » | couvrir un talus ou une zone difficile sans tondre : géraniums vivaces, bugle, lierre, millepertuis, distances de plantation | /blog/ne-jamais-laisser-un-sol-nu/, /blog/paillage-potager/, /blog/haie-diversifiee-plutot-que-thuya/ → publié /blog/couvre-sol-persistants/ le 2026-11-05
 
 ---
 
