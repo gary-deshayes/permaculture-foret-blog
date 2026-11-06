@@ -372,6 +372,16 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 
 ---
 
+## P33 — Hiver fleuri et techniques de sol (P32 épuisé le 2026-11-06, ajouté par l'éditeur SEO)
+
+- [ ] fleurir-le-jardin-en-hiver | « fleurs d'hiver » | hamamélis, sarcococca, chimonanthe, hellébores : ce qui fleurit vraiment entre décembre et février, exposition et parfum | /blog/cultiver-les-hellebores/, /blog/plantes-melliferes-au-potager/, /blog/tailler-les-arbustes-a-floraison-printaniere/, /comparatifs/
+- [ ] pailler-avec-des-copeaux-de-bois | « paillage copeaux » | copeaux frais contre BRF, effet dépressif sur l'azote, usage en allée ou sous fruitiers, doses | /blog/brf-bois-rameal-fragmente/, /blog/paillage-potager/, /blog/nourrir-le-sol-avec-le-broyat-de-branches/
+- [ ] cultiver-les-epinards | « cultiver les épinards » | semis d'automne et de fin d'hiver, variétés d'hiver, montée à graines, récolte feuille à feuille | /blog/legumes-hiver-semis-aout/, /blog/cultiver-les-blettes/, /blog/rotation-cultures-potager/, /comparatifs/
+- [ ] planter-un-arbre-en-conteneur | « planter un arbre en conteneur » | motte contre racines nues, démêlage des chignons, trou, tuteurage, arrosage les deux premières années | /blog/planter-un-verger-en-racines-nues/, /blog/planter-arbre-fruitier/, /blog/pailler-les-fruitiers/
+- [ ] les-arbres-d-ombre-au-jardin | « arbre d'ombre » | tilleul, érable, mûrier, noyer : ombre d'été, distance de plantation, racines, ce qu'on peut cultiver dessous | /blog/cultiver-le-murier-platane/, /blog/planter-un-noyer/, /blog/le-verger-en-permaculture/
+
+---
+
 ## Terminé
 
 (cocher les lignes ci-dessus au fur et à mesure ; ajouter ici le slug publié et la date)
