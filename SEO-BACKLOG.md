@@ -368,7 +368,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] bouturer-les-hortensias | « bouturer l'hortensia » | boutures de bois aoûté en novembre, substrat, obscurité, humidité, échecs classiques | /blog/tailler-les-hortensias/, /blog/multiplier-les-aromatiques/, /blog/diviser-les-vivaces/ → publié /blog/bouturer-les-hortensias/ le 2026-11-06
 - [x] planter-un-pecher | « planter un pêcher » | exposition plein sud, sol drainé, porte-greffes, cloque et variétés résistantes, taille de formation | /blog/planter-arbre-fruitier/, /blog/taille-arbres-fruitiers/, /blog/planter-un-verger-en-racines-nues/ → publié /blog/planter-un-pecher/ le 2026-11-06
 - [x] pailler-avec-du-foin | « paillage foin » | épaisseur, foin contre paille, azote et limaces, différence avec le BRF, dosage au potager | /blog/paillage-potager/, /blog/ne-jamais-laisser-un-sol-nu/, /blog/brf-bois-rameal-fragmente/ → publié /blog/pailler-avec-du-foin/ le 2026-11-06
-- [ ] accueillir-les-herissons-au-jardin | « hérisson jardin » | ce qui marche vraiment (passages, tas de bois, eau), ce qu'il faut éviter (lait, tondeuse), hérissons et limaces | /blog/auxiliaires-jardin-potager/, /blog/creer-une-haie-seche/, /blog/limaces-potager/
+- [x] accueillir-les-herissons-au-jardin | « hérisson jardin » | ce qui marche vraiment (passages, tas de bois, eau), ce qu'il faut éviter (lait, tondeuse), hérissons et limaces | /blog/auxiliaires-jardin-potager/, /blog/creer-une-haie-seche/, /blog/limaces-potager/ → publié /blog/accueillir-les-herissons-au-jardin/ le 2026-11-06
 
 ---
 
