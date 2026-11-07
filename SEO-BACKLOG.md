@@ -378,7 +378,18 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 - [x] pailler-avec-des-copeaux-de-bois | « paillage copeaux » | copeaux frais contre BRF, effet dépressif sur l'azote, usage en allée ou sous fruitiers, doses | /blog/brf-bois-rameal-fragmente/, /blog/paillage-potager/, /blog/nourrir-le-sol-avec-le-broyat-de-branches/ → publié /blog/pailler-avec-des-copeaux-de-bois/ le 2026-11-07
 - [x] cultiver-les-epinards | « cultiver les épinards » | semis d'automne et de fin d'hiver, variétés d'hiver, montée à graines, récolte feuille à feuille | /blog/legumes-hiver-semis-aout/, /blog/cultiver-les-blettes/, /blog/rotation-cultures-potager/, /comparatifs/ → doublon de /blog/semer-epinards-hiver/ (2026-09-09) : sujet déjà traité, non rédigé (2026-11-07)
 - [x] planter-un-arbre-en-conteneur | « planter un arbre en conteneur » | motte contre racines nues, démêlage des chignons, trou, tuteurage, arrosage les deux premières années | /blog/planter-un-verger-en-racines-nues/, /blog/planter-arbre-fruitier/, /blog/pailler-les-fruitiers/ + /blog/fruitiers-en-pot-sur-une-terrasse/, /comparatifs/ → publié /blog/planter-un-arbre-en-conteneur/ le 2026-11-07
-- [ ] les-arbres-d-ombre-au-jardin | « arbre d'ombre » | tilleul, érable, mûrier, noyer : ombre d'été, distance de plantation, racines, ce qu'on peut cultiver dessous | /blog/cultiver-le-murier-platane/, /blog/planter-un-noyer/, /blog/le-verger-en-permaculture/
+- [x] les-arbres-d-ombre-au-jardin | « arbre d'ombre » | tilleul, érable, mûrier, noyer : ombre d'été, distance de plantation, racines, ce qu'on peut cultiver dessous | /blog/cultiver-le-murier-platane/, /blog/planter-un-noyer/, /blog/le-verger-en-permaculture/ → publié /blog/les-arbres-d-ombre-au-jardin/ le 2026-11-07
+
+---
+
+## P34 — Arbres, vent et sol (P33 épuisé le 2026-11-07, ajouté par l'éditeur SEO)
+
+- [ ] elaguer-un-arbre | « élaguer un arbre » | quand intervenir, ce qu'on coupe vraiment, hauteur de couronne, sécurité, périodes à éviter (nidification, montée de sève) | /blog/les-arbres-d-ombre-au-jardin/, /blog/taille-arbres-fruitiers/, /blog/entretenir-et-affuter-les-outils-de-jardin/
+- [ ] proteger-le-jardin-du-vent | « brise-vent jardin » | haie brise-vent, clôture ajourée, distances, essences selon le sol | /blog/haie-diversifiee-plutot-que-thuya/, /blog/creer-une-haie-seche/, /blog/les-arbres-d-ombre-au-jardin/
+- [ ] amender-un-sol-sableux | « sol sableux potager » | matière organique, arrosage, cultures adaptées, erreurs de dosage | /blog/amender-sol-argileux/, /blog/tester-le-ph-de-son-sol/, /blog/compost-de-surface-au-potager/
+- [ ] paillage-mineral | « paillage gravier » | gravier, ardoise, pouzzolane : usages, limites, plantes adaptées, prix au m² | /blog/paillage-potager/, /blog/cultiver-la-lavande/, /comparatifs/
+- [ ] cultiver-le-bambou | « cultiver le bambou » | barrière anti-rhizome, variétés non traçantes, taille, usages au jardin | /blog/creer-une-haie-seche/, /blog/couvre-sol-persistants/, /comparatifs/
+- [ ] fabriquer-une-bordure-en-plessis | « bordure en plessis » | plessis de châtaignier, matériau, gestes, durée de vie, entretien | /blog/entretenir-et-affuter-les-outils-de-jardin/, /blog/paillage-potager/, /comparatifs/
 
 ---
 
