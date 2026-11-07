@@ -384,7 +384,7 @@ Format des lignes : `slug prévu | kw principal | angle | maillage interne à po
 
 ## P34 — Arbres, vent et sol (P33 épuisé le 2026-11-07, ajouté par l'éditeur SEO)
 
-- [ ] elaguer-un-arbre | « élaguer un arbre » | quand intervenir, ce qu'on coupe vraiment, hauteur de couronne, sécurité, périodes à éviter (nidification, montée de sève) | /blog/les-arbres-d-ombre-au-jardin/, /blog/taille-arbres-fruitiers/, /blog/entretenir-et-affuter-les-outils-de-jardin/
+- [x] elaguer-un-arbre | « élaguer un arbre » | quand intervenir, ce qu'on coupe vraiment, hauteur de couronne, sécurité, périodes à éviter (nidification, montée de sève) | /blog/les-arbres-d-ombre-au-jardin/, /blog/taille-arbres-fruitiers/, /blog/entretenir-et-affuter-les-outils-de-jardin/ → publié /blog/elaguer-un-arbre/ le 2026-11-07
 - [ ] proteger-le-jardin-du-vent | « brise-vent jardin » | haie brise-vent, clôture ajourée, distances, essences selon le sol | /blog/haie-diversifiee-plutot-que-thuya/, /blog/creer-une-haie-seche/, /blog/les-arbres-d-ombre-au-jardin/
 - [ ] amender-un-sol-sableux | « sol sableux potager » | matière organique, arrosage, cultures adaptées, erreurs de dosage | /blog/amender-sol-argileux/, /blog/tester-le-ph-de-son-sol/, /blog/compost-de-surface-au-potager/
 - [ ] paillage-mineral | « paillage gravier » | gravier, ardoise, pouzzolane : usages, limites, plantes adaptées, prix au m² | /blog/paillage-potager/, /blog/cultiver-la-lavande/, /comparatifs/
